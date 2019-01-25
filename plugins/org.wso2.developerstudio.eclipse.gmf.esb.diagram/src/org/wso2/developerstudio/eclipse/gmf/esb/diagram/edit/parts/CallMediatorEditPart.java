@@ -68,325 +68,325 @@ import org.eclipse.papyrus.infra.gmfdiag.css.CSSNodeImpl;
  * @generated NOT
  */
 public class CallMediatorEditPart extends SingleCompartmentComplexFiguredAbstractMediator {
-    
-    private static String CALL_MEDIATOR_QNAME = "call";
-    public IFigure endpointOutputConnector;
-    /**
-     * @generated
-     */
-    public static final int VISUAL_ID = 3742;
 
-    /**
-     * @generated
-     */
-    protected IFigure contentPane;
+	private static String CALL_MEDIATOR_QNAME = "call";
+	public IFigure endpointOutputConnector;
+	/**
+	 * @generated
+	 */
+	public static final int VISUAL_ID = 3742;
 
-    /**
-     * @generated
-     */
-    public CallMediatorEditPart(View view) {
-        super(view);
-    }
+	/**
+	 * @generated
+	 */
+	protected IFigure contentPane;
 
-    /**
-     * @generated
-     */
-    protected void createDefaultEditPolicies() {
-        installEditPolicy(EditPolicyRoles.CREATION_ROLE,
-                new CreationEditPolicyWithCustomReparent(EsbVisualIDRegistry.TYPED_INSTANCE));
-        super.createDefaultEditPolicies();
-        installEditPolicy(EditPolicyRoles.SEMANTIC_ROLE, new CallMediatorItemSemanticEditPolicy());
-        installEditPolicy(EditPolicyRoles.DRAG_DROP_ROLE, new FeedbackIndicateDragDropEditPolicy());
-        installEditPolicy(EditPolicyRoles.CANONICAL_ROLE, new CallMediatorCanonicalEditPolicy());
-        installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
-        installEditPolicy(EditPolicyRoles.OPEN_ROLE, new ShowPropertyViewEditPolicy());
-        // XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable
-        // editpolicies
-        // removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
-    }
+	/**
+	 * @generated
+	 */
+	public CallMediatorEditPart(View view) {
+		super(view);
+	}
 
-    /**
-     * @generated NOT
-     */
-    protected LayoutEditPolicy createLayoutEditPolicy() {
+	/**
+	 * @generated
+	 */
+	protected void createDefaultEditPolicies() {
+		installEditPolicy(EditPolicyRoles.CREATION_ROLE,
+				new CreationEditPolicyWithCustomReparent(EsbVisualIDRegistry.TYPED_INSTANCE));
+		super.createDefaultEditPolicies();
+		installEditPolicy(EditPolicyRoles.SEMANTIC_ROLE, new CallMediatorItemSemanticEditPolicy());
+		installEditPolicy(EditPolicyRoles.DRAG_DROP_ROLE, new FeedbackIndicateDragDropEditPolicy());
+		installEditPolicy(EditPolicyRoles.CANONICAL_ROLE, new CallMediatorCanonicalEditPolicy());
+		installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
+		installEditPolicy(EditPolicyRoles.OPEN_ROLE, new ShowPropertyViewEditPolicy());
+		// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable
+		// editpolicies
+		// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
+	}
 
-        org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy() {
+	/**
+	 * @generated NOT
+	 */
+	protected LayoutEditPolicy createLayoutEditPolicy() {
 
-            protected EditPolicy createChildEditPolicy(EditPart child) {
-                View childView = (View) child.getModel();
-                switch (EsbVisualIDRegistry.getVisualID(childView)) {
-                case CallMediatorInputConnectorEditPart.VISUAL_ID:
-                case CallMediatorOutputConnectorEditPart.VISUAL_ID:
-                    return new BorderItemSelectionEditPolicy();
-                }
-                EditPolicy result = child.getEditPolicy(EditPolicy.PRIMARY_DRAG_ROLE);
-                if (result == null) {
-                    result = new NonResizableEditPolicy();
-                }
-                return result;
-            }
+		org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy() {
 
-            protected Command getMoveChildrenCommand(Request request) {
-                return null;
-            }
+			protected EditPolicy createChildEditPolicy(EditPart child) {
+				View childView = (View) child.getModel();
+				switch (EsbVisualIDRegistry.getVisualID(childView)) {
+				case CallMediatorInputConnectorEditPart.VISUAL_ID:
+				case CallMediatorOutputConnectorEditPart.VISUAL_ID:
+					return new BorderItemSelectionEditPolicy();
+				}
+				EditPolicy result = child.getEditPolicy(EditPolicy.PRIMARY_DRAG_ROLE);
+				if (result == null) {
+					result = new NonResizableEditPolicy();
+				}
+				return result;
+			}
 
-            protected Command getCreateCommand(CreateRequest request) {
-                return null;
-            }
-        };
+			protected Command getMoveChildrenCommand(Request request) {
+				return null;
+			}
 
-        return lep;
-    }
+			protected Command getCreateCommand(CreateRequest request) {
+				return null;
+			}
+		};
 
-    /**
-     * @generated NOT
-     */
-    protected IFigure createNodeShape() {
-        return primaryShape = new CallMediatorFigure(new Color(null, 245, 252, 255), new Color(null, 41, 128, 185)) {
-            public void setBounds(org.eclipse.draw2d.geometry.Rectangle rect) {
-                super.setBounds(rect);
-                if ((!connected) && (this.getBounds().getLocation().x != 0 && this.getBounds().getLocation().y != 0)) {
-                    connectToMostSuitableElement();
-                    reAllocate(rect);
-                    connected = true;
-                }
-            };
-        };
-    }
+		return lep;
+	}
 
-    /**
-     * @generated
-     */
-    public CallMediatorFigure getPrimaryShape() {
-        return (CallMediatorFigure) primaryShape;
-    }
+	/**
+	 * @generated NOT
+	 */
+	protected IFigure createNodeShape() {
+		return primaryShape = new CallMediatorFigure(new Color(null, 245, 252, 255), new Color(null, 41, 128, 185)) {
+			public void setBounds(org.eclipse.draw2d.geometry.Rectangle rect) {
+				super.setBounds(rect);
+				if ((!connected) && (this.getBounds().getLocation().x != 0 && this.getBounds().getLocation().y != 0)) {
+					connectToMostSuitableElement();
+					reAllocate(rect);
+					connected = true;
+				}
+			};
+		};
+	}
 
-    protected boolean addFixedChild(EditPart childEditPart) {
+	/**
+	 * @generated
+	 */
+	public CallMediatorFigure getPrimaryShape() {
+		return (CallMediatorFigure) primaryShape;
+	}
 
-        if (childEditPart instanceof CallMediatorInputConnectorEditPart) {
+	protected boolean addFixedChild(EditPart childEditPart) {
 
-            IFigure borderItemFigure = ((CallMediatorInputConnectorEditPart) childEditPart).getFigure();
-            BorderItemLocator locator = new FixedBorderItemLocator(getMainFigure(), borderItemFigure,
-                    PositionConstants.WEST, 0.5);
-            getBorderedFigure().getBorderItemContainer().add(borderItemFigure, locator);
-            return true;
+		if (childEditPart instanceof CallMediatorInputConnectorEditPart) {
 
-        } else if (childEditPart instanceof CallMediatorOutputConnectorEditPart) {
+			IFigure borderItemFigure = ((CallMediatorInputConnectorEditPart) childEditPart).getFigure();
+			BorderItemLocator locator = new FixedBorderItemLocator(getMainFigure(), borderItemFigure,
+					PositionConstants.WEST, 0.5);
+			getBorderedFigure().getBorderItemContainer().add(borderItemFigure, locator);
+			return true;
 
-            IFigure borderItemFigure = ((CallMediatorOutputConnectorEditPart) childEditPart).getFigure();
-            BorderItemLocator locator = new FixedBorderItemLocator(getMainFigure(), borderItemFigure,
-                    PositionConstants.EAST, 0.5);
-            getBorderedFigure().getBorderItemContainer().add(borderItemFigure, locator);
+		} else if (childEditPart instanceof CallMediatorOutputConnectorEditPart) {
 
-            return true;
-        }
-        if (childEditPart instanceof CallMediatorEndpointOutputConnectorEditPart) {
-            endpointOutputConnector = ((CallMediatorEndpointOutputConnectorEditPart) childEditPart).getFigure();
-            endpointOutputConnector.setEnabled(false);
-        }
+			IFigure borderItemFigure = ((CallMediatorOutputConnectorEditPart) childEditPart).getFigure();
+			BorderItemLocator locator = new FixedBorderItemLocator(getMainFigure(), borderItemFigure,
+					PositionConstants.EAST, 0.5);
+			getBorderedFigure().getBorderItemContainer().add(borderItemFigure, locator);
 
-        return false;
-    }
+			return true;
+		}
+		if (childEditPart instanceof CallMediatorEndpointOutputConnectorEditPart) {
+			endpointOutputConnector = ((CallMediatorEndpointOutputConnectorEditPart) childEditPart).getFigure();
+			endpointOutputConnector.setEnabled(false);
+		}
 
-    protected void addChildVisual(EditPart childEditPart, int index) {
-        if (addFixedChild(childEditPart)) {
-            return;
-        }
-        super.addChildVisual(childEditPart, -1);
-    }
+		return false;
+	}
 
-    protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
-        if (editPart instanceof IBorderItemEditPart) {
-            return getBorderedFigure().getBorderItemContainer();
-        }
-        return getContentPane();
-    }
+	protected void addChildVisual(EditPart childEditPart, int index) {
+		if (addFixedChild(childEditPart)) {
+			return;
+		}
+		super.addChildVisual(childEditPart, -1);
+	}
 
-    /**
-     * @generated
-     */
-    protected NodeFigure createNodePlate() {
-        DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(40, 40);
-        return result;
-    }
+	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
+		if (editPart instanceof IBorderItemEditPart) {
+			return getBorderedFigure().getBorderItemContainer();
+		}
+		return getContentPane();
+	}
 
-    /**
-     * Creates figure for this edit part.
-     * 
-     * Body of this method does not depend on settings in generation model
-     * so you may safely remove <i>generated</i> tag and modify it.
-     * 
-     * @generated
-     */
-    protected NodeFigure createMainFigure() {
-        NodeFigure figure = createNodePlate();
-        figure.setLayoutManager(new StackLayout());
-        IFigure shape = createNodeShape();
-        figure.add(shape);
-        contentPane = setupContentPane(shape);
-        return figure;
-    }
+	/**
+	 * @generated
+	 */
+	protected NodeFigure createNodePlate() {
+		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(40, 40);
+		return result;
+	}
 
-    /**
-     * Default implementation treats passed figure as content pane.
-     * Respects layout one may have set for generated figure.
-     * 
-     * @param nodeShape instance of generated figure class
-     * @generated
-     */
-    protected IFigure setupContentPane(IFigure nodeShape) {
-        if (nodeShape.getLayoutManager() == null) {
-            ConstrainedToolbarLayout layout = new ConstrainedToolbarLayout();
-            layout.setSpacing(5);
-            nodeShape.setLayoutManager(layout);
-        }
-        return nodeShape; // use nodeShape itself as contentPane
-    }
+	/**
+	 * Creates figure for this edit part.
+	 * 
+	 * Body of this method does not depend on settings in generation model
+	 * so you may safely remove <i>generated</i> tag and modify it.
+	 * 
+	 * @generated
+	 */
+	protected NodeFigure createMainFigure() {
+		NodeFigure figure = createNodePlate();
+		figure.setLayoutManager(new StackLayout());
+		IFigure shape = createNodeShape();
+		figure.add(shape);
+		contentPane = setupContentPane(shape);
+		return figure;
+	}
 
-    /**
-     * @generated
-     */
-    public IFigure getContentPane() {
-        if (contentPane != null) {
-            return contentPane;
-        }
-        return super.getContentPane();
-    }
+	/**
+	 * Default implementation treats passed figure as content pane.
+	 * Respects layout one may have set for generated figure.
+	 * 
+	 * @param nodeShape instance of generated figure class
+	 * @generated
+	 */
+	protected IFigure setupContentPane(IFigure nodeShape) {
+		if (nodeShape.getLayoutManager() == null) {
+			ConstrainedToolbarLayout layout = new ConstrainedToolbarLayout();
+			layout.setSpacing(5);
+			nodeShape.setLayoutManager(layout);
+		}
+		return nodeShape; // use nodeShape itself as contentPane
+	}
 
-    /**
-     * @generated
-     */
-    protected void setForegroundColor(Color color) {
-        if (primaryShape != null) {
-            primaryShape.setForegroundColor(color);
-        }
-    }
+	/**
+	 * @generated
+	 */
+	public IFigure getContentPane() {
+		if (contentPane != null) {
+			return contentPane;
+		}
+		return super.getContentPane();
+	}
 
-    /**
-     * @generated
-     */
-    protected void setBackgroundColor(Color color) {
-        if (primaryShape != null) {
-            primaryShape.setBackgroundColor(color);
-        }
-    }
+	/**
+	 * @generated
+	 */
+	protected void setForegroundColor(Color color) {
+		if (primaryShape != null) {
+			primaryShape.setForegroundColor(color);
+		}
+	}
 
-    /**
-     * @generated
-     */
-    protected void setLineWidth(int width) {
-        if (primaryShape instanceof Shape) {
-            ((Shape) primaryShape).setLineWidth(width);
-        }
-    }
+	/**
+	 * @generated
+	 */
+	protected void setBackgroundColor(Color color) {
+		if (primaryShape != null) {
+			primaryShape.setBackgroundColor(color);
+		}
+	}
 
-    /**
-     * @generated
-     */
-    protected void setLineType(int style) {
-        if (primaryShape instanceof Shape) {
-            ((Shape) primaryShape).setLineStyle(style);
-        }
-    }
+	/**
+	 * @generated
+	 */
+	protected void setLineWidth(int width) {
+		if (primaryShape instanceof Shape) {
+			((Shape) primaryShape).setLineWidth(width);
+		}
+	}
 
-    /**
-     * @generated NOT
-     */
-    public class CallMediatorFigure extends EsbGroupingShape {
+	/**
+	 * @generated
+	 */
+	protected void setLineType(int style) {
+		if (primaryShape instanceof Shape) {
+			((Shape) primaryShape).setLineStyle(style);
+		}
+	}
 
-        /**
-         * @generated
-         */
-        private WrappingLabel fFigureCallMediatorDescriptionFigure;
+	/**
+	 * @generated NOT
+	 */
+	public class CallMediatorFigure extends EsbGroupingShape {
 
-        /**
-         * @generated NOT
-         */
-        public CallMediatorFigure(Color bgColor, Color boderColor) {
-            super(bgColor, boderColor);
-            ToolbarLayout layoutThis = new ToolbarLayout();
-            layoutThis.setStretchMinorAxis(true);
-            layoutThis.setMinorAlignment(ToolbarLayout.ALIGN_CENTER);
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureCallMediatorDescriptionFigure;
 
-            layoutThis.setSpacing(0);
-            layoutThis.setVertical(false);
+		/**
+		 * @generated NOT
+		 */
+		public CallMediatorFigure(Color bgColor, Color boderColor) {
+			super(bgColor, boderColor);
+			ToolbarLayout layoutThis = new ToolbarLayout();
+			layoutThis.setStretchMinorAxis(true);
+			layoutThis.setMinorAlignment(ToolbarLayout.ALIGN_CENTER);
 
-            this.setLayoutManager(layoutThis);
-            this.setPreferredSize(new Dimension(getMapMode().DPtoLP(170), getMapMode().DPtoLP(100)));
-            this.setOutline(false);
-            this.setBackgroundColor(THIS_BACK);
-            createContents();
-        }
+			layoutThis.setSpacing(0);
+			layoutThis.setVertical(false);
 
-        /**
-         * @generated
-         */
-        private void createContents() {
+			this.setLayoutManager(layoutThis);
+			this.setPreferredSize(new Dimension(getMapMode().DPtoLP(170), getMapMode().DPtoLP(100)));
+			this.setOutline(false);
+			this.setBackgroundColor(THIS_BACK);
+			createContents();
+		}
 
-            fFigureCallMediatorDescriptionFigure = new WrappingLabel();
-        }
+		/**
+		 * @generated
+		 */
+		private void createContents() {
 
-        /**
-         * @generated
-         */
-        public WrappingLabel getFigureCallMediatorDescriptionFigure() {
-            return fFigureCallMediatorDescriptionFigure;
-        }
+			fFigureCallMediatorDescriptionFigure = new WrappingLabel();
+		}
 
-        public String getIconPath() {
-            return CALL_MEDIATOR_ICON_PATH;
-        }
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureCallMediatorDescriptionFigure() {
+			return fFigureCallMediatorDescriptionFigure;
+		}
 
-        public String getNodeName() {
-            return Messages.CallMediatorEditPart_NodeName;
-        }
+		public String getIconPath() {
+			return CALL_MEDIATOR_ICON_PATH;
+		}
 
-        public IFigure getToolTip() {
-            if (StringUtils.isEmpty(toolTipMessage)) {
-                toolTipMessage = Messages.CallMediatorEditPart_ToolTipMessage;
-            }
-            return new CustomToolTip().getCustomToolTipShape(toolTipMessage);
-        }
-    }
-    
-    /**
-     * @generated NOT
-     * 
-     * This method will get invoked if the corresponding data model for the editpart changes
-     */
-    @Override
-    public void notifyChanged(Notification notification) {
-        // this.getModel will get EMF datamodel of the call mediator datamodel 
-        if (this.getModel() instanceof CSSNodeImpl) {
-            // The following part will check for validation issues with the current data in the model
-            CSSNodeImpl model = (CSSNodeImpl) this.getModel();
-            if (model.getElement() instanceof CallMediatorImpl) {
-                CallMediatorImpl callMediatorDataModel = (CallMediatorImpl) model.getElement();
-                try {
-                    org.apache.synapse.mediators.builtin.CallMediator callMediator;
-                    callMediator = CallMediatorTransformer.createCallMediator((EsbNode) callMediatorDataModel, true);
-                    CallMediatorSerializer callMediatorSerializer = new CallMediatorSerializer();
-                    OMElement omElement = callMediatorSerializer.serializeSpecificMediator(callMediator);
-                    // This will add a marker in the visual view if the data model is incomplete
-                    if (StringUtils
-                            .isEmpty(MediatorValidationUtil.validateMediatorsFromOEMElement(omElement, CALL_MEDIATOR_QNAME))) {
-                        GraphicalValidatorUtil.removeValidationMark(this);
-                    } else {
-                        GraphicalValidatorUtil.addValidationMark(this);
-                    }
-                } catch (JaxenException | TransformerException e) {
-                    // If some error occur while serializing the visual data model into synapse model
-                    // this will also add a maker to the visual view
-                    GraphicalValidatorUtil.addValidationMark(this);
-                }
-            }
-        }
-        super.notifyChanged(notification);
-    }
+		public String getNodeName() {
+			return Messages.CallMediatorEditPart_NodeName;
+		}
 
-    /**
-     * @generated
-     */
-    static final Color THIS_BACK = new Color(null, 230, 230, 230);
+		public IFigure getToolTip() {
+			if (StringUtils.isEmpty(toolTipMessage)) {
+				toolTipMessage = Messages.CallMediatorEditPart_ToolTipMessage;
+			}
+			return new CustomToolTip().getCustomToolTipShape(toolTipMessage);
+		}
+	}
+
+	/**
+	 * @generated NOT
+	 * 
+	 * This method will get invoked if the corresponding data model for the editpart changes
+	 */
+	@Override
+	public void notifyChanged(Notification notification) {
+		// this.getModel will get EMF datamodel of the call mediator datamodel 
+		if (this.getModel() instanceof CSSNodeImpl) {
+			// The following part will check for validation issues with the current data in the model
+			CSSNodeImpl model = (CSSNodeImpl) this.getModel();
+			if (model.getElement() instanceof CallMediatorImpl) {
+				CallMediatorImpl callMediatorDataModel = (CallMediatorImpl) model.getElement();
+				try {
+					org.apache.synapse.mediators.builtin.CallMediator callMediator;
+					callMediator = CallMediatorTransformer.createCallMediator((EsbNode) callMediatorDataModel, true);
+					CallMediatorSerializer callMediatorSerializer = new CallMediatorSerializer();
+					OMElement omElement = callMediatorSerializer.serializeSpecificMediator(callMediator);
+					// This will add a marker in the visual view if the data model is incomplete
+					if (StringUtils.isEmpty(
+							MediatorValidationUtil.validateMediatorsFromOEMElement(omElement, CALL_MEDIATOR_QNAME))) {
+						GraphicalValidatorUtil.removeValidationMark(this);
+					} else {
+						GraphicalValidatorUtil.addValidationMark(this);
+					}
+				} catch (JaxenException | TransformerException e) {
+					// If some error occur while serializing the visual data model into synapse model
+					// this will also add a maker to the visual view
+					GraphicalValidatorUtil.addValidationMark(this);
+				}
+			}
+		}
+		super.notifyChanged(notification);
+	}
+
+	/**
+	 * @generated
+	 */
+	static final Color THIS_BACK = new Color(null, 230, 230, 230);
 
 }
