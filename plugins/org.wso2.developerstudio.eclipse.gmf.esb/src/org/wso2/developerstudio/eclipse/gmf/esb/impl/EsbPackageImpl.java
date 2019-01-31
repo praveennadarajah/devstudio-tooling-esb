@@ -19809,15 +19809,6 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
 
         propertyMediatorOutputConnectorEClass = createEClass(PROPERTY_MEDIATOR_OUTPUT_CONNECTOR);
 
-        propertyGroupMediatorEClass = createEClass(PROPERTY_GROUP_MEDIATOR);
-        createEReference(propertyGroupMediatorEClass, PROPERTY_GROUP_MEDIATOR__INPUT_CONNECTOR);
-        createEReference(propertyGroupMediatorEClass, PROPERTY_GROUP_MEDIATOR__OUTPUT_CONNECTOR);
-        createEReference(propertyGroupMediatorEClass, PROPERTY_GROUP_MEDIATOR__PROPERTIES);
-
-        propertyGroupMediatorInputConnectorEClass = createEClass(PROPERTY_GROUP_MEDIATOR_INPUT_CONNECTOR);
-
-        propertyGroupMediatorOutputConnectorEClass = createEClass(PROPERTY_GROUP_MEDIATOR_OUTPUT_CONNECTOR);
-
         namespacedPropertyEClass = createEClass(NAMESPACED_PROPERTY);
         createEAttribute(namespacedPropertyEClass, NAMESPACED_PROPERTY__PRETTY_NAME);
         createEAttribute(namespacedPropertyEClass, NAMESPACED_PROPERTY__PROPERTY_NAME);
@@ -21361,6 +21352,15 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
         commentMediatorEClass = createEClass(COMMENT_MEDIATOR);
         createEAttribute(commentMediatorEClass, COMMENT_MEDIATOR__COMMENT_TEXT);
 
+        propertyGroupMediatorEClass = createEClass(PROPERTY_GROUP_MEDIATOR);
+        createEReference(propertyGroupMediatorEClass, PROPERTY_GROUP_MEDIATOR__INPUT_CONNECTOR);
+        createEReference(propertyGroupMediatorEClass, PROPERTY_GROUP_MEDIATOR__OUTPUT_CONNECTOR);
+        createEReference(propertyGroupMediatorEClass, PROPERTY_GROUP_MEDIATOR__PROPERTIES);
+
+        propertyGroupMediatorInputConnectorEClass = createEClass(PROPERTY_GROUP_MEDIATOR_INPUT_CONNECTOR);
+
+        propertyGroupMediatorOutputConnectorEClass = createEClass(PROPERTY_GROUP_MEDIATOR_OUTPUT_CONNECTOR);
+
         // Create enums
         artifactTypeEEnum = createEEnum(ARTIFACT_TYPE);
         callMediatorEndpointTypeEEnum = createEEnum(CALL_MEDIATOR_ENDPOINT_TYPE);
@@ -21603,9 +21603,6 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
         propertyMediatorEClass.getESuperTypes().add(this.getMediator());
         propertyMediatorInputConnectorEClass.getESuperTypes().add(this.getInputConnector());
         propertyMediatorOutputConnectorEClass.getESuperTypes().add(this.getOutputConnector());
-        propertyGroupMediatorEClass.getESuperTypes().add(this.getMediator());
-        propertyGroupMediatorInputConnectorEClass.getESuperTypes().add(this.getInputConnector());
-        propertyGroupMediatorOutputConnectorEClass.getESuperTypes().add(this.getOutputConnector());
         namespacedPropertyEClass.getESuperTypes().add(this.getEsbNode());
         enrichMediatorEClass.getESuperTypes().add(this.getMediator());
         enrichMediatorInputConnectorEClass.getESuperTypes().add(this.getInputConnector());
@@ -21864,6 +21861,9 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
         inboundEndpointOnErrorSequenceOutputConnectorEClass.getESuperTypes().add(this.getOutputConnector());
         inboundEndpointOnErrorSequenceInputConnectorEClass.getESuperTypes().add(this.getInputConnector());
         commentMediatorEClass.getESuperTypes().add(this.getMediator());
+        propertyGroupMediatorEClass.getESuperTypes().add(this.getMediator());
+        propertyGroupMediatorInputConnectorEClass.getESuperTypes().add(this.getInputConnector());
+        propertyGroupMediatorOutputConnectorEClass.getESuperTypes().add(this.getOutputConnector());
 
         // Initialize classes and features; add operations and parameters
         initEClass(esbDiagramEClass, EsbDiagram.class, "EsbDiagram", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -22263,15 +22263,6 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
         initEClass(propertyMediatorInputConnectorEClass, PropertyMediatorInputConnector.class, "PropertyMediatorInputConnector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
         initEClass(propertyMediatorOutputConnectorEClass, PropertyMediatorOutputConnector.class, "PropertyMediatorOutputConnector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-        initEClass(propertyGroupMediatorEClass, PropertyGroupMediator.class, "PropertyGroupMediator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-        initEReference(getPropertyGroupMediator_InputConnector(), this.getPropertyGroupMediatorInputConnector(), null, "inputConnector", null, 0, 1, PropertyGroupMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        initEReference(getPropertyGroupMediator_OutputConnector(), this.getPropertyGroupMediatorOutputConnector(), null, "outputConnector", null, 0, 1, PropertyGroupMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-        initEReference(getPropertyGroupMediator_Properties(), this.getPropertyMediator(), null, "properties", null, 0, 1, PropertyGroupMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-        initEClass(propertyGroupMediatorInputConnectorEClass, PropertyGroupMediatorInputConnector.class, "PropertyGroupMediatorInputConnector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-        initEClass(propertyGroupMediatorOutputConnectorEClass, PropertyGroupMediatorOutputConnector.class, "PropertyGroupMediatorOutputConnector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
         initEClass(namespacedPropertyEClass, NamespacedProperty.class, "NamespacedProperty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         initEAttribute(getNamespacedProperty_PrettyName(), ecorePackage.getEString(), "prettyName", "Namespaced Property", 0, 1, NamespacedProperty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -23820,6 +23811,15 @@ public class EsbPackageImpl extends EPackageImpl implements EsbPackage {
 
         initEClass(commentMediatorEClass, CommentMediator.class, "CommentMediator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         initEAttribute(getCommentMediator_CommentText(), ecorePackage.getEString(), "commentText", "class_name", 0, 1, CommentMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+        initEClass(propertyGroupMediatorEClass, PropertyGroupMediator.class, "PropertyGroupMediator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+        initEReference(getPropertyGroupMediator_InputConnector(), this.getPropertyGroupMediatorInputConnector(), null, "inputConnector", null, 0, 1, PropertyGroupMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEReference(getPropertyGroupMediator_OutputConnector(), this.getPropertyGroupMediatorOutputConnector(), null, "outputConnector", null, 0, 1, PropertyGroupMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEReference(getPropertyGroupMediator_Properties(), this.getPropertyMediator(), null, "properties", null, 0, -1, PropertyGroupMediator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+        initEClass(propertyGroupMediatorInputConnectorEClass, PropertyGroupMediatorInputConnector.class, "PropertyGroupMediatorInputConnector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+        initEClass(propertyGroupMediatorOutputConnectorEClass, PropertyGroupMediatorOutputConnector.class, "PropertyGroupMediatorOutputConnector", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
         // Initialize enums and add enum literals
         initEEnum(artifactTypeEEnum, ArtifactType.class, "ArtifactType");

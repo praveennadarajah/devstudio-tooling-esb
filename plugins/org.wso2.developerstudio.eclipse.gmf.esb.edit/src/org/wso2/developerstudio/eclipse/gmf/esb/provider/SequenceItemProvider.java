@@ -394,11 +394,6 @@ public class SequenceItemProvider extends MediatorItemProvider {
         newChildDescriptors.add
             (createChildParameter
                 (EsbPackage.Literals.SEQUENCE__INCLUDED_MEDIATORS,
-                 EsbFactory.eINSTANCE.createPropertyGroupMediator()));
-
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.SEQUENCE__INCLUDED_MEDIATORS,
                  EsbFactory.eINSTANCE.createEnrichMediator()));
 
         newChildDescriptors.add
@@ -620,6 +615,11 @@ public class SequenceItemProvider extends MediatorItemProvider {
             (createChildParameter
                 (EsbPackage.Literals.SEQUENCE__INCLUDED_MEDIATORS,
                  EsbFactory.eINSTANCE.createCommentMediator()));
+
+        newChildDescriptors.add
+            (createChildParameter
+                (EsbPackage.Literals.SEQUENCE__INCLUDED_MEDIATORS,
+                 EsbFactory.eINSTANCE.createPropertyGroupMediator()));
 
         newChildDescriptors.add
             (createChildParameter

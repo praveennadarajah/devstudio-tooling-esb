@@ -27,7 +27,7 @@ import org.wso2.developerstudio.eclipse.gmf.esb.PropertyGroupMediatorOutputConne
  *
  * @generated
  */
-public class PropertyGroupMediatorOutputConnectorImpl extends OutputConnectorImpl implements PropertyGroupMediatorOutputConnector {
+public class PropertyGroupMediatorOutputConnectorImpl extends OutputConnectorImpl implements PropertyGroupMediatorOutputConnector{
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->

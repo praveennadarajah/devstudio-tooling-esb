@@ -409,18 +409,6 @@ public class EsbAdapterFactory extends AdapterFactoryImpl {
                 return createPropertyMediatorOutputConnectorAdapter();
             }
             @Override
-            public Adapter casePropertyGroupMediator(PropertyGroupMediator object) {
-                return createPropertyGroupMediatorAdapter();
-            }
-            @Override
-            public Adapter casePropertyGroupMediatorInputConnector(PropertyGroupMediatorInputConnector object) {
-                return createPropertyGroupMediatorInputConnectorAdapter();
-            }
-            @Override
-            public Adapter casePropertyGroupMediatorOutputConnector(PropertyGroupMediatorOutputConnector object) {
-                return createPropertyGroupMediatorOutputConnectorAdapter();
-            }
-            @Override
             public Adapter caseNamespacedProperty(NamespacedProperty object) {
                 return createNamespacedPropertyAdapter();
             }
@@ -1535,6 +1523,18 @@ public class EsbAdapterFactory extends AdapterFactoryImpl {
             @Override
             public Adapter caseCommentMediator(CommentMediator object) {
                 return createCommentMediatorAdapter();
+            }
+            @Override
+            public Adapter casePropertyGroupMediator(PropertyGroupMediator object) {
+                return createPropertyGroupMediatorAdapter();
+            }
+            @Override
+            public Adapter casePropertyGroupMediatorInputConnector(PropertyGroupMediatorInputConnector object) {
+                return createPropertyGroupMediatorInputConnectorAdapter();
+            }
+            @Override
+            public Adapter casePropertyGroupMediatorOutputConnector(PropertyGroupMediatorOutputConnector object) {
+                return createPropertyGroupMediatorOutputConnectorAdapter();
             }
             @Override
             public Adapter defaultCase(EObject object) {

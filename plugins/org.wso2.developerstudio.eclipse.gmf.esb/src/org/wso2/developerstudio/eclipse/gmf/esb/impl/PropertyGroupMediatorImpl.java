@@ -15,14 +15,18 @@
  */
 package org.wso2.developerstudio.eclipse.gmf.esb.impl;
 
+import java.util.Collection;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
 import org.wso2.developerstudio.eclipse.gmf.esb.PropertyGroupMediator;
 import org.wso2.developerstudio.eclipse.gmf.esb.PropertyGroupMediatorInputConnector;
@@ -66,14 +70,14 @@ public class PropertyGroupMediatorImpl extends MediatorImpl implements PropertyG
     protected PropertyGroupMediatorOutputConnector outputConnector;
 
     /**
-     * The cached value of the '{@link #getProperties() <em>Properties</em>}' containment reference.
+     * The cached value of the '{@link #getProperties() <em>Properties</em>}' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @see #getProperties()
      * @generated
      * @ordered
      */
-    protected PropertyMediator properties;
+    protected EList<PropertyMediator> properties;
 
     /**
      * <!-- begin-user-doc -->
@@ -185,42 +189,11 @@ public class PropertyGroupMediatorImpl extends MediatorImpl implements PropertyG
      * <!-- end-user-doc -->
      * @generated
      */
-    public PropertyMediator getProperties() {
+    public EList<PropertyMediator> getProperties() {
+        if (properties == null) {
+            properties = new EObjectContainmentEList<PropertyMediator>(PropertyMediator.class, this, EsbPackage.PROPERTY_GROUP_MEDIATOR__PROPERTIES);
+        }
         return properties;
-    }
-
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public NotificationChain basicSetProperties(PropertyMediator newProperties, NotificationChain msgs) {
-        PropertyMediator oldProperties = properties;
-        properties = newProperties;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.PROPERTY_GROUP_MEDIATOR__PROPERTIES, oldProperties, newProperties);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
-
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public void setProperties(PropertyMediator newProperties) {
-        if (newProperties != properties) {
-            NotificationChain msgs = null;
-            if (properties != null)
-                msgs = ((InternalEObject)properties).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.PROPERTY_GROUP_MEDIATOR__PROPERTIES, null, msgs);
-            if (newProperties != null)
-                msgs = ((InternalEObject)newProperties).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.PROPERTY_GROUP_MEDIATOR__PROPERTIES, null, msgs);
-            msgs = basicSetProperties(newProperties, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.PROPERTY_GROUP_MEDIATOR__PROPERTIES, newProperties, newProperties));
     }
 
     /**
@@ -236,7 +209,7 @@ public class PropertyGroupMediatorImpl extends MediatorImpl implements PropertyG
             case EsbPackage.PROPERTY_GROUP_MEDIATOR__OUTPUT_CONNECTOR:
                 return basicSetOutputConnector(null, msgs);
             case EsbPackage.PROPERTY_GROUP_MEDIATOR__PROPERTIES:
-                return basicSetProperties(null, msgs);
+                return ((InternalEList<?>)getProperties()).basicRemove(otherEnd, msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
     }
@@ -264,6 +237,7 @@ public class PropertyGroupMediatorImpl extends MediatorImpl implements PropertyG
      * <!-- end-user-doc -->
      * @generated
      */
+    @SuppressWarnings("unchecked")
     @Override
     public void eSet(int featureID, Object newValue) {
         switch (featureID) {
@@ -274,7 +248,8 @@ public class PropertyGroupMediatorImpl extends MediatorImpl implements PropertyG
                 setOutputConnector((PropertyGroupMediatorOutputConnector)newValue);
                 return;
             case EsbPackage.PROPERTY_GROUP_MEDIATOR__PROPERTIES:
-                setProperties((PropertyMediator)newValue);
+                getProperties().clear();
+                getProperties().addAll((Collection<? extends PropertyMediator>)newValue);
                 return;
         }
         super.eSet(featureID, newValue);
@@ -295,7 +270,7 @@ public class PropertyGroupMediatorImpl extends MediatorImpl implements PropertyG
                 setOutputConnector((PropertyGroupMediatorOutputConnector)null);
                 return;
             case EsbPackage.PROPERTY_GROUP_MEDIATOR__PROPERTIES:
-                setProperties((PropertyMediator)null);
+                getProperties().clear();
                 return;
         }
         super.eUnset(featureID);
@@ -314,7 +289,7 @@ public class PropertyGroupMediatorImpl extends MediatorImpl implements PropertyG
             case EsbPackage.PROPERTY_GROUP_MEDIATOR__OUTPUT_CONNECTOR:
                 return outputConnector != null;
             case EsbPackage.PROPERTY_GROUP_MEDIATOR__PROPERTIES:
-                return properties != null;
+                return properties != null && !properties.isEmpty();
         }
         return super.eIsSet(featureID);
     }

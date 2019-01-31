@@ -139,9 +139,6 @@ public class EsbViewProvider extends AbstractProvider implements IViewProvider {
 				case PropertyMediatorEditPart.VISUAL_ID:
 				case PropertyMediatorInputConnectorEditPart.VISUAL_ID:
 				case PropertyMediatorOutputConnectorEditPart.VISUAL_ID:
-				case PropertyGroupMediatorEditPart.VISUAL_ID:
-				case PropertyGroupMediatorInputConnectorEditPart.VISUAL_ID:
-				case PropertyGroupMediatorOutputConnectorEditPart.VISUAL_ID:
 				case ThrottleMediatorEditPart.VISUAL_ID:
 				case ThrottleMediatorInputConnectorEditPart.VISUAL_ID:
 				case ThrottleMediatorOutputConnectorEditPart.VISUAL_ID:
@@ -362,6 +359,9 @@ public class EsbViewProvider extends AbstractProvider implements IViewProvider {
 				case PublishEventMediatorEditPart.VISUAL_ID:
 				case PublishEventMediatorInputConnectorEditPart.VISUAL_ID:
 				case PublishEventMediatorOutputConnectorEditPart.VISUAL_ID:
+				case PropertyGroupMediatorEditPart.VISUAL_ID:
+				case PropertyGroupMediatorInputConnectorEditPart.VISUAL_ID:
+				case PropertyGroupMediatorOutputConnectorEditPart.VISUAL_ID:
 				case EntitlementOnAcceptContainerEditPart.VISUAL_ID:
 				case EntitlementAdviceContainerEditPart.VISUAL_ID:
 				case EntitlementObligationsContainerEditPart.VISUAL_ID:
@@ -485,9 +485,6 @@ public class EsbViewProvider extends AbstractProvider implements IViewProvider {
 				|| PropertyMediatorEditPart.VISUAL_ID == visualID
 				|| PropertyMediatorInputConnectorEditPart.VISUAL_ID == visualID
 				|| PropertyMediatorOutputConnectorEditPart.VISUAL_ID == visualID
-				|| PropertyGroupMediatorEditPart.VISUAL_ID == visualID
-				|| PropertyGroupMediatorInputConnectorEditPart.VISUAL_ID == visualID
-				|| PropertyGroupMediatorOutputConnectorEditPart.VISUAL_ID == visualID
 				|| ThrottleMediatorEditPart.VISUAL_ID == visualID
 				|| ThrottleMediatorInputConnectorEditPart.VISUAL_ID == visualID
 				|| ThrottleMediatorOutputConnectorEditPart.VISUAL_ID == visualID
@@ -704,6 +701,9 @@ public class EsbViewProvider extends AbstractProvider implements IViewProvider {
 				|| MediatorFlow30EditPart.VISUAL_ID == visualID || PublishEventMediatorEditPart.VISUAL_ID == visualID
 				|| PublishEventMediatorInputConnectorEditPart.VISUAL_ID == visualID
 				|| PublishEventMediatorOutputConnectorEditPart.VISUAL_ID == visualID
+				|| PropertyGroupMediatorEditPart.VISUAL_ID == visualID
+				|| PropertyGroupMediatorInputConnectorEditPart.VISUAL_ID == visualID
+				|| PropertyGroupMediatorOutputConnectorEditPart.VISUAL_ID == visualID
 				|| EntitlementOnAcceptContainerEditPart.VISUAL_ID == visualID
 				|| MediatorFlow22EditPart.VISUAL_ID == visualID
 				|| EntitlementAdviceContainerEditPart.VISUAL_ID == visualID
@@ -854,14 +854,6 @@ public class EsbViewProvider extends AbstractProvider implements IViewProvider {
 					preferencesHint);
 		case PropertyMediatorOutputConnectorEditPart.VISUAL_ID:
 			return createPropertyMediatorOutputConnector_3034(domainElement, containerView, index, persisted,
-					preferencesHint);
-		case PropertyGroupMediatorEditPart.VISUAL_ID:
-			return createPropertyGroupMediator_3788(domainElement, containerView, index, persisted, preferencesHint);
-		case PropertyGroupMediatorInputConnectorEditPart.VISUAL_ID:
-			return createPropertyGroupMediatorInputConnector_3789(domainElement, containerView, index, persisted,
-					preferencesHint);
-		case PropertyGroupMediatorOutputConnectorEditPart.VISUAL_ID:
-			return createPropertyGroupMediatorOutputConnector_3790(domainElement, containerView, index, persisted,
 					preferencesHint);
 		case ThrottleMediatorEditPart.VISUAL_ID:
 			return createThrottleMediator_3493(domainElement, containerView, index, persisted, preferencesHint);
@@ -1480,6 +1472,14 @@ public class EsbViewProvider extends AbstractProvider implements IViewProvider {
 					preferencesHint);
 		case PublishEventMediatorOutputConnectorEditPart.VISUAL_ID:
 			return createPublishEventMediatorOutputConnector_3787(domainElement, containerView, index, persisted,
+					preferencesHint);
+		case PropertyGroupMediatorEditPart.VISUAL_ID:
+			return createPropertyGroupMediator_3788(domainElement, containerView, index, persisted, preferencesHint);
+		case PropertyGroupMediatorInputConnectorEditPart.VISUAL_ID:
+			return createPropertyGroupMediatorInputConnector_3789(domainElement, containerView, index, persisted,
+					preferencesHint);
+		case PropertyGroupMediatorOutputConnectorEditPart.VISUAL_ID:
+			return createPropertyGroupMediatorOutputConnector_3790(domainElement, containerView, index, persisted,
 					preferencesHint);
 		case EntitlementOnAcceptContainerEditPart.VISUAL_ID:
 			return createEntitlementOnAcceptContainer_3755(domainElement, containerView, index, persisted,

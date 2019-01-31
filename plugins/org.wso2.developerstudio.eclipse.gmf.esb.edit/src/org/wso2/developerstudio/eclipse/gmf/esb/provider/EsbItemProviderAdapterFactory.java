@@ -8456,9 +8456,6 @@ public class EsbItemProviderAdapterFactory extends EsbAdapterFactory
         if (propertyMediatorItemProvider != null) propertyMediatorItemProvider.dispose();
         if (propertyMediatorInputConnectorItemProvider != null) propertyMediatorInputConnectorItemProvider.dispose();
         if (propertyMediatorOutputConnectorItemProvider != null) propertyMediatorOutputConnectorItemProvider.dispose();
-        if (propertyGroupMediatorItemProvider != null) propertyGroupMediatorItemProvider.dispose();
-        if (propertyGroupMediatorInputConnectorItemProvider != null) propertyGroupMediatorInputConnectorItemProvider.dispose();
-        if (propertyGroupMediatorOutputConnectorItemProvider != null) propertyGroupMediatorOutputConnectorItemProvider.dispose();
         if (namespacedPropertyItemProvider != null) namespacedPropertyItemProvider.dispose();
         if (enrichMediatorItemProvider != null) enrichMediatorItemProvider.dispose();
         if (enrichMediatorInputConnectorItemProvider != null) enrichMediatorInputConnectorItemProvider.dispose();
@@ -8733,6 +8730,9 @@ public class EsbItemProviderAdapterFactory extends EsbAdapterFactory
         if (inboundEndpointOnErrorSequenceOutputConnectorItemProvider != null) inboundEndpointOnErrorSequenceOutputConnectorItemProvider.dispose();
         if (inboundEndpointOnErrorSequenceInputConnectorItemProvider != null) inboundEndpointOnErrorSequenceInputConnectorItemProvider.dispose();
         if (commentMediatorItemProvider != null) commentMediatorItemProvider.dispose();
+        if (propertyGroupMediatorItemProvider != null) propertyGroupMediatorItemProvider.dispose();
+        if (propertyGroupMediatorInputConnectorItemProvider != null) propertyGroupMediatorInputConnectorItemProvider.dispose();
+        if (propertyGroupMediatorOutputConnectorItemProvider != null) propertyGroupMediatorOutputConnectorItemProvider.dispose();
     }
 
 }

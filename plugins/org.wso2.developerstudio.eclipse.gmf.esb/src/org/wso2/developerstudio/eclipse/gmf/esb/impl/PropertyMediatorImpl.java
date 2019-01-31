@@ -358,8 +358,7 @@ public class PropertyMediatorImpl extends MediatorImpl implements PropertyMediat
      */
     protected static final String NEW_PROPERTY_NAME_EDEFAULT = "";
 
-    /**
-     * The cached value of the '{@link #getNewPropertyName() <em>New Property Name</em>}' attribute.
+    /*     * The cached value of the '{@link #getNewPropertyName() <em>New Property Name</em>}' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @see #getNewPropertyName()

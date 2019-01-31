@@ -163,9 +163,6 @@ public class MediatorFlowMediatorFlowCompartment18EditPart extends ShapeCompartm
 			if (type == EsbElementTypes.PropertyMediator_3492) {
 				return this;
 			}
-			if (type == EsbElementTypes.PropertyGroupMediator_3788) {
-				return this;
-			}
 			if (type == EsbElementTypes.ThrottleMediator_3493) {
 				return this;
 			}
@@ -347,6 +344,9 @@ public class MediatorFlowMediatorFlowCompartment18EditPart extends ShapeCompartm
 				return this;
 			}
 			if (type == EsbElementTypes.PublishEventMediator_3785) {
+				return this;
+			}
+			if (type == EsbElementTypes.PropertyGroupMediator_3788) {
 				return this;
 			}
 			return getParent().getTargetEditPart(request);

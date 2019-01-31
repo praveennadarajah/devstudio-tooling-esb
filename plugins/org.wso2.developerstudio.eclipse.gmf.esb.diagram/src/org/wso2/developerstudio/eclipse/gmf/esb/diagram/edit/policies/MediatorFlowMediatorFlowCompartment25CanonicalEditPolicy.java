@@ -143,7 +143,6 @@ public class MediatorFlowMediatorFlowCompartment25CanonicalEditPolicy extends Ca
 		switch (visualID) {
 		case DropMediatorEditPart.VISUAL_ID:
 		case PropertyMediatorEditPart.VISUAL_ID:
-		case PropertyGroupMediatorEditPart.VISUAL_ID:
 		case ThrottleMediatorEditPart.VISUAL_ID:
 		case FilterMediatorEditPart.VISUAL_ID:
 		case LogMediatorEditPart.VISUAL_ID:
@@ -205,6 +204,7 @@ public class MediatorFlowMediatorFlowCompartment25CanonicalEditPolicy extends Ca
 		case FastXSLTMediatorEditPart.VISUAL_ID:
 		case ForEachMediatorEditPart.VISUAL_ID:
 		case PublishEventMediatorEditPart.VISUAL_ID:
+		case PropertyGroupMediatorEditPart.VISUAL_ID:
 			return true;
 		}
 		return false;

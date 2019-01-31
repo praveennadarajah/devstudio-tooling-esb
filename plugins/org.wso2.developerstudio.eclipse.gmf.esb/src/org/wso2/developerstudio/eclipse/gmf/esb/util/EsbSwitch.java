@@ -732,31 +732,6 @@ public class EsbSwitch<T> extends Switch<T> {
                 if (result == null) result = defaultCase(theEObject);
                 return result;
             }
-            case EsbPackage.PROPERTY_GROUP_MEDIATOR: {
-                PropertyGroupMediator propertyGroupMediator = (PropertyGroupMediator)theEObject;
-                T result = casePropertyGroupMediator(propertyGroupMediator);
-                if (result == null) result = caseMediator(propertyGroupMediator);
-                if (result == null) result = caseEsbElement(propertyGroupMediator);
-                if (result == null) result = caseEsbNode(propertyGroupMediator);
-                if (result == null) result = defaultCase(theEObject);
-                return result;
-            }
-            case EsbPackage.PROPERTY_GROUP_MEDIATOR_INPUT_CONNECTOR: {
-                PropertyGroupMediatorInputConnector propertyGroupMediatorInputConnector = (PropertyGroupMediatorInputConnector)theEObject;
-                T result = casePropertyGroupMediatorInputConnector(propertyGroupMediatorInputConnector);
-                if (result == null) result = caseInputConnector(propertyGroupMediatorInputConnector);
-                if (result == null) result = caseEsbConnector(propertyGroupMediatorInputConnector);
-                if (result == null) result = defaultCase(theEObject);
-                return result;
-            }
-            case EsbPackage.PROPERTY_GROUP_MEDIATOR_OUTPUT_CONNECTOR: {
-                PropertyGroupMediatorOutputConnector propertyGroupMediatorOutputConnector = (PropertyGroupMediatorOutputConnector)theEObject;
-                T result = casePropertyGroupMediatorOutputConnector(propertyGroupMediatorOutputConnector);
-                if (result == null) result = caseOutputConnector(propertyGroupMediatorOutputConnector);
-                if (result == null) result = caseEsbConnector(propertyGroupMediatorOutputConnector);
-                if (result == null) result = defaultCase(theEObject);
-                return result;
-            }
             case EsbPackage.NAMESPACED_PROPERTY: {
                 NamespacedProperty namespacedProperty = (NamespacedProperty)theEObject;
                 T result = caseNamespacedProperty(namespacedProperty);
@@ -2961,6 +2936,31 @@ public class EsbSwitch<T> extends Switch<T> {
                 if (result == null) result = caseMediator(commentMediator);
                 if (result == null) result = caseEsbElement(commentMediator);
                 if (result == null) result = caseEsbNode(commentMediator);
+                if (result == null) result = defaultCase(theEObject);
+                return result;
+            }
+            case EsbPackage.PROPERTY_GROUP_MEDIATOR: {
+                PropertyGroupMediator propertyGroupMediator = (PropertyGroupMediator)theEObject;
+                T result = casePropertyGroupMediator(propertyGroupMediator);
+                if (result == null) result = caseMediator(propertyGroupMediator);
+                if (result == null) result = caseEsbElement(propertyGroupMediator);
+                if (result == null) result = caseEsbNode(propertyGroupMediator);
+                if (result == null) result = defaultCase(theEObject);
+                return result;
+            }
+            case EsbPackage.PROPERTY_GROUP_MEDIATOR_INPUT_CONNECTOR: {
+                PropertyGroupMediatorInputConnector propertyGroupMediatorInputConnector = (PropertyGroupMediatorInputConnector)theEObject;
+                T result = casePropertyGroupMediatorInputConnector(propertyGroupMediatorInputConnector);
+                if (result == null) result = caseInputConnector(propertyGroupMediatorInputConnector);
+                if (result == null) result = caseEsbConnector(propertyGroupMediatorInputConnector);
+                if (result == null) result = defaultCase(theEObject);
+                return result;
+            }
+            case EsbPackage.PROPERTY_GROUP_MEDIATOR_OUTPUT_CONNECTOR: {
+                PropertyGroupMediatorOutputConnector propertyGroupMediatorOutputConnector = (PropertyGroupMediatorOutputConnector)theEObject;
+                T result = casePropertyGroupMediatorOutputConnector(propertyGroupMediatorOutputConnector);
+                if (result == null) result = caseOutputConnector(propertyGroupMediatorOutputConnector);
+                if (result == null) result = caseEsbConnector(propertyGroupMediatorOutputConnector);
                 if (result == null) result = defaultCase(theEObject);
                 return result;
             }

@@ -15,6 +15,8 @@
  */
 package org.wso2.developerstudio.eclipse.gmf.esb;
 
+import org.eclipse.emf.common.util.EList;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -88,29 +90,19 @@ public interface PropertyGroupMediator extends Mediator {
     void setOutputConnector(PropertyGroupMediatorOutputConnector value);
 
     /**
-     * Returns the value of the '<em><b>Properties</b></em>' containment reference.
+     * Returns the value of the '<em><b>Properties</b></em>' containment reference list.
+     * The list contents are of type {@link org.wso2.developerstudio.eclipse.gmf.esb.PropertyMediator}.
      * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Properties</em>' containment reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Properties</em>' containment reference.
-     * @see #setProperties(PropertyMediator)
+     * @return the value of the '<em>Properties</em>' containment reference list.
      * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getPropertyGroupMediator_Properties()
      * @model containment="true"
      * @generated
      */
-    PropertyMediator getProperties();
-
-    /**
-     * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.PropertyGroupMediator#getProperties <em>Properties</em>}' containment reference.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Properties</em>' containment reference.
-     * @see #getProperties()
-     * @generated
-     */
-    void setProperties(PropertyMediator value);
+    EList<PropertyMediator> getProperties();
 
 } // PropertyGroupMediator

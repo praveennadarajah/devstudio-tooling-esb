@@ -262,11 +262,6 @@ public class EsbServerItemProvider extends EsbNodeItemProvider {
         newChildDescriptors.add
             (createChildParameter
                 (EsbPackage.Literals.ESB_SERVER__CHILDREN,
-                 EsbFactory.eINSTANCE.createPropertyGroupMediator()));
-
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.ESB_SERVER__CHILDREN,
                  EsbFactory.eINSTANCE.createEnrichMediator()));
 
         newChildDescriptors.add
@@ -588,6 +583,11 @@ public class EsbServerItemProvider extends EsbNodeItemProvider {
             (createChildParameter
                 (EsbPackage.Literals.ESB_SERVER__CHILDREN,
                  EsbFactory.eINSTANCE.createCommentMediator()));
+
+        newChildDescriptors.add
+            (createChildParameter
+                (EsbPackage.Literals.ESB_SERVER__CHILDREN,
+                 EsbFactory.eINSTANCE.createPropertyGroupMediator()));
 
         newChildDescriptors.add
             (createChildParameter

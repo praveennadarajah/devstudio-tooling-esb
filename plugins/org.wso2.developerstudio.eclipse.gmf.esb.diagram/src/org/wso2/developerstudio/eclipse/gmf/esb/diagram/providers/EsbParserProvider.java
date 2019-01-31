@@ -1173,8 +1173,6 @@ public class EsbParserProvider extends AbstractProvider implements IParserProvid
 			return getDropMediatorDescription_5166Parser();
 		case PropertyMediatorDescriptionEditPart.VISUAL_ID:
 			return getPropertyMediatorDescription_5167Parser();
-		case PropertyGroupMediatorDescriptionEditPart.VISUAL_ID:
-			return getPropertyGroupMediatorDescription_5215Parser();
 		case ThrottleMediatorGroupIdEditPart.VISUAL_ID:
 			return getThrottleMediatorGroupId_5128Parser();
 
@@ -1282,6 +1280,8 @@ public class EsbParserProvider extends AbstractProvider implements IParserProvid
 			return getForEachMediatorForEachID_5213Parser();
 		case PublishEventMediatorStreamNameEditPart.VISUAL_ID:
 			return getPublishEventMediatorDescription_5214Parser();
+		case PropertyGroupMediatorDescriptionEditPart.VISUAL_ID:
+			return getPropertyGroupMediatorDescription_5215Parser();
 		case DefaultEndPointEndPointName2EditPart.VISUAL_ID:
 			return getDefaultEndPointEndPointName_5160Parser();
 		case AddressEndPointEndPointName2EditPart.VISUAL_ID:

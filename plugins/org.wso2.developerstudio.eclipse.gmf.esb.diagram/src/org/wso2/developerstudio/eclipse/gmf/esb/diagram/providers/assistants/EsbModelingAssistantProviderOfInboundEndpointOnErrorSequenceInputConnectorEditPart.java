@@ -54,7 +54,6 @@ public class EsbModelingAssistantProviderOfInboundEndpointOnErrorSequenceInputCo
 			types.add(EsbElementTypes.ProxyOutputConnector_3002);
 			types.add(EsbElementTypes.ProxyOutSequenceOutputConnector_3729);
 			types.add(EsbElementTypes.PropertyMediatorOutputConnector_3034);
-			types.add(EsbElementTypes.PropertyGroupMediatorOutputConnector_3790);
 			types.add(EsbElementTypes.ThrottleMediatorOutputConnector_3122);
 			types.add(EsbElementTypes.ThrottleMediatorOnAcceptOutputConnector_3581);
 			types.add(EsbElementTypes.ThrottleMediatorOnRejectOutputConnector_3582);
@@ -140,6 +139,7 @@ public class EsbModelingAssistantProviderOfInboundEndpointOnErrorSequenceInputCo
 			types.add(EsbElementTypes.ForEachMediatorOutputConnector_3782);
 			types.add(EsbElementTypes.ForEachMediatorTargetOutputConnector_3783);
 			types.add(EsbElementTypes.PublishEventMediatorOutputConnector_3787);
+			types.add(EsbElementTypes.PropertyGroupMediatorOutputConnector_3790);
 			types.add(EsbElementTypes.MessageOutputConnector_3047);
 			types.add(EsbElementTypes.MergeNodeOutputConnector_3016);
 			types.add(EsbElementTypes.SequencesOutputConnector_3617);

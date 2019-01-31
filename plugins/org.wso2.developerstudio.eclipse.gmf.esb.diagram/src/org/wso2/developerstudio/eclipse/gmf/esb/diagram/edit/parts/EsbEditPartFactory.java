@@ -83,18 +83,6 @@ public class EsbEditPartFactory implements EditPartFactory {
 			case PropertyMediatorOutputConnectorEditPart.VISUAL_ID:
 				return new PropertyMediatorOutputConnectorEditPart(view);
 
-			case PropertyGroupMediatorEditPart.VISUAL_ID:
-				return new PropertyGroupMediatorEditPart(view);
-
-			case PropertyGroupMediatorDescriptionEditPart.VISUAL_ID:
-				return new PropertyGroupMediatorDescriptionEditPart(view);
-
-			case PropertyGroupMediatorInputConnectorEditPart.VISUAL_ID:
-				return new PropertyGroupMediatorInputConnectorEditPart(view);
-
-			case PropertyGroupMediatorOutputConnectorEditPart.VISUAL_ID:
-				return new PropertyGroupMediatorOutputConnectorEditPart(view);
-
 			case ThrottleMediatorEditPart.VISUAL_ID:
 				return new ThrottleMediatorEditPart(view);
 
@@ -958,6 +946,18 @@ public class EsbEditPartFactory implements EditPartFactory {
 
 			case PublishEventMediatorOutputConnectorEditPart.VISUAL_ID:
 				return new PublishEventMediatorOutputConnectorEditPart(view);
+
+			case PropertyGroupMediatorEditPart.VISUAL_ID:
+				return new PropertyGroupMediatorEditPart(view);
+
+			case PropertyGroupMediatorDescriptionEditPart.VISUAL_ID:
+				return new PropertyGroupMediatorDescriptionEditPart(view);
+
+			case PropertyGroupMediatorInputConnectorEditPart.VISUAL_ID:
+				return new PropertyGroupMediatorInputConnectorEditPart(view);
+
+			case PropertyGroupMediatorOutputConnectorEditPart.VISUAL_ID:
+				return new PropertyGroupMediatorOutputConnectorEditPart(view);
 
 			case EntitlementOnAcceptContainerEditPart.VISUAL_ID:
 				return new EntitlementOnAcceptContainerEditPart(view);

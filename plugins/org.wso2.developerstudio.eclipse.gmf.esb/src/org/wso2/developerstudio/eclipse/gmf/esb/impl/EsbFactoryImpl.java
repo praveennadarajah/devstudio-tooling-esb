@@ -138,9 +138,6 @@ public class EsbFactoryImpl extends EFactoryImpl implements EsbFactory {
             case EsbPackage.PROPERTY_MEDIATOR: return createPropertyMediator();
             case EsbPackage.PROPERTY_MEDIATOR_INPUT_CONNECTOR: return createPropertyMediatorInputConnector();
             case EsbPackage.PROPERTY_MEDIATOR_OUTPUT_CONNECTOR: return createPropertyMediatorOutputConnector();
-            case EsbPackage.PROPERTY_GROUP_MEDIATOR: return createPropertyGroupMediator();
-            case EsbPackage.PROPERTY_GROUP_MEDIATOR_INPUT_CONNECTOR: return createPropertyGroupMediatorInputConnector();
-            case EsbPackage.PROPERTY_GROUP_MEDIATOR_OUTPUT_CONNECTOR: return createPropertyGroupMediatorOutputConnector();
             case EsbPackage.NAMESPACED_PROPERTY: return createNamespacedProperty();
             case EsbPackage.ENRICH_MEDIATOR: return createEnrichMediator();
             case EsbPackage.ENRICH_MEDIATOR_INPUT_CONNECTOR: return createEnrichMediatorInputConnector();
@@ -415,6 +412,9 @@ public class EsbFactoryImpl extends EFactoryImpl implements EsbFactory {
             case EsbPackage.INBOUND_ENDPOINT_ON_ERROR_SEQUENCE_OUTPUT_CONNECTOR: return createInboundEndpointOnErrorSequenceOutputConnector();
             case EsbPackage.INBOUND_ENDPOINT_ON_ERROR_SEQUENCE_INPUT_CONNECTOR: return createInboundEndpointOnErrorSequenceInputConnector();
             case EsbPackage.COMMENT_MEDIATOR: return createCommentMediator();
+            case EsbPackage.PROPERTY_GROUP_MEDIATOR: return createPropertyGroupMediator();
+            case EsbPackage.PROPERTY_GROUP_MEDIATOR_INPUT_CONNECTOR: return createPropertyGroupMediatorInputConnector();
+            case EsbPackage.PROPERTY_GROUP_MEDIATOR_OUTPUT_CONNECTOR: return createPropertyGroupMediatorOutputConnector();
             default:
                 throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
         }
@@ -1811,10 +1811,12 @@ public class EsbFactoryImpl extends EFactoryImpl implements EsbFactory {
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
+     * @generated NOT
      */
     public PropertyGroupMediator createPropertyGroupMediator() {
         PropertyGroupMediatorImpl propertyGroupMediator = new PropertyGroupMediatorImpl();
+        propertyGroupMediator.setInputConnector(createPropertyGroupMediatorInputConnector());
+        propertyGroupMediator.setOutputConnector(createPropertyGroupMediatorOutputConnector());
         return propertyGroupMediator;
     }
 

@@ -40,8 +40,6 @@ public class EsbDiagramUpdater {
 			return getDropMediator_3491SemanticChildren(view);
 		case PropertyMediatorEditPart.VISUAL_ID:
 			return getPropertyMediator_3492SemanticChildren(view);
-		case PropertyGroupMediatorEditPart.VISUAL_ID:
-			return getPropertyGroupMediator_3788SemanticChildren(view);
 		case ThrottleMediatorEditPart.VISUAL_ID:
 			return getThrottleMediator_3493SemanticChildren(view);
 		case ThrottleContainerEditPart.VISUAL_ID:
@@ -190,6 +188,8 @@ public class EsbDiagramUpdater {
 			return getForEachMediator_3780SemanticChildren(view);
 		case PublishEventMediatorEditPart.VISUAL_ID:
 			return getPublishEventMediator_3785SemanticChildren(view);
+		case PropertyGroupMediatorEditPart.VISUAL_ID:
+			return getPropertyGroupMediator_3788SemanticChildren(view);
 		case EntitlementOnAcceptContainerEditPart.VISUAL_ID:
 			return getEntitlementOnAcceptContainer_3755SemanticChildren(view);
 		case EntitlementAdviceContainerEditPart.VISUAL_ID:
@@ -3515,10 +3515,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -3760,6 +3756,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -3791,10 +3791,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -4036,6 +4032,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -4067,10 +4067,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -4312,6 +4308,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -4343,10 +4343,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -4588,6 +4584,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -4619,10 +4619,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -4864,6 +4860,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -4895,10 +4895,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -5140,6 +5136,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -5171,10 +5171,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -5416,6 +5412,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -5447,10 +5447,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -5692,6 +5688,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -5723,10 +5723,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -5968,6 +5964,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -5999,10 +5999,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -6244,6 +6240,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -6275,10 +6275,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -6520,6 +6516,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -6551,10 +6551,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -6796,6 +6792,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -6827,10 +6827,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -7072,6 +7068,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -7103,10 +7103,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -7348,6 +7344,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -7379,10 +7379,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -7624,6 +7620,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -7655,10 +7655,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -7900,6 +7896,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -7931,10 +7931,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -8176,6 +8172,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -8207,10 +8207,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -8452,6 +8448,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -8483,10 +8483,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -8728,6 +8724,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -8759,10 +8759,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -9004,6 +9000,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -9035,10 +9035,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -9280,6 +9276,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -9311,10 +9311,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -9556,6 +9552,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -9587,10 +9587,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -9832,6 +9828,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -9863,10 +9863,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -10108,6 +10104,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -10183,10 +10183,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -10428,6 +10424,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -10459,10 +10459,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -10704,6 +10700,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -10735,10 +10735,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -10980,6 +10976,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -11105,10 +11105,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -11350,6 +11346,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -11381,10 +11381,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -11626,6 +11622,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -11657,10 +11657,6 @@ public class EsbDiagramUpdater {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
-			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
-				result.add(new EsbNodeDescriptor(childElement, visualID));
-				continue;
-			}
 			if (visualID == ThrottleMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
@@ -11902,6 +11898,10 @@ public class EsbDiagramUpdater {
 				continue;
 			}
 			if (visualID == PublishEventMediatorEditPart.VISUAL_ID) {
+				result.add(new EsbNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == PropertyGroupMediatorEditPart.VISUAL_ID) {
 				result.add(new EsbNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -11963,12 +11963,6 @@ public class EsbDiagramUpdater {
 			return getPropertyMediatorInputConnector_3033ContainedLinks(view);
 		case PropertyMediatorOutputConnectorEditPart.VISUAL_ID:
 			return getPropertyMediatorOutputConnector_3034ContainedLinks(view);
-		case PropertyGroupMediatorEditPart.VISUAL_ID:
-			return getPropertyGroupMediator_3788ContainedLinks(view);
-		case PropertyGroupMediatorInputConnectorEditPart.VISUAL_ID:
-			return getPropertyGroupMediatorInputConnector_3789ContainedLinks(view);
-		case PropertyGroupMediatorOutputConnectorEditPart.VISUAL_ID:
-			return getPropertyGroupMediatorOutputConnector_3790ContainedLinks(view);
 		case ThrottleMediatorEditPart.VISUAL_ID:
 			return getThrottleMediator_3493ContainedLinks(view);
 		case ThrottleMediatorInputConnectorEditPart.VISUAL_ID:
@@ -12439,6 +12433,12 @@ public class EsbDiagramUpdater {
 			return getPublishEventMediatorInputConnector_3786ContainedLinks(view);
 		case PublishEventMediatorOutputConnectorEditPart.VISUAL_ID:
 			return getPublishEventMediatorOutputConnector_3787ContainedLinks(view);
+		case PropertyGroupMediatorEditPart.VISUAL_ID:
+			return getPropertyGroupMediator_3788ContainedLinks(view);
+		case PropertyGroupMediatorInputConnectorEditPart.VISUAL_ID:
+			return getPropertyGroupMediatorInputConnector_3789ContainedLinks(view);
+		case PropertyGroupMediatorOutputConnectorEditPart.VISUAL_ID:
+			return getPropertyGroupMediatorOutputConnector_3790ContainedLinks(view);
 		case EntitlementOnAcceptContainerEditPart.VISUAL_ID:
 			return getEntitlementOnAcceptContainer_3755ContainedLinks(view);
 		case MediatorFlow22EditPart.VISUAL_ID:
@@ -12650,12 +12650,6 @@ public class EsbDiagramUpdater {
 			return getPropertyMediatorInputConnector_3033IncomingLinks(view);
 		case PropertyMediatorOutputConnectorEditPart.VISUAL_ID:
 			return getPropertyMediatorOutputConnector_3034IncomingLinks(view);
-		case PropertyGroupMediatorEditPart.VISUAL_ID:
-			return getPropertyGroupMediator_3788IncomingLinks(view);
-		case PropertyGroupMediatorInputConnectorEditPart.VISUAL_ID:
-			return getPropertyGroupMediatorInputConnector_3789IncomingLinks(view);
-		case PropertyGroupMediatorOutputConnectorEditPart.VISUAL_ID:
-			return getPropertyGroupMediatorOutputConnector_3790IncomingLinks(view);
 		case ThrottleMediatorEditPart.VISUAL_ID:
 			return getThrottleMediator_3493IncomingLinks(view);
 		case ThrottleMediatorInputConnectorEditPart.VISUAL_ID:
@@ -13126,6 +13120,12 @@ public class EsbDiagramUpdater {
 			return getPublishEventMediatorInputConnector_3786IncomingLinks(view);
 		case PublishEventMediatorOutputConnectorEditPart.VISUAL_ID:
 			return getPublishEventMediatorOutputConnector_3787IncomingLinks(view);
+		case PropertyGroupMediatorEditPart.VISUAL_ID:
+			return getPropertyGroupMediator_3788IncomingLinks(view);
+		case PropertyGroupMediatorInputConnectorEditPart.VISUAL_ID:
+			return getPropertyGroupMediatorInputConnector_3789IncomingLinks(view);
+		case PropertyGroupMediatorOutputConnectorEditPart.VISUAL_ID:
+			return getPropertyGroupMediatorOutputConnector_3790IncomingLinks(view);
 		case EntitlementOnAcceptContainerEditPart.VISUAL_ID:
 			return getEntitlementOnAcceptContainer_3755IncomingLinks(view);
 		case MediatorFlow22EditPart.VISUAL_ID:
@@ -13337,12 +13337,6 @@ public class EsbDiagramUpdater {
 			return getPropertyMediatorInputConnector_3033OutgoingLinks(view);
 		case PropertyMediatorOutputConnectorEditPart.VISUAL_ID:
 			return getPropertyMediatorOutputConnector_3034OutgoingLinks(view);
-		case PropertyGroupMediatorEditPart.VISUAL_ID:
-			return getPropertyGroupMediator_3788OutgoingLinks(view);
-		case PropertyGroupMediatorInputConnectorEditPart.VISUAL_ID:
-			return getPropertyGroupMediatorInputConnector_3789OutgoingLinks(view);
-		case PropertyGroupMediatorOutputConnectorEditPart.VISUAL_ID:
-			return getPropertyGroupMediatorOutputConnector_3790OutgoingLinks(view);
 		case ThrottleMediatorEditPart.VISUAL_ID:
 			return getThrottleMediator_3493OutgoingLinks(view);
 		case ThrottleMediatorInputConnectorEditPart.VISUAL_ID:
@@ -13813,6 +13807,12 @@ public class EsbDiagramUpdater {
 			return getPublishEventMediatorInputConnector_3786OutgoingLinks(view);
 		case PublishEventMediatorOutputConnectorEditPart.VISUAL_ID:
 			return getPublishEventMediatorOutputConnector_3787OutgoingLinks(view);
+		case PropertyGroupMediatorEditPart.VISUAL_ID:
+			return getPropertyGroupMediator_3788OutgoingLinks(view);
+		case PropertyGroupMediatorInputConnectorEditPart.VISUAL_ID:
+			return getPropertyGroupMediatorInputConnector_3789OutgoingLinks(view);
+		case PropertyGroupMediatorOutputConnectorEditPart.VISUAL_ID:
+			return getPropertyGroupMediatorOutputConnector_3790OutgoingLinks(view);
 		case EntitlementOnAcceptContainerEditPart.VISUAL_ID:
 			return getEntitlementOnAcceptContainer_3755OutgoingLinks(view);
 		case MediatorFlow22EditPart.VISUAL_ID:

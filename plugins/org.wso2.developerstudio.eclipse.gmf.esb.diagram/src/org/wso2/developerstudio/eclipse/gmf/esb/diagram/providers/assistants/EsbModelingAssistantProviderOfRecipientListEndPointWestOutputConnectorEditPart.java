@@ -148,9 +148,6 @@ public class EsbModelingAssistantProviderOfRecipientListEndPointWestOutputConnec
 		if (targetEditPart instanceof PropertyMediatorInputConnectorEditPart) {
 			types.add(EsbElementTypes.EsbLink_4001);
 		}
-		if (targetEditPart instanceof PropertyGroupMediatorInputConnectorEditPart) {
-			types.add(EsbElementTypes.EsbLink_4001);
-		}
 		if (targetEditPart instanceof ThrottleMediatorInputConnectorEditPart) {
 			types.add(EsbElementTypes.EsbLink_4001);
 		}
@@ -334,6 +331,9 @@ public class EsbModelingAssistantProviderOfRecipientListEndPointWestOutputConnec
 		if (targetEditPart instanceof PublishEventMediatorInputConnectorEditPart) {
 			types.add(EsbElementTypes.EsbLink_4001);
 		}
+		if (targetEditPart instanceof PropertyGroupMediatorInputConnectorEditPart) {
+			types.add(EsbElementTypes.EsbLink_4001);
+		}
 		if (targetEditPart instanceof ProxyInSequenceInputConnectorEditPart) {
 			types.add(EsbElementTypes.EsbLink_4001);
 		}
@@ -411,7 +411,6 @@ public class EsbModelingAssistantProviderOfRecipientListEndPointWestOutputConnec
 			types.add(EsbElementTypes.ProxyFaultInputConnector_3489);
 			types.add(EsbElementTypes.DropMediatorInputConnector_3008);
 			types.add(EsbElementTypes.PropertyMediatorInputConnector_3033);
-			types.add(EsbElementTypes.PropertyGroupMediatorInputConnector_3789);
 			types.add(EsbElementTypes.ThrottleMediatorInputConnector_3121);
 			types.add(EsbElementTypes.FilterMediatorInputConnector_3010);
 			types.add(EsbElementTypes.LogMediatorInputConnector_3018);
@@ -473,6 +472,7 @@ public class EsbModelingAssistantProviderOfRecipientListEndPointWestOutputConnec
 			types.add(EsbElementTypes.FastXSLTMediatorInputConnector_3765);
 			types.add(EsbElementTypes.ForEachMediatorInputConnector_3781);
 			types.add(EsbElementTypes.PublishEventMediatorInputConnector_3786);
+			types.add(EsbElementTypes.PropertyGroupMediatorInputConnector_3789);
 			types.add(EsbElementTypes.ProxyInSequenceInputConnector_3731);
 			types.add(EsbElementTypes.MessageInputConnector_3046);
 			types.add(EsbElementTypes.MergeNodeFirstInputConnector_3014);

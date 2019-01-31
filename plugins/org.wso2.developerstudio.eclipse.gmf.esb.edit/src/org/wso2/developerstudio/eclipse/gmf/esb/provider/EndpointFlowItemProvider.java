@@ -223,11 +223,6 @@ public class EndpointFlowItemProvider extends EsbNodeItemProvider {
         newChildDescriptors.add
             (createChildParameter
                 (EsbPackage.Literals.ENDPOINT_FLOW__CHILDREN,
-                 EsbFactory.eINSTANCE.createPropertyGroupMediator()));
-
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.ENDPOINT_FLOW__CHILDREN,
                  EsbFactory.eINSTANCE.createEnrichMediator()));
 
         newChildDescriptors.add
@@ -549,6 +544,11 @@ public class EndpointFlowItemProvider extends EsbNodeItemProvider {
             (createChildParameter
                 (EsbPackage.Literals.ENDPOINT_FLOW__CHILDREN,
                  EsbFactory.eINSTANCE.createCommentMediator()));
+
+        newChildDescriptors.add
+            (createChildParameter
+                (EsbPackage.Literals.ENDPOINT_FLOW__CHILDREN,
+                 EsbFactory.eINSTANCE.createPropertyGroupMediator()));
     }
 
 }

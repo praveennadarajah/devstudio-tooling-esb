@@ -90,9 +90,6 @@ public class MediatorFlowMediatorFlowCompartment25ItemSemanticEditPolicy extends
 		if (EsbElementTypes.PropertyMediator_3492 == req.getElementType()) {
 			return getGEFWrapper(new PropertyMediatorCreateCommand(req));
 		}
-		if (EsbElementTypes.PropertyGroupMediator_3788 == req.getElementType()) {
-			return getGEFWrapper(new PropertyGroupMediatorCreateCommand(req));
-		}
 		if (EsbElementTypes.ThrottleMediator_3493 == req.getElementType()) {
 			return getGEFWrapper(new ThrottleMediatorCreateCommand(req));
 		}
@@ -275,6 +272,9 @@ public class MediatorFlowMediatorFlowCompartment25ItemSemanticEditPolicy extends
 		}
 		if (EsbElementTypes.PublishEventMediator_3785 == req.getElementType()) {
 			return getGEFWrapper(new PublishEventMediatorCreateCommand(req));
+		}
+		if (EsbElementTypes.PropertyGroupMediator_3788 == req.getElementType()) {
+			return getGEFWrapper(new PropertyGroupMediatorCreateCommand(req));
 		}
 		return super.getCreateCommand(req);
 	}
