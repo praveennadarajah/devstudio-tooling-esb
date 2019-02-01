@@ -20,23 +20,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.MessageInputConnector;
  */
 public class MessageInputConnectorImpl extends InputConnectorImpl implements MessageInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected MessageInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.MESSAGE_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.MESSAGE_INPUT_CONNECTOR;
+	}
 
 } // MessageInputConnectorImpl

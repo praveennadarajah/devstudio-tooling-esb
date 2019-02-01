@@ -20,22 +20,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
  */
 public class EnqueueMediatorInputConnectorImpl extends InputConnectorImpl implements EnqueueMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected EnqueueMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.ENQUEUE_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.ENQUEUE_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // EnqueueMediatorInputConnectorImpl

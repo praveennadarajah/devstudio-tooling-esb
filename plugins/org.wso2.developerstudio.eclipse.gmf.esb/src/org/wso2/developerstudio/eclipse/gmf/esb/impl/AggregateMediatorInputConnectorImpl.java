@@ -23,13 +23,13 @@ import org.wso2.developerstudio.eclipse.gmf.esb.OutputConnector;
  */
 public class AggregateMediatorInputConnectorImpl extends InputConnectorImpl implements AggregateMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected AggregateMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /*
      * public boolean shouldConnect(OutputConnector sourceEnd) {
@@ -45,13 +45,13 @@ public class AggregateMediatorInputConnectorImpl extends InputConnectorImpl impl
      */
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.AGGREGATE_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.AGGREGATE_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // AggregateMediatorInputConnectorImpl

@@ -20,23 +20,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.ProxyOutputConnector;
  */
 public class ProxyOutputConnectorImpl extends OutputConnectorImpl implements ProxyOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ProxyOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.PROXY_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.PROXY_OUTPUT_CONNECTOR;
+	}
 
 } // ProxyOutputConnectorImpl

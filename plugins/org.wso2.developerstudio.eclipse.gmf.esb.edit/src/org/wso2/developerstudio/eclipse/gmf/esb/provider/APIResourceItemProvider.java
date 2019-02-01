@@ -37,14 +37,14 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
  */
 public class APIResourceItemProvider extends EsbNodeItemProvider {
     /**
-     * This constructs an instance from a factory and a notifier.
-     * <!-- begin-user-doc -->
+	 * This constructs an instance from a factory and a notifier.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public APIResourceItemProvider(AdapterFactory adapterFactory) {
-        super(adapterFactory);
-    }
+		super(adapterFactory);
+	}
 
     /**
      * This returns the property descriptors for the adapted class.
@@ -116,202 +116,202 @@ public class APIResourceItemProvider extends EsbNodeItemProvider {
     }
 
     /**
-     * This adds a property descriptor for the Url Style feature.
-     * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Url Style feature.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected void addUrlStylePropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_APIResource_urlStyle_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_urlStyle_feature", "_UI_APIResource_type"),
-                 EsbPackage.Literals.API_RESOURCE__URL_STYLE,
-                 true,
-                 false,
-                 false,
-                 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-                 getString("_UI_BasicPropertyCategory"),
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_APIResource_urlStyle_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_urlStyle_feature", "_UI_APIResource_type"),
+				 EsbPackage.Literals.API_RESOURCE__URL_STYLE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_BasicPropertyCategory"),
+				 null));
+	}
 
     /**
-     * This adds a property descriptor for the Uri Template feature.
-     * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Uri Template feature.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected void addUriTemplatePropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_APIResource_uriTemplate_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_uriTemplate_feature", "_UI_APIResource_type"),
-                 EsbPackage.Literals.API_RESOURCE__URI_TEMPLATE,
-                 true,
-                 false,
-                 false,
-                 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-                 getString("_UI_BasicPropertyCategory"),
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_APIResource_uriTemplate_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_uriTemplate_feature", "_UI_APIResource_type"),
+				 EsbPackage.Literals.API_RESOURCE__URI_TEMPLATE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_BasicPropertyCategory"),
+				 null));
+	}
 
     /**
-     * This adds a property descriptor for the Url Mapping feature.
-     * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Url Mapping feature.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected void addUrlMappingPropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_APIResource_urlMapping_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_urlMapping_feature", "_UI_APIResource_type"),
-                 EsbPackage.Literals.API_RESOURCE__URL_MAPPING,
-                 true,
-                 false,
-                 false,
-                 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-                 getString("_UI_BasicPropertyCategory"),
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_APIResource_urlMapping_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_urlMapping_feature", "_UI_APIResource_type"),
+				 EsbPackage.Literals.API_RESOURCE__URL_MAPPING,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 getString("_UI_BasicPropertyCategory"),
+				 null));
+	}
 
     /**
-     * This adds a property descriptor for the Allow Get feature.
-     * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Allow Get feature.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected void addAllowGetPropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_APIResource_allowGet_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_allowGet_feature", "_UI_APIResource_type"),
-                 EsbPackage.Literals.API_RESOURCE__ALLOW_GET,
-                 true,
-                 false,
-                 false,
-                 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
-                 getString("_UI_MethodsPropertyCategory"),
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_APIResource_allowGet_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_allowGet_feature", "_UI_APIResource_type"),
+				 EsbPackage.Literals.API_RESOURCE__ALLOW_GET,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 getString("_UI_MethodsPropertyCategory"),
+				 null));
+	}
 
     /**
-     * This adds a property descriptor for the Allow Post feature.
-     * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Allow Post feature.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected void addAllowPostPropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_APIResource_allowPost_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_allowPost_feature", "_UI_APIResource_type"),
-                 EsbPackage.Literals.API_RESOURCE__ALLOW_POST,
-                 true,
-                 false,
-                 false,
-                 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
-                 getString("_UI_MethodsPropertyCategory"),
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_APIResource_allowPost_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_allowPost_feature", "_UI_APIResource_type"),
+				 EsbPackage.Literals.API_RESOURCE__ALLOW_POST,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 getString("_UI_MethodsPropertyCategory"),
+				 null));
+	}
 
     /**
-     * This adds a property descriptor for the Allow Put feature.
-     * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Allow Put feature.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected void addAllowPutPropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_APIResource_allowPut_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_allowPut_feature", "_UI_APIResource_type"),
-                 EsbPackage.Literals.API_RESOURCE__ALLOW_PUT,
-                 true,
-                 false,
-                 false,
-                 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
-                 getString("_UI_MethodsPropertyCategory"),
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_APIResource_allowPut_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_allowPut_feature", "_UI_APIResource_type"),
+				 EsbPackage.Literals.API_RESOURCE__ALLOW_PUT,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 getString("_UI_MethodsPropertyCategory"),
+				 null));
+	}
 
     /**
-     * This adds a property descriptor for the Allow Delete feature.
-     * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Allow Delete feature.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected void addAllowDeletePropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_APIResource_allowDelete_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_allowDelete_feature", "_UI_APIResource_type"),
-                 EsbPackage.Literals.API_RESOURCE__ALLOW_DELETE,
-                 true,
-                 false,
-                 false,
-                 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
-                 getString("_UI_MethodsPropertyCategory"),
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_APIResource_allowDelete_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_allowDelete_feature", "_UI_APIResource_type"),
+				 EsbPackage.Literals.API_RESOURCE__ALLOW_DELETE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 getString("_UI_MethodsPropertyCategory"),
+				 null));
+	}
 
     /**
-     * This adds a property descriptor for the Allow Options feature.
-     * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Allow Options feature.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected void addAllowOptionsPropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_APIResource_allowOptions_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_allowOptions_feature", "_UI_APIResource_type"),
-                 EsbPackage.Literals.API_RESOURCE__ALLOW_OPTIONS,
-                 true,
-                 false,
-                 false,
-                 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
-                 getString("_UI_MethodsPropertyCategory"),
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_APIResource_allowOptions_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_allowOptions_feature", "_UI_APIResource_type"),
+				 EsbPackage.Literals.API_RESOURCE__ALLOW_OPTIONS,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 getString("_UI_MethodsPropertyCategory"),
+				 null));
+	}
 
     /**
-     * This adds a property descriptor for the Allow Head feature.
-     * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Allow Head feature.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected void addAllowHeadPropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_APIResource_allowHead_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_allowHead_feature", "_UI_APIResource_type"),
-                 EsbPackage.Literals.API_RESOURCE__ALLOW_HEAD,
-                 true,
-                 false,
-                 false,
-                 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
-                 getString("_UI_MethodsPropertyCategory"),
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_APIResource_allowHead_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_APIResource_allowHead_feature", "_UI_APIResource_type"),
+				 EsbPackage.Literals.API_RESOURCE__ALLOW_HEAD,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
+				 getString("_UI_MethodsPropertyCategory"),
+				 null));
+	}
 
     /**
      * This adds a property descriptor for the Allow Patch feature.
@@ -501,193 +501,193 @@ public class APIResourceItemProvider extends EsbNodeItemProvider {
     }
 
     /**
-     * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
-     * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
-     * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
-     * <!-- begin-user-doc -->
+	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
+	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
+	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
-        if (childrenFeatures == null) {
-            super.getChildrenFeatures(object);
-            childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__INPUT_CONNECTOR);
-            childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__OUTPUT_CONNECTOR);
-            childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__OUT_SEQUENCE_OUTPUT_CONNECTOR);
-            childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__IN_SEQUENCE_INPUT_CONNECTORS);
-            childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__FAULT_INPUT_CONNECTOR);
-            childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__CONTAINER);
-            childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__IN_SEQUENCE_KEY);
-            childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__OUT_SEQUENCE_KEY);
-            childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__FAULT_SEQUENCE_KEY);
-        }
-        return childrenFeatures;
-    }
+		if (childrenFeatures == null) {
+			super.getChildrenFeatures(object);
+			childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__INPUT_CONNECTOR);
+			childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__OUTPUT_CONNECTOR);
+			childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__OUT_SEQUENCE_OUTPUT_CONNECTOR);
+			childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__IN_SEQUENCE_INPUT_CONNECTORS);
+			childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__FAULT_INPUT_CONNECTOR);
+			childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__CONTAINER);
+			childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__IN_SEQUENCE_KEY);
+			childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__OUT_SEQUENCE_KEY);
+			childrenFeatures.add(EsbPackage.Literals.API_RESOURCE__FAULT_SEQUENCE_KEY);
+		}
+		return childrenFeatures;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EStructuralFeature getChildFeature(Object object, Object child) {
-        // Check the type of the specified child object and return the proper feature to use for
-        // adding (see {@link AddCommand}) it as a child.
+		// Check the type of the specified child object and return the proper feature to use for
+		// adding (see {@link AddCommand}) it as a child.
 
-        return super.getChildFeature(object, child);
-    }
+		return super.getChildFeature(object, child);
+	}
 
     /**
-     * This returns APIResource.gif.
-     * <!-- begin-user-doc -->
+	 * This returns APIResource.gif.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object getImage(Object object) {
-        return overlayImage(object, getResourceLocator().getImage("full/obj16/APIResource"));
-    }
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/APIResource"));
+	}
 
     /**
-     * This returns the label text for the adapted class.
-     * <!-- begin-user-doc -->
+	 * This returns the label text for the adapted class.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String getText(Object object) {
-        String label = ((APIResource)object).getInSequenceName();
-        return label == null || label.length() == 0 ?
-            getString("_UI_APIResource_type") :
-            getString("_UI_APIResource_type") + " " + label;
-    }
+		String label = ((APIResource)object).getInSequenceName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_APIResource_type") :
+			getString("_UI_APIResource_type") + " " + label;
+	}
 
     /**
-     * This handles model notifications by calling {@link #updateChildren} to update any cached
-     * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
-     * <!-- begin-user-doc -->
+	 * This handles model notifications by calling {@link #updateChildren} to update any cached
+	 * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void notifyChanged(Notification notification) {
-        updateChildren(notification);
+		updateChildren(notification);
 
-        switch (notification.getFeatureID(APIResource.class)) {
-            case EsbPackage.API_RESOURCE__URL_STYLE:
-            case EsbPackage.API_RESOURCE__URI_TEMPLATE:
-            case EsbPackage.API_RESOURCE__URL_MAPPING:
-            case EsbPackage.API_RESOURCE__ALLOW_GET:
-            case EsbPackage.API_RESOURCE__ALLOW_POST:
-            case EsbPackage.API_RESOURCE__ALLOW_PUT:
-            case EsbPackage.API_RESOURCE__ALLOW_DELETE:
-            case EsbPackage.API_RESOURCE__ALLOW_OPTIONS:
-            case EsbPackage.API_RESOURCE__ALLOW_HEAD:
-            case EsbPackage.API_RESOURCE__ALLOW_PATCH:
-            case EsbPackage.API_RESOURCE__IN_SEQUENCE_TYPE:
-            case EsbPackage.API_RESOURCE__IN_SEQUENCE_NAME:
-            case EsbPackage.API_RESOURCE__OUT_SEQUENCE_TYPE:
-            case EsbPackage.API_RESOURCE__OUT_SEQUENCE_NAME:
-            case EsbPackage.API_RESOURCE__FAULT_SEQUENCE_TYPE:
-            case EsbPackage.API_RESOURCE__FAULT_SEQUENCE_NAME:
-            case EsbPackage.API_RESOURCE__PROTOCOL:
-                fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-                return;
-            case EsbPackage.API_RESOURCE__INPUT_CONNECTOR:
-            case EsbPackage.API_RESOURCE__OUTPUT_CONNECTOR:
-            case EsbPackage.API_RESOURCE__OUT_SEQUENCE_OUTPUT_CONNECTOR:
-            case EsbPackage.API_RESOURCE__IN_SEQUENCE_INPUT_CONNECTORS:
-            case EsbPackage.API_RESOURCE__FAULT_INPUT_CONNECTOR:
-            case EsbPackage.API_RESOURCE__CONTAINER:
-            case EsbPackage.API_RESOURCE__IN_SEQUENCE_KEY:
-            case EsbPackage.API_RESOURCE__OUT_SEQUENCE_KEY:
-            case EsbPackage.API_RESOURCE__FAULT_SEQUENCE_KEY:
-                fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
-                return;
-        }
-        super.notifyChanged(notification);
-    }
+		switch (notification.getFeatureID(APIResource.class)) {
+			case EsbPackage.API_RESOURCE__URL_STYLE:
+			case EsbPackage.API_RESOURCE__URI_TEMPLATE:
+			case EsbPackage.API_RESOURCE__URL_MAPPING:
+			case EsbPackage.API_RESOURCE__ALLOW_GET:
+			case EsbPackage.API_RESOURCE__ALLOW_POST:
+			case EsbPackage.API_RESOURCE__ALLOW_PUT:
+			case EsbPackage.API_RESOURCE__ALLOW_DELETE:
+			case EsbPackage.API_RESOURCE__ALLOW_OPTIONS:
+			case EsbPackage.API_RESOURCE__ALLOW_HEAD:
+			case EsbPackage.API_RESOURCE__ALLOW_PATCH:
+			case EsbPackage.API_RESOURCE__IN_SEQUENCE_TYPE:
+			case EsbPackage.API_RESOURCE__IN_SEQUENCE_NAME:
+			case EsbPackage.API_RESOURCE__OUT_SEQUENCE_TYPE:
+			case EsbPackage.API_RESOURCE__OUT_SEQUENCE_NAME:
+			case EsbPackage.API_RESOURCE__FAULT_SEQUENCE_TYPE:
+			case EsbPackage.API_RESOURCE__FAULT_SEQUENCE_NAME:
+			case EsbPackage.API_RESOURCE__PROTOCOL:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+			case EsbPackage.API_RESOURCE__INPUT_CONNECTOR:
+			case EsbPackage.API_RESOURCE__OUTPUT_CONNECTOR:
+			case EsbPackage.API_RESOURCE__OUT_SEQUENCE_OUTPUT_CONNECTOR:
+			case EsbPackage.API_RESOURCE__IN_SEQUENCE_INPUT_CONNECTORS:
+			case EsbPackage.API_RESOURCE__FAULT_INPUT_CONNECTOR:
+			case EsbPackage.API_RESOURCE__CONTAINER:
+			case EsbPackage.API_RESOURCE__IN_SEQUENCE_KEY:
+			case EsbPackage.API_RESOURCE__OUT_SEQUENCE_KEY:
+			case EsbPackage.API_RESOURCE__FAULT_SEQUENCE_KEY:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+				return;
+		}
+		super.notifyChanged(notification);
+	}
 
     /**
-     * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
-     * that can be created under this object.
-     * <!-- begin-user-doc -->
+	 * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
+	 * that can be created under this object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
-        super.collectNewChildDescriptors(newChildDescriptors, object);
+		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.API_RESOURCE__INPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createAPIResourceInputConnector()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.API_RESOURCE__INPUT_CONNECTOR,
+				 EsbFactory.eINSTANCE.createAPIResourceInputConnector()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.API_RESOURCE__OUTPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createAPIResourceOutputConnector()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.API_RESOURCE__OUTPUT_CONNECTOR,
+				 EsbFactory.eINSTANCE.createAPIResourceOutputConnector()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.API_RESOURCE__OUT_SEQUENCE_OUTPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createAPIResourceOutSequenceOutputConnector()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.API_RESOURCE__OUT_SEQUENCE_OUTPUT_CONNECTOR,
+				 EsbFactory.eINSTANCE.createAPIResourceOutSequenceOutputConnector()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.API_RESOURCE__IN_SEQUENCE_INPUT_CONNECTORS,
-                 EsbFactory.eINSTANCE.createAPIResourceInSequenceInputConnector()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.API_RESOURCE__IN_SEQUENCE_INPUT_CONNECTORS,
+				 EsbFactory.eINSTANCE.createAPIResourceInSequenceInputConnector()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.API_RESOURCE__FAULT_INPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createAPIResourceFaultInputConnector()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.API_RESOURCE__FAULT_INPUT_CONNECTOR,
+				 EsbFactory.eINSTANCE.createAPIResourceFaultInputConnector()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.API_RESOURCE__CONTAINER,
-                 EsbFactory.eINSTANCE.createProxyServiceContainer()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.API_RESOURCE__CONTAINER,
+				 EsbFactory.eINSTANCE.createProxyServiceContainer()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.API_RESOURCE__IN_SEQUENCE_KEY,
-                 EsbFactory.eINSTANCE.createRegistryKeyProperty()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.API_RESOURCE__IN_SEQUENCE_KEY,
+				 EsbFactory.eINSTANCE.createRegistryKeyProperty()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.API_RESOURCE__OUT_SEQUENCE_KEY,
-                 EsbFactory.eINSTANCE.createRegistryKeyProperty()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.API_RESOURCE__OUT_SEQUENCE_KEY,
+				 EsbFactory.eINSTANCE.createRegistryKeyProperty()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.API_RESOURCE__FAULT_SEQUENCE_KEY,
-                 EsbFactory.eINSTANCE.createRegistryKeyProperty()));
-    }
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.API_RESOURCE__FAULT_SEQUENCE_KEY,
+				 EsbFactory.eINSTANCE.createRegistryKeyProperty()));
+	}
 
     /**
-     * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
-     * <!-- begin-user-doc -->
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
-        Object childFeature = feature;
-        Object childObject = child;
+		Object childFeature = feature;
+		Object childObject = child;
 
-        boolean qualify =
-            childFeature == EsbPackage.Literals.API_RESOURCE__IN_SEQUENCE_KEY ||
-            childFeature == EsbPackage.Literals.API_RESOURCE__OUT_SEQUENCE_KEY ||
-            childFeature == EsbPackage.Literals.API_RESOURCE__FAULT_SEQUENCE_KEY;
+		boolean qualify =
+			childFeature == EsbPackage.Literals.API_RESOURCE__IN_SEQUENCE_KEY ||
+			childFeature == EsbPackage.Literals.API_RESOURCE__OUT_SEQUENCE_KEY ||
+			childFeature == EsbPackage.Literals.API_RESOURCE__FAULT_SEQUENCE_KEY;
 
-        if (qualify) {
-            return getString
-                ("_UI_CreateChild_text2",
-                 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
-        }
-        return super.getCreateChildText(owner, feature, child, selection);
-    }
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
+	}
 
 }

@@ -21,22 +21,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
 public class CacheMediatorOnHitOutputConnectorImpl extends OutputConnectorImpl
         implements CacheMediatorOnHitOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected CacheMediatorOnHitOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.CACHE_MEDIATOR_ON_HIT_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.CACHE_MEDIATOR_ON_HIT_OUTPUT_CONNECTOR;
+	}
 
 } // CacheMediatorOnHitOutputConnectorImpl

@@ -32,195 +32,195 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum Enable implements Enumerator {
     /**
-     * The '<em><b>Enable</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Enable</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #ENABLE_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #ENABLE_VALUE
+	 * @generated
+	 * @ordered
+	 */
     ENABLE(0, "enable", "enable"),
 
     /**
-     * The '<em><b>Disable</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Disable</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #DISABLE_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #DISABLE_VALUE
+	 * @generated
+	 * @ordered
+	 */
     DISABLE(1, "disable", "disable");
 
     /**
-     * The '<em><b>Enable</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Enable</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Enable</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #ENABLE
-     * @model name="enable"
-     * @generated
-     * @ordered
-     */
+	 * @see #ENABLE
+	 * @model name="enable"
+	 * @generated
+	 * @ordered
+	 */
     public static final int ENABLE_VALUE = 0;
 
     /**
-     * The '<em><b>Disable</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Disable</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Disable</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #DISABLE
-     * @model name="disable"
-     * @generated
-     * @ordered
-     */
+	 * @see #DISABLE
+	 * @model name="disable"
+	 * @generated
+	 * @ordered
+	 */
     public static final int DISABLE_VALUE = 1;
 
     /**
-     * An array of all the '<em><b>Enable</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * An array of all the '<em><b>Enable</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private static final Enable[] VALUES_ARRAY = new Enable[] {
-            ENABLE,
-            DISABLE,
-        };
+			ENABLE,
+			DISABLE,
+		};
 
     /**
-     * A public read-only list of all the '<em><b>Enable</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * A public read-only list of all the '<em><b>Enable</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public static final List<Enable> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
     /**
-     * Returns the '<em><b>Enable</b></em>' literal with the specified literal value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Enable</b></em>' literal with the specified literal value.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param literal the literal.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static Enable get(String literal) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            Enable result = VALUES_ARRAY[i];
-            if (result.toString().equals(literal)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			Enable result = VALUES_ARRAY[i];
+			if (result.toString().equals(literal)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
     /**
-     * Returns the '<em><b>Enable</b></em>' literal with the specified name.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Enable</b></em>' literal with the specified name.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param name the name.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static Enable getByName(String name) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            Enable result = VALUES_ARRAY[i];
-            if (result.getName().equals(name)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			Enable result = VALUES_ARRAY[i];
+			if (result.getName().equals(name)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
     /**
-     * Returns the '<em><b>Enable</b></em>' literal with the specified integer value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Enable</b></em>' literal with the specified integer value.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the integer value.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static Enable get(int value) {
-        switch (value) {
-            case ENABLE_VALUE: return ENABLE;
-            case DISABLE_VALUE: return DISABLE;
-        }
-        return null;
-    }
+		switch (value) {
+			case ENABLE_VALUE: return ENABLE;
+			case DISABLE_VALUE: return DISABLE;
+		}
+		return null;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final int value;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final String name;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final String literal;
 
     /**
-     * Only this class can construct instances.
-     * <!-- begin-user-doc -->
+	 * Only this class can construct instances.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private Enable(int value, String name, String literal) {
-        this.value = value;
-        this.name = name;
-        this.literal = literal;
-    }
+		this.value = value;
+		this.name = name;
+		this.literal = literal;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public int getValue() {
-      return value;
-    }
+	  return value;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getName() {
-      return name;
-    }
+	  return name;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getLiteral() {
-      return literal;
-    }
+	  return literal;
+	}
 
     /**
-     * Returns the literal value of the enumerator, which is its string representation.
-     * <!-- begin-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string representation.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        return literal;
-    }
+		return literal;
+	}
 
 } // Enable

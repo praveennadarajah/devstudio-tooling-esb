@@ -35,219 +35,219 @@ import org.wso2.developerstudio.eclipse.gmf.esb.MessageOutputConnector;
  */
 public class MessageMediatorImpl extends EsbElementImpl implements MessageMediator {
     /**
-     * The cached value of the '{@link #getInputConnector() <em>Input Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getInputConnector() <em>Input Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getInputConnector()
-     * @generated
-     * @ordered
-     */
+	 * @see #getInputConnector()
+	 * @generated
+	 * @ordered
+	 */
     protected MessageInputConnector inputConnector;
 
     /**
-     * The cached value of the '{@link #getOutputConnector() <em>Output Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOutputConnector() <em>Output Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutputConnector()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutputConnector()
+	 * @generated
+	 * @ordered
+	 */
     protected MessageOutputConnector outputConnector;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected MessageMediatorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.MESSAGE_MEDIATOR;
-    }
+		return EsbPackage.Literals.MESSAGE_MEDIATOR;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public MessageInputConnector getInputConnector() {
-        return inputConnector;
-    }
+		return inputConnector;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetInputConnector(MessageInputConnector newInputConnector, NotificationChain msgs) {
-        MessageInputConnector oldInputConnector = inputConnector;
-        inputConnector = newInputConnector;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR, oldInputConnector, newInputConnector);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		MessageInputConnector oldInputConnector = inputConnector;
+		inputConnector = newInputConnector;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR, oldInputConnector, newInputConnector);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setInputConnector(MessageInputConnector newInputConnector) {
-        if (newInputConnector != inputConnector) {
-            NotificationChain msgs = null;
-            if (inputConnector != null)
-                msgs = ((InternalEObject)inputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR, null, msgs);
-            if (newInputConnector != null)
-                msgs = ((InternalEObject)newInputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR, null, msgs);
-            msgs = basicSetInputConnector(newInputConnector, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR, newInputConnector, newInputConnector));
-    }
+		if (newInputConnector != inputConnector) {
+			NotificationChain msgs = null;
+			if (inputConnector != null)
+				msgs = ((InternalEObject)inputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR, null, msgs);
+			if (newInputConnector != null)
+				msgs = ((InternalEObject)newInputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR, null, msgs);
+			msgs = basicSetInputConnector(newInputConnector, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR, newInputConnector, newInputConnector));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public MessageOutputConnector getOutputConnector() {
-        return outputConnector;
-    }
+		return outputConnector;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetOutputConnector(MessageOutputConnector newOutputConnector,
             NotificationChain msgs) {
-        MessageOutputConnector oldOutputConnector = outputConnector;
-        outputConnector = newOutputConnector;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR, oldOutputConnector, newOutputConnector);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		MessageOutputConnector oldOutputConnector = outputConnector;
+		outputConnector = newOutputConnector;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR, oldOutputConnector, newOutputConnector);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setOutputConnector(MessageOutputConnector newOutputConnector) {
-        if (newOutputConnector != outputConnector) {
-            NotificationChain msgs = null;
-            if (outputConnector != null)
-                msgs = ((InternalEObject)outputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
-            if (newOutputConnector != null)
-                msgs = ((InternalEObject)newOutputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
-            msgs = basicSetOutputConnector(newOutputConnector, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR, newOutputConnector, newOutputConnector));
-    }
+		if (newOutputConnector != outputConnector) {
+			NotificationChain msgs = null;
+			if (outputConnector != null)
+				msgs = ((InternalEObject)outputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
+			if (newOutputConnector != null)
+				msgs = ((InternalEObject)newOutputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
+			msgs = basicSetOutputConnector(newOutputConnector, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR, newOutputConnector, newOutputConnector));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR:
-                return basicSetInputConnector(null, msgs);
-            case EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR:
-                return basicSetOutputConnector(null, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR:
+				return basicSetInputConnector(null, msgs);
+			case EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR:
+				return basicSetOutputConnector(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR:
-                return getInputConnector();
-            case EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR:
-                return getOutputConnector();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR:
+				return getInputConnector();
+			case EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR:
+				return getOutputConnector();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR:
-                setInputConnector((MessageInputConnector)newValue);
-                return;
-            case EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR:
-                setOutputConnector((MessageOutputConnector)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR:
+				setInputConnector((MessageInputConnector)newValue);
+				return;
+			case EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR:
+				setOutputConnector((MessageOutputConnector)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR:
-                setInputConnector((MessageInputConnector)null);
-                return;
-            case EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR:
-                setOutputConnector((MessageOutputConnector)null);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR:
+				setInputConnector((MessageInputConnector)null);
+				return;
+			case EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR:
+				setOutputConnector((MessageOutputConnector)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR:
-                return inputConnector != null;
-            case EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR:
-                return outputConnector != null;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.MESSAGE_MEDIATOR__INPUT_CONNECTOR:
+				return inputConnector != null;
+			case EsbPackage.MESSAGE_MEDIATOR__OUTPUT_CONNECTOR:
+				return outputConnector != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } // MessageMediatorImpl

@@ -20,22 +20,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
  */
 public class APIResourceFaultInputConnectorImpl extends InputConnectorImpl implements APIResourceFaultInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected APIResourceFaultInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.API_RESOURCE_FAULT_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.API_RESOURCE_FAULT_INPUT_CONNECTOR;
+	}
 
 } // APIResourceFaultInputConnectorImpl

@@ -34,153 +34,153 @@ import org.wso2.developerstudio.eclipse.gmf.esb.SequenceDiagram;
  */
 public class SequenceDiagramImpl extends EObjectImpl implements SequenceDiagram {
     /**
-     * The cached value of the '{@link #getSequence() <em>Sequence</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getSequence() <em>Sequence</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getSequence()
-     * @generated
-     * @ordered
-     */
+	 * @see #getSequence()
+	 * @generated
+	 * @ordered
+	 */
     protected EsbSequence sequence;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected SequenceDiagramImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.SEQUENCE_DIAGRAM;
-    }
+		return EsbPackage.Literals.SEQUENCE_DIAGRAM;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EsbSequence getSequence() {
-        return sequence;
-    }
+		return sequence;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetSequence(EsbSequence newSequence, NotificationChain msgs) {
-        EsbSequence oldSequence = sequence;
-        sequence = newSequence;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE, oldSequence, newSequence);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		EsbSequence oldSequence = sequence;
+		sequence = newSequence;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE, oldSequence, newSequence);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setSequence(EsbSequence newSequence) {
-        if (newSequence != sequence) {
-            NotificationChain msgs = null;
-            if (sequence != null)
-                msgs = ((InternalEObject)sequence).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE, null, msgs);
-            if (newSequence != null)
-                msgs = ((InternalEObject)newSequence).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE, null, msgs);
-            msgs = basicSetSequence(newSequence, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE, newSequence, newSequence));
-    }
+		if (newSequence != sequence) {
+			NotificationChain msgs = null;
+			if (sequence != null)
+				msgs = ((InternalEObject)sequence).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE, null, msgs);
+			if (newSequence != null)
+				msgs = ((InternalEObject)newSequence).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE, null, msgs);
+			msgs = basicSetSequence(newSequence, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE, newSequence, newSequence));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE:
-                return basicSetSequence(null, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE:
+				return basicSetSequence(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE:
-                return getSequence();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE:
+				return getSequence();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE:
-                setSequence((EsbSequence)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE:
+				setSequence((EsbSequence)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE:
-                setSequence((EsbSequence)null);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE:
+				setSequence((EsbSequence)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE:
-                return sequence != null;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.SEQUENCE_DIAGRAM__SEQUENCE:
+				return sequence != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } // SequenceDiagramImpl

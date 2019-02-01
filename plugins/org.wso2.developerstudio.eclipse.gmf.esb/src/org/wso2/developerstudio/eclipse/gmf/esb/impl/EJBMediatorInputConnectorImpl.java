@@ -29,22 +29,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
  */
 public class EJBMediatorInputConnectorImpl extends InputConnectorImpl implements EJBMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected EJBMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.EJB_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.EJB_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // EJBMediatorInputConnectorImpl

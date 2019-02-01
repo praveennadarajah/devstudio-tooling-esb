@@ -21,23 +21,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
 public class EntitlementMediatorInputConnectorImpl extends InputConnectorImpl
         implements EntitlementMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected EntitlementMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.ENTITLEMENT_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.ENTITLEMENT_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // EntitlementMediatorInputConnectorImpl

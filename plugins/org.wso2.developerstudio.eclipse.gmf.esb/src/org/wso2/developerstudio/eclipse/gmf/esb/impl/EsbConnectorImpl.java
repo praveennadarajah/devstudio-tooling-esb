@@ -22,23 +22,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
  */
 public abstract class EsbConnectorImpl extends EObjectImpl implements EsbConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected EsbConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.ESB_CONNECTOR;
-    }
+		return EsbPackage.Literals.ESB_CONNECTOR;
+	}
 
 } // EsbConnectorImpl

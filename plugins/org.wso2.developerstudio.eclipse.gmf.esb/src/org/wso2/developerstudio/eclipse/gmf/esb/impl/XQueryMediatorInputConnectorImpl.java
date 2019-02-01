@@ -20,23 +20,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.XQueryMediatorInputConnector;
  */
 public class XQueryMediatorInputConnectorImpl extends InputConnectorImpl implements XQueryMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected XQueryMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.XQUERY_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.XQUERY_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // XQueryMediatorInputConnectorImpl

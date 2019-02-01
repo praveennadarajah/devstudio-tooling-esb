@@ -23,221 +23,221 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum CalloutPayloadType implements Enumerator {
     /**
-     * The '<em><b>XPATH</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>XPATH</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #XPATH_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #XPATH_VALUE
+	 * @generated
+	 * @ordered
+	 */
     XPATH(0, "XPATH", "XPATH"),
     /**
-     * The '<em><b>PROPERTY</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>PROPERTY</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #PROPERTY_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #PROPERTY_VALUE
+	 * @generated
+	 * @ordered
+	 */
     PROPERTY(1, "PROPERTY", "PROPERTY"),
     /**
-     * The '<em><b>ENVELOPE</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>ENVELOPE</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #ENVELOPE_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #ENVELOPE_VALUE
+	 * @generated
+	 * @ordered
+	 */
     ENVELOPE(2, "ENVELOPE", "ENVELOPE");
 
     /**
-     * The '<em><b>XPATH</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>XPATH</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>XPATH</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #XPATH
-     * @model
-     * @generated
-     * @ordered
-     */
+	 * @see #XPATH
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
     public static final int XPATH_VALUE = 0;
 
     /**
-     * The '<em><b>PROPERTY</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>PROPERTY</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>PROPERTY</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #PROPERTY
-     * @model
-     * @generated
-     * @ordered
-     */
+	 * @see #PROPERTY
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
     public static final int PROPERTY_VALUE = 1;
 
     /**
-     * The '<em><b>ENVELOPE</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>ENVELOPE</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>ENVELOPE</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #ENVELOPE
-     * @model
-     * @generated
-     * @ordered
-     */
+	 * @see #ENVELOPE
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
     public static final int ENVELOPE_VALUE = 2;
 
     /**
-     * An array of all the '<em><b>Callout Payload Type</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * An array of all the '<em><b>Callout Payload Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private static final CalloutPayloadType[] VALUES_ARRAY = new CalloutPayloadType[] {
-            XPATH,
-            PROPERTY,
-            ENVELOPE,
-        };
+			XPATH,
+			PROPERTY,
+			ENVELOPE,
+		};
 
     /**
-     * A public read-only list of all the '<em><b>Callout Payload Type</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * A public read-only list of all the '<em><b>Callout Payload Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public static final List<CalloutPayloadType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
     /**
-     * Returns the '<em><b>Callout Payload Type</b></em>' literal with the specified literal value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Callout Payload Type</b></em>' literal with the specified literal value.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param literal the literal.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static CalloutPayloadType get(String literal) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            CalloutPayloadType result = VALUES_ARRAY[i];
-            if (result.toString().equals(literal)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			CalloutPayloadType result = VALUES_ARRAY[i];
+			if (result.toString().equals(literal)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
     /**
-     * Returns the '<em><b>Callout Payload Type</b></em>' literal with the specified name.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Callout Payload Type</b></em>' literal with the specified name.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param name the name.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static CalloutPayloadType getByName(String name) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            CalloutPayloadType result = VALUES_ARRAY[i];
-            if (result.getName().equals(name)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			CalloutPayloadType result = VALUES_ARRAY[i];
+			if (result.getName().equals(name)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
     /**
-     * Returns the '<em><b>Callout Payload Type</b></em>' literal with the specified integer value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Callout Payload Type</b></em>' literal with the specified integer value.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the integer value.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static CalloutPayloadType get(int value) {
-        switch (value) {
-            case XPATH_VALUE: return XPATH;
-            case PROPERTY_VALUE: return PROPERTY;
-            case ENVELOPE_VALUE: return ENVELOPE;
-        }
-        return null;
-    }
+		switch (value) {
+			case XPATH_VALUE: return XPATH;
+			case PROPERTY_VALUE: return PROPERTY;
+			case ENVELOPE_VALUE: return ENVELOPE;
+		}
+		return null;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final int value;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final String name;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final String literal;
 
     /**
-     * Only this class can construct instances.
-     * <!-- begin-user-doc -->
+	 * Only this class can construct instances.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private CalloutPayloadType(int value, String name, String literal) {
-        this.value = value;
-        this.name = name;
-        this.literal = literal;
-    }
+		this.value = value;
+		this.name = name;
+		this.literal = literal;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public int getValue() {
-      return value;
-    }
+	  return value;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getName() {
-      return name;
-    }
+	  return name;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getLiteral() {
-      return literal;
-    }
+	  return literal;
+	}
 
     /**
-     * Returns the literal value of the enumerator, which is its string representation.
-     * <!-- begin-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string representation.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public String toString() {
-        return literal;
-    }
+		return literal;
+	}
 
 } // CalloutPayloadType

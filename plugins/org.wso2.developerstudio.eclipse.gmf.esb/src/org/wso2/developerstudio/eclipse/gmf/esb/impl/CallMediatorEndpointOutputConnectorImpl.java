@@ -30,22 +30,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
 public class CallMediatorEndpointOutputConnectorImpl extends OutputConnectorImpl
         implements CallMediatorEndpointOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected CallMediatorEndpointOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.CALL_MEDIATOR_ENDPOINT_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.CALL_MEDIATOR_ENDPOINT_OUTPUT_CONNECTOR;
+	}
 
 } // CallMediatorEndpointOutputConnectorImpl

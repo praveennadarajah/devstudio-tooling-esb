@@ -32,14 +32,14 @@ public class RuleSessionPropertyImpl extends AbstractNameValuePropertyImpl imple
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.RULE_SESSION_PROPERTY;
-    }
+		return EsbPackage.Literals.RULE_SESSION_PROPERTY;
+	}
 
 } // RuleSessionPropertyImpl

@@ -30,22 +30,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
 public class EntitlementMediatorOnAcceptOutputConnectorImpl extends OutputConnectorImpl
         implements EntitlementMediatorOnAcceptOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected EntitlementMediatorOnAcceptOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.ENTITLEMENT_MEDIATOR_ON_ACCEPT_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.ENTITLEMENT_MEDIATOR_ON_ACCEPT_OUTPUT_CONNECTOR;
+	}
 
 } // EntitlementMediatorOnAcceptOutputConnectorImpl

@@ -20,23 +20,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.FilterMediatorInputConnector;
  */
 public class FilterMediatorInputConnectorImpl extends InputConnectorImpl implements FilterMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected FilterMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.FILTER_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.FILTER_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // FilterMediatorInputConnectorImpl

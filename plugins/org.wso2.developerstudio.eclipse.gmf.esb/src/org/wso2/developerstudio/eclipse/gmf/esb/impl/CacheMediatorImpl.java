@@ -67,143 +67,143 @@ import org.wso2.developerstudio.eclipse.platform.core.utils.DeveloperStudioProvi
  */
 public class CacheMediatorImpl extends MediatorImpl implements CacheMediator {
     /**
-     * The default value of the '{@link #getCacheProtocolType() <em>Cache Protocol Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getCacheProtocolType() <em>Cache Protocol Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getCacheProtocolType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCacheProtocolType()
+	 * @generated
+	 * @ordered
+	 */
     protected static final CacheProtocolType CACHE_PROTOCOL_TYPE_EDEFAULT = CacheProtocolType.HTTP;
 
     /**
-     * The cached value of the '{@link #getCacheProtocolType() <em>Cache Protocol Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getCacheProtocolType() <em>Cache Protocol Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getCacheProtocolType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCacheProtocolType()
+	 * @generated
+	 * @ordered
+	 */
     protected CacheProtocolType cacheProtocolType = CACHE_PROTOCOL_TYPE_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getCacheType() <em>Cache Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getCacheType() <em>Cache Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getCacheType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCacheType()
+	 * @generated
+	 * @ordered
+	 */
     protected static final CacheType CACHE_TYPE_EDEFAULT = CacheType.FINDER;
 
     /**
-     * The cached value of the '{@link #getCacheType() <em>Cache Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getCacheType() <em>Cache Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getCacheType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCacheType()
+	 * @generated
+	 * @ordered
+	 */
     protected CacheType cacheType = CACHE_TYPE_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getHashGenerator() <em>Hash Generator</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getHashGenerator() <em>Hash Generator</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getHashGenerator()
-     * @generated
-     * @ordered
-     */
+	 * @see #getHashGenerator()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String HASH_GENERATOR_EDEFAULT = "org.wso2.carbon.mediator.cache.digest.HttpRequestHashGenerator";
 
     /**
-     * The cached value of the '{@link #getHashGenerator() <em>Hash Generator</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getHashGenerator() <em>Hash Generator</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getHashGenerator()
-     * @generated
-     * @ordered
-     */
+	 * @see #getHashGenerator()
+	 * @generated
+	 * @ordered
+	 */
     protected String hashGenerator = HASH_GENERATOR_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getCacheTimeout() <em>Cache Timeout</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getCacheTimeout() <em>Cache Timeout</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getCacheTimeout()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCacheTimeout()
+	 * @generated
+	 * @ordered
+	 */
     protected static final int CACHE_TIMEOUT_EDEFAULT = 120;
 
     /**
-     * The cached value of the '{@link #getCacheTimeout() <em>Cache Timeout</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getCacheTimeout() <em>Cache Timeout</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getCacheTimeout()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCacheTimeout()
+	 * @generated
+	 * @ordered
+	 */
     protected int cacheTimeout = CACHE_TIMEOUT_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getMaxMessageSize() <em>Max Message Size</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getMaxMessageSize() <em>Max Message Size</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getMaxMessageSize()
-     * @generated
-     * @ordered
-     */
+	 * @see #getMaxMessageSize()
+	 * @generated
+	 * @ordered
+	 */
     protected static final int MAX_MESSAGE_SIZE_EDEFAULT = 2000;
 
     /**
-     * The cached value of the '{@link #getMaxMessageSize() <em>Max Message Size</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getMaxMessageSize() <em>Max Message Size</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getMaxMessageSize()
-     * @generated
-     * @ordered
-     */
+	 * @see #getMaxMessageSize()
+	 * @generated
+	 * @ordered
+	 */
     protected int maxMessageSize = MAX_MESSAGE_SIZE_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getCacheProtocolMethods() <em>Cache Protocol Methods</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getCacheProtocolMethods() <em>Cache Protocol Methods</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getCacheProtocolMethods()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCacheProtocolMethods()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String CACHE_PROTOCOL_METHODS_EDEFAULT = "*";
 
     /**
-     * The cached value of the '{@link #getCacheProtocolMethods() <em>Cache Protocol Methods</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getCacheProtocolMethods() <em>Cache Protocol Methods</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getCacheProtocolMethods()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCacheProtocolMethods()
+	 * @generated
+	 * @ordered
+	 */
     protected String cacheProtocolMethods = CACHE_PROTOCOL_METHODS_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getMaxEntryCount() <em>Max Entry Count</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getMaxEntryCount() <em>Max Entry Count</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getMaxEntryCount()
-     * @generated
-     * @ordered
-     */
+	 * @see #getMaxEntryCount()
+	 * @generated
+	 * @ordered
+	 */
     protected static final int MAX_ENTRY_COUNT_EDEFAULT = 1000;
 
     /**
-     * The cached value of the '{@link #getMaxEntryCount() <em>Max Entry Count</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getMaxEntryCount() <em>Max Entry Count</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getMaxEntryCount()
-     * @generated
-     * @ordered
-     */
+	 * @see #getMaxEntryCount()
+	 * @generated
+	 * @ordered
+	 */
     protected int maxEntryCount = MAX_ENTRY_COUNT_EDEFAULT;
 
     /**
@@ -218,143 +218,143 @@ public class CacheMediatorImpl extends MediatorImpl implements CacheMediator {
     protected static final CacheSequenceType SEQUENCE_TYPE_EDEFAULT = CacheSequenceType.ANONYMOUS;
 
     /**
-     * The cached value of the '{@link #getSequenceType() <em>Sequence Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getSequenceType() <em>Sequence Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getSequenceType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getSequenceType()
+	 * @generated
+	 * @ordered
+	 */
     protected CacheSequenceType sequenceType = SEQUENCE_TYPE_EDEFAULT;
 
     /**
-     * The cached value of the '{@link #getSequenceKey() <em>Sequence Key</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getSequenceKey() <em>Sequence Key</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getSequenceKey()
-     * @generated
-     * @ordered
-     */
+	 * @see #getSequenceKey()
+	 * @generated
+	 * @ordered
+	 */
     protected RegistryKeyProperty sequenceKey;
 
     /**
-     * The cached value of the '{@link #getInputConnector() <em>Input Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getInputConnector() <em>Input Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getInputConnector()
-     * @generated
-     * @ordered
-     */
+	 * @see #getInputConnector()
+	 * @generated
+	 * @ordered
+	 */
     protected CacheMediatorInputConnector inputConnector;
 
     /**
-     * The cached value of the '{@link #getOutputConnector() <em>Output Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOutputConnector() <em>Output Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutputConnector()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutputConnector()
+	 * @generated
+	 * @ordered
+	 */
     protected CacheMediatorOutputConnector outputConnector;
 
     /**
-     * The cached value of the '{@link #getOnHitOutputConnector() <em>On Hit Output Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOnHitOutputConnector() <em>On Hit Output Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOnHitOutputConnector()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOnHitOutputConnector()
+	 * @generated
+	 * @ordered
+	 */
     protected CacheMediatorOnHitOutputConnector onHitOutputConnector;
 
     /**
-     * The cached value of the '{@link #getMediatorFlow() <em>Mediator Flow</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getMediatorFlow() <em>Mediator Flow</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getMediatorFlow()
-     * @generated
-     * @ordered
-     */
+	 * @see #getMediatorFlow()
+	 * @generated
+	 * @ordered
+	 */
     protected MediatorFlow mediatorFlow;
 
     /**
-     * The default value of the '{@link #getHeadersToExcludeInHash() <em>Headers To Exclude In Hash</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getHeadersToExcludeInHash() <em>Headers To Exclude In Hash</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getHeadersToExcludeInHash()
-     * @generated
-     * @ordered
-     */
+	 * @see #getHeadersToExcludeInHash()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String HEADERS_TO_EXCLUDE_IN_HASH_EDEFAULT = null;
 
     /**
-     * The cached value of the '{@link #getHeadersToExcludeInHash() <em>Headers To Exclude In Hash</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getHeadersToExcludeInHash() <em>Headers To Exclude In Hash</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getHeadersToExcludeInHash()
-     * @generated
-     * @ordered
-     */
+	 * @see #getHeadersToExcludeInHash()
+	 * @generated
+	 * @ordered
+	 */
     protected String headersToExcludeInHash = HEADERS_TO_EXCLUDE_IN_HASH_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getResponseCodes() <em>Response Codes</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getResponseCodes() <em>Response Codes</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getResponseCodes()
-     * @generated
-     * @ordered
-     */
+	 * @see #getResponseCodes()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String RESPONSE_CODES_EDEFAULT = ".*";
 
     /**
-     * The cached value of the '{@link #getResponseCodes() <em>Response Codes</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getResponseCodes() <em>Response Codes</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getResponseCodes()
-     * @generated
-     * @ordered
-     */
+	 * @see #getResponseCodes()
+	 * @generated
+	 * @ordered
+	 */
     protected String responseCodes = RESPONSE_CODES_EDEFAULT;
 
     /**
-     * The default value of the '{@link #isEnableCacheControl() <em>Enable Cache Control</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #isEnableCacheControl() <em>Enable Cache Control</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #isEnableCacheControl()
-     * @generated
-     * @ordered
-     */
+	 * @see #isEnableCacheControl()
+	 * @generated
+	 * @ordered
+	 */
     protected static final boolean ENABLE_CACHE_CONTROL_EDEFAULT = false;
 
     /**
-     * The cached value of the '{@link #isEnableCacheControl() <em>Enable Cache Control</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #isEnableCacheControl() <em>Enable Cache Control</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #isEnableCacheControl()
-     * @generated
-     * @ordered
-     */
+	 * @see #isEnableCacheControl()
+	 * @generated
+	 * @ordered
+	 */
     protected boolean enableCacheControl = ENABLE_CACHE_CONTROL_EDEFAULT;
 
     /**
-     * The default value of the '{@link #isIncludeAgeHeader() <em>Include Age Header</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #isIncludeAgeHeader() <em>Include Age Header</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #isIncludeAgeHeader()
-     * @generated
-     * @ordered
-     */
+	 * @see #isIncludeAgeHeader()
+	 * @generated
+	 * @ordered
+	 */
     protected static final boolean INCLUDE_AGE_HEADER_EDEFAULT = false;
 
     /**
-     * The cached value of the '{@link #isIncludeAgeHeader() <em>Include Age Header</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #isIncludeAgeHeader() <em>Include Age Header</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #isIncludeAgeHeader()
-     * @generated
-     * @ordered
-     */
+	 * @see #isIncludeAgeHeader()
+	 * @generated
+	 * @ordered
+	 */
     protected boolean includeAgeHeader = INCLUDE_AGE_HEADER_EDEFAULT;
 
     /**
@@ -375,768 +375,768 @@ public class CacheMediatorImpl extends MediatorImpl implements CacheMediator {
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.CACHE_MEDIATOR;
-    }
+		return EsbPackage.Literals.CACHE_MEDIATOR;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public CacheProtocolType getCacheProtocolType() {
-        return cacheProtocolType;
-    }
+		return cacheProtocolType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setCacheProtocolType(CacheProtocolType newCacheProtocolType) {
-        CacheProtocolType oldCacheProtocolType = cacheProtocolType;
-        cacheProtocolType = newCacheProtocolType == null ? CACHE_PROTOCOL_TYPE_EDEFAULT : newCacheProtocolType;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_TYPE, oldCacheProtocolType, cacheProtocolType));
-    }
+		CacheProtocolType oldCacheProtocolType = cacheProtocolType;
+		cacheProtocolType = newCacheProtocolType == null ? CACHE_PROTOCOL_TYPE_EDEFAULT : newCacheProtocolType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_TYPE, oldCacheProtocolType, cacheProtocolType));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public CacheType getCacheType() {
-        return cacheType;
-    }
+		return cacheType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setCacheType(CacheType newCacheType) {
-        CacheType oldCacheType = cacheType;
-        cacheType = newCacheType == null ? CACHE_TYPE_EDEFAULT : newCacheType;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__CACHE_TYPE, oldCacheType, cacheType));
-    }
+		CacheType oldCacheType = cacheType;
+		cacheType = newCacheType == null ? CACHE_TYPE_EDEFAULT : newCacheType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__CACHE_TYPE, oldCacheType, cacheType));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getHashGenerator() {
-        return hashGenerator;
-    }
+		return hashGenerator;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setHashGenerator(String newHashGenerator) {
-        String oldHashGenerator = hashGenerator;
-        hashGenerator = newHashGenerator;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__HASH_GENERATOR, oldHashGenerator, hashGenerator));
-    }
+		String oldHashGenerator = hashGenerator;
+		hashGenerator = newHashGenerator;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__HASH_GENERATOR, oldHashGenerator, hashGenerator));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public int getCacheTimeout() {
-        return cacheTimeout;
-    }
+		return cacheTimeout;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setCacheTimeout(int newCacheTimeout) {
-        int oldCacheTimeout = cacheTimeout;
-        cacheTimeout = newCacheTimeout;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__CACHE_TIMEOUT, oldCacheTimeout, cacheTimeout));
-    }
+		int oldCacheTimeout = cacheTimeout;
+		cacheTimeout = newCacheTimeout;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__CACHE_TIMEOUT, oldCacheTimeout, cacheTimeout));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public int getMaxMessageSize() {
-        return maxMessageSize;
-    }
+		return maxMessageSize;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setMaxMessageSize(int newMaxMessageSize) {
-        int oldMaxMessageSize = maxMessageSize;
-        maxMessageSize = newMaxMessageSize;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__MAX_MESSAGE_SIZE, oldMaxMessageSize, maxMessageSize));
-    }
+		int oldMaxMessageSize = maxMessageSize;
+		maxMessageSize = newMaxMessageSize;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__MAX_MESSAGE_SIZE, oldMaxMessageSize, maxMessageSize));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getCacheProtocolMethods() {
-        return cacheProtocolMethods;
-    }
+		return cacheProtocolMethods;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setCacheProtocolMethods(String newCacheProtocolMethods) {
-        String oldCacheProtocolMethods = cacheProtocolMethods;
-        cacheProtocolMethods = newCacheProtocolMethods;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_METHODS, oldCacheProtocolMethods, cacheProtocolMethods));
-    }
+		String oldCacheProtocolMethods = cacheProtocolMethods;
+		cacheProtocolMethods = newCacheProtocolMethods;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_METHODS, oldCacheProtocolMethods, cacheProtocolMethods));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public int getMaxEntryCount() {
-        return maxEntryCount;
-    }
+		return maxEntryCount;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setMaxEntryCount(int newMaxEntryCount) {
-        int oldMaxEntryCount = maxEntryCount;
-        maxEntryCount = newMaxEntryCount;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__MAX_ENTRY_COUNT, oldMaxEntryCount, maxEntryCount));
-    }
+		int oldMaxEntryCount = maxEntryCount;
+		maxEntryCount = newMaxEntryCount;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__MAX_ENTRY_COUNT, oldMaxEntryCount, maxEntryCount));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public CacheSequenceType getSequenceType() {
-        return sequenceType;
-    }
+		return sequenceType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setSequenceType(CacheSequenceType newSequenceType) {
-        CacheSequenceType oldSequenceType = sequenceType;
-        sequenceType = newSequenceType == null ? SEQUENCE_TYPE_EDEFAULT : newSequenceType;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__SEQUENCE_TYPE, oldSequenceType, sequenceType));
-    }
+		CacheSequenceType oldSequenceType = sequenceType;
+		sequenceType = newSequenceType == null ? SEQUENCE_TYPE_EDEFAULT : newSequenceType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__SEQUENCE_TYPE, oldSequenceType, sequenceType));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public RegistryKeyProperty getSequenceKey() {
-        return sequenceKey;
-    }
+		return sequenceKey;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetSequenceKey(RegistryKeyProperty newSequenceKey, NotificationChain msgs) {
-        RegistryKeyProperty oldSequenceKey = sequenceKey;
-        sequenceKey = newSequenceKey;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY, oldSequenceKey, newSequenceKey);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		RegistryKeyProperty oldSequenceKey = sequenceKey;
+		sequenceKey = newSequenceKey;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY, oldSequenceKey, newSequenceKey);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setSequenceKey(RegistryKeyProperty newSequenceKey) {
-        if (newSequenceKey != sequenceKey) {
-            NotificationChain msgs = null;
-            if (sequenceKey != null)
-                msgs = ((InternalEObject)sequenceKey).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY, null, msgs);
-            if (newSequenceKey != null)
-                msgs = ((InternalEObject)newSequenceKey).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY, null, msgs);
-            msgs = basicSetSequenceKey(newSequenceKey, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY, newSequenceKey, newSequenceKey));
-    }
+		if (newSequenceKey != sequenceKey) {
+			NotificationChain msgs = null;
+			if (sequenceKey != null)
+				msgs = ((InternalEObject)sequenceKey).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY, null, msgs);
+			if (newSequenceKey != null)
+				msgs = ((InternalEObject)newSequenceKey).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY, null, msgs);
+			msgs = basicSetSequenceKey(newSequenceKey, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY, newSequenceKey, newSequenceKey));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public CacheMediatorInputConnector getInputConnector() {
-        return inputConnector;
-    }
+		return inputConnector;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetInputConnector(CacheMediatorInputConnector newInputConnector,
             NotificationChain msgs) {
-        CacheMediatorInputConnector oldInputConnector = inputConnector;
-        inputConnector = newInputConnector;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR, oldInputConnector, newInputConnector);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		CacheMediatorInputConnector oldInputConnector = inputConnector;
+		inputConnector = newInputConnector;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR, oldInputConnector, newInputConnector);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setInputConnector(CacheMediatorInputConnector newInputConnector) {
-        if (newInputConnector != inputConnector) {
-            NotificationChain msgs = null;
-            if (inputConnector != null)
-                msgs = ((InternalEObject)inputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR, null, msgs);
-            if (newInputConnector != null)
-                msgs = ((InternalEObject)newInputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR, null, msgs);
-            msgs = basicSetInputConnector(newInputConnector, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR, newInputConnector, newInputConnector));
-    }
+		if (newInputConnector != inputConnector) {
+			NotificationChain msgs = null;
+			if (inputConnector != null)
+				msgs = ((InternalEObject)inputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR, null, msgs);
+			if (newInputConnector != null)
+				msgs = ((InternalEObject)newInputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR, null, msgs);
+			msgs = basicSetInputConnector(newInputConnector, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR, newInputConnector, newInputConnector));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public CacheMediatorOutputConnector getOutputConnector() {
-        return outputConnector;
-    }
+		return outputConnector;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetOutputConnector(CacheMediatorOutputConnector newOutputConnector,
             NotificationChain msgs) {
-        CacheMediatorOutputConnector oldOutputConnector = outputConnector;
-        outputConnector = newOutputConnector;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR, oldOutputConnector, newOutputConnector);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		CacheMediatorOutputConnector oldOutputConnector = outputConnector;
+		outputConnector = newOutputConnector;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR, oldOutputConnector, newOutputConnector);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setOutputConnector(CacheMediatorOutputConnector newOutputConnector) {
-        if (newOutputConnector != outputConnector) {
-            NotificationChain msgs = null;
-            if (outputConnector != null)
-                msgs = ((InternalEObject)outputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
-            if (newOutputConnector != null)
-                msgs = ((InternalEObject)newOutputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
-            msgs = basicSetOutputConnector(newOutputConnector, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR, newOutputConnector, newOutputConnector));
-    }
+		if (newOutputConnector != outputConnector) {
+			NotificationChain msgs = null;
+			if (outputConnector != null)
+				msgs = ((InternalEObject)outputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
+			if (newOutputConnector != null)
+				msgs = ((InternalEObject)newOutputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
+			msgs = basicSetOutputConnector(newOutputConnector, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR, newOutputConnector, newOutputConnector));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public CacheMediatorOnHitOutputConnector getOnHitOutputConnector() {
-        return onHitOutputConnector;
-    }
+		return onHitOutputConnector;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetOnHitOutputConnector(CacheMediatorOnHitOutputConnector newOnHitOutputConnector,
             NotificationChain msgs) {
-        CacheMediatorOnHitOutputConnector oldOnHitOutputConnector = onHitOutputConnector;
-        onHitOutputConnector = newOnHitOutputConnector;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR, oldOnHitOutputConnector, newOnHitOutputConnector);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		CacheMediatorOnHitOutputConnector oldOnHitOutputConnector = onHitOutputConnector;
+		onHitOutputConnector = newOnHitOutputConnector;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR, oldOnHitOutputConnector, newOnHitOutputConnector);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setOnHitOutputConnector(CacheMediatorOnHitOutputConnector newOnHitOutputConnector) {
-        if (newOnHitOutputConnector != onHitOutputConnector) {
-            NotificationChain msgs = null;
-            if (onHitOutputConnector != null)
-                msgs = ((InternalEObject)onHitOutputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR, null, msgs);
-            if (newOnHitOutputConnector != null)
-                msgs = ((InternalEObject)newOnHitOutputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR, null, msgs);
-            msgs = basicSetOnHitOutputConnector(newOnHitOutputConnector, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR, newOnHitOutputConnector, newOnHitOutputConnector));
-    }
+		if (newOnHitOutputConnector != onHitOutputConnector) {
+			NotificationChain msgs = null;
+			if (onHitOutputConnector != null)
+				msgs = ((InternalEObject)onHitOutputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR, null, msgs);
+			if (newOnHitOutputConnector != null)
+				msgs = ((InternalEObject)newOnHitOutputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR, null, msgs);
+			msgs = basicSetOnHitOutputConnector(newOnHitOutputConnector, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR, newOnHitOutputConnector, newOnHitOutputConnector));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public MediatorFlow getMediatorFlow() {
-        return mediatorFlow;
-    }
+		return mediatorFlow;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetMediatorFlow(MediatorFlow newMediatorFlow, NotificationChain msgs) {
-        MediatorFlow oldMediatorFlow = mediatorFlow;
-        mediatorFlow = newMediatorFlow;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW, oldMediatorFlow, newMediatorFlow);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		MediatorFlow oldMediatorFlow = mediatorFlow;
+		mediatorFlow = newMediatorFlow;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW, oldMediatorFlow, newMediatorFlow);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setMediatorFlow(MediatorFlow newMediatorFlow) {
-        if (newMediatorFlow != mediatorFlow) {
-            NotificationChain msgs = null;
-            if (mediatorFlow != null)
-                msgs = ((InternalEObject)mediatorFlow).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW, null, msgs);
-            if (newMediatorFlow != null)
-                msgs = ((InternalEObject)newMediatorFlow).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW, null, msgs);
-            msgs = basicSetMediatorFlow(newMediatorFlow, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW, newMediatorFlow, newMediatorFlow));
-    }
+		if (newMediatorFlow != mediatorFlow) {
+			NotificationChain msgs = null;
+			if (mediatorFlow != null)
+				msgs = ((InternalEObject)mediatorFlow).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW, null, msgs);
+			if (newMediatorFlow != null)
+				msgs = ((InternalEObject)newMediatorFlow).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW, null, msgs);
+			msgs = basicSetMediatorFlow(newMediatorFlow, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW, newMediatorFlow, newMediatorFlow));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getHeadersToExcludeInHash() {
-        return headersToExcludeInHash;
-    }
+		return headersToExcludeInHash;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setHeadersToExcludeInHash(String newHeadersToExcludeInHash) {
-        String oldHeadersToExcludeInHash = headersToExcludeInHash;
-        headersToExcludeInHash = newHeadersToExcludeInHash;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__HEADERS_TO_EXCLUDE_IN_HASH, oldHeadersToExcludeInHash, headersToExcludeInHash));
-    }
+		String oldHeadersToExcludeInHash = headersToExcludeInHash;
+		headersToExcludeInHash = newHeadersToExcludeInHash;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__HEADERS_TO_EXCLUDE_IN_HASH, oldHeadersToExcludeInHash, headersToExcludeInHash));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getResponseCodes() {
-        return responseCodes;
-    }
+		return responseCodes;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setResponseCodes(String newResponseCodes) {
-        String oldResponseCodes = responseCodes;
-        responseCodes = newResponseCodes;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__RESPONSE_CODES, oldResponseCodes, responseCodes));
-    }
+		String oldResponseCodes = responseCodes;
+		responseCodes = newResponseCodes;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__RESPONSE_CODES, oldResponseCodes, responseCodes));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public boolean isEnableCacheControl() {
-        return enableCacheControl;
-    }
+		return enableCacheControl;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setEnableCacheControl(boolean newEnableCacheControl) {
-        boolean oldEnableCacheControl = enableCacheControl;
-        enableCacheControl = newEnableCacheControl;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__ENABLE_CACHE_CONTROL, oldEnableCacheControl, enableCacheControl));
-    }
+		boolean oldEnableCacheControl = enableCacheControl;
+		enableCacheControl = newEnableCacheControl;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__ENABLE_CACHE_CONTROL, oldEnableCacheControl, enableCacheControl));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public boolean isIncludeAgeHeader() {
-        return includeAgeHeader;
-    }
+		return includeAgeHeader;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setIncludeAgeHeader(boolean newIncludeAgeHeader) {
-        boolean oldIncludeAgeHeader = includeAgeHeader;
-        includeAgeHeader = newIncludeAgeHeader;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__INCLUDE_AGE_HEADER, oldIncludeAgeHeader, includeAgeHeader));
-    }
+		boolean oldIncludeAgeHeader = includeAgeHeader;
+		includeAgeHeader = newIncludeAgeHeader;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.CACHE_MEDIATOR__INCLUDE_AGE_HEADER, oldIncludeAgeHeader, includeAgeHeader));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY:
-                return basicSetSequenceKey(null, msgs);
-            case EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR:
-                return basicSetInputConnector(null, msgs);
-            case EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR:
-                return basicSetOutputConnector(null, msgs);
-            case EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR:
-                return basicSetOnHitOutputConnector(null, msgs);
-            case EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW:
-                return basicSetMediatorFlow(null, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY:
+				return basicSetSequenceKey(null, msgs);
+			case EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR:
+				return basicSetInputConnector(null, msgs);
+			case EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR:
+				return basicSetOutputConnector(null, msgs);
+			case EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR:
+				return basicSetOnHitOutputConnector(null, msgs);
+			case EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW:
+				return basicSetMediatorFlow(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_TYPE:
-                return getCacheProtocolType();
-            case EsbPackage.CACHE_MEDIATOR__CACHE_TYPE:
-                return getCacheType();
-            case EsbPackage.CACHE_MEDIATOR__HASH_GENERATOR:
-                return getHashGenerator();
-            case EsbPackage.CACHE_MEDIATOR__CACHE_TIMEOUT:
-                return getCacheTimeout();
-            case EsbPackage.CACHE_MEDIATOR__MAX_MESSAGE_SIZE:
-                return getMaxMessageSize();
-            case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_METHODS:
-                return getCacheProtocolMethods();
-            case EsbPackage.CACHE_MEDIATOR__MAX_ENTRY_COUNT:
-                return getMaxEntryCount();
-            case EsbPackage.CACHE_MEDIATOR__SEQUENCE_TYPE:
-                return getSequenceType();
-            case EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY:
-                return getSequenceKey();
-            case EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR:
-                return getInputConnector();
-            case EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR:
-                return getOutputConnector();
-            case EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR:
-                return getOnHitOutputConnector();
-            case EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW:
-                return getMediatorFlow();
-            case EsbPackage.CACHE_MEDIATOR__HEADERS_TO_EXCLUDE_IN_HASH:
-                return getHeadersToExcludeInHash();
-            case EsbPackage.CACHE_MEDIATOR__RESPONSE_CODES:
-                return getResponseCodes();
-            case EsbPackage.CACHE_MEDIATOR__ENABLE_CACHE_CONTROL:
-                return isEnableCacheControl();
-            case EsbPackage.CACHE_MEDIATOR__INCLUDE_AGE_HEADER:
-                return isIncludeAgeHeader();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_TYPE:
+				return getCacheProtocolType();
+			case EsbPackage.CACHE_MEDIATOR__CACHE_TYPE:
+				return getCacheType();
+			case EsbPackage.CACHE_MEDIATOR__HASH_GENERATOR:
+				return getHashGenerator();
+			case EsbPackage.CACHE_MEDIATOR__CACHE_TIMEOUT:
+				return getCacheTimeout();
+			case EsbPackage.CACHE_MEDIATOR__MAX_MESSAGE_SIZE:
+				return getMaxMessageSize();
+			case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_METHODS:
+				return getCacheProtocolMethods();
+			case EsbPackage.CACHE_MEDIATOR__MAX_ENTRY_COUNT:
+				return getMaxEntryCount();
+			case EsbPackage.CACHE_MEDIATOR__SEQUENCE_TYPE:
+				return getSequenceType();
+			case EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY:
+				return getSequenceKey();
+			case EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR:
+				return getInputConnector();
+			case EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR:
+				return getOutputConnector();
+			case EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR:
+				return getOnHitOutputConnector();
+			case EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW:
+				return getMediatorFlow();
+			case EsbPackage.CACHE_MEDIATOR__HEADERS_TO_EXCLUDE_IN_HASH:
+				return getHeadersToExcludeInHash();
+			case EsbPackage.CACHE_MEDIATOR__RESPONSE_CODES:
+				return getResponseCodes();
+			case EsbPackage.CACHE_MEDIATOR__ENABLE_CACHE_CONTROL:
+				return isEnableCacheControl();
+			case EsbPackage.CACHE_MEDIATOR__INCLUDE_AGE_HEADER:
+				return isIncludeAgeHeader();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_TYPE:
-                setCacheProtocolType((CacheProtocolType)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__CACHE_TYPE:
-                setCacheType((CacheType)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__HASH_GENERATOR:
-                setHashGenerator((String)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__CACHE_TIMEOUT:
-                setCacheTimeout((Integer)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__MAX_MESSAGE_SIZE:
-                setMaxMessageSize((Integer)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_METHODS:
-                setCacheProtocolMethods((String)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__MAX_ENTRY_COUNT:
-                setMaxEntryCount((Integer)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__SEQUENCE_TYPE:
-                setSequenceType((CacheSequenceType)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY:
-                setSequenceKey((RegistryKeyProperty)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR:
-                setInputConnector((CacheMediatorInputConnector)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR:
-                setOutputConnector((CacheMediatorOutputConnector)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR:
-                setOnHitOutputConnector((CacheMediatorOnHitOutputConnector)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW:
-                setMediatorFlow((MediatorFlow)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__HEADERS_TO_EXCLUDE_IN_HASH:
-                setHeadersToExcludeInHash((String)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__RESPONSE_CODES:
-                setResponseCodes((String)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__ENABLE_CACHE_CONTROL:
-                setEnableCacheControl((Boolean)newValue);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__INCLUDE_AGE_HEADER:
-                setIncludeAgeHeader((Boolean)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_TYPE:
+				setCacheProtocolType((CacheProtocolType)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__CACHE_TYPE:
+				setCacheType((CacheType)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__HASH_GENERATOR:
+				setHashGenerator((String)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__CACHE_TIMEOUT:
+				setCacheTimeout((Integer)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__MAX_MESSAGE_SIZE:
+				setMaxMessageSize((Integer)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_METHODS:
+				setCacheProtocolMethods((String)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__MAX_ENTRY_COUNT:
+				setMaxEntryCount((Integer)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__SEQUENCE_TYPE:
+				setSequenceType((CacheSequenceType)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY:
+				setSequenceKey((RegistryKeyProperty)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR:
+				setInputConnector((CacheMediatorInputConnector)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR:
+				setOutputConnector((CacheMediatorOutputConnector)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR:
+				setOnHitOutputConnector((CacheMediatorOnHitOutputConnector)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW:
+				setMediatorFlow((MediatorFlow)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__HEADERS_TO_EXCLUDE_IN_HASH:
+				setHeadersToExcludeInHash((String)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__RESPONSE_CODES:
+				setResponseCodes((String)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__ENABLE_CACHE_CONTROL:
+				setEnableCacheControl((Boolean)newValue);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__INCLUDE_AGE_HEADER:
+				setIncludeAgeHeader((Boolean)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_TYPE:
-                setCacheProtocolType(CACHE_PROTOCOL_TYPE_EDEFAULT);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__CACHE_TYPE:
-                setCacheType(CACHE_TYPE_EDEFAULT);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__HASH_GENERATOR:
-                setHashGenerator(HASH_GENERATOR_EDEFAULT);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__CACHE_TIMEOUT:
-                setCacheTimeout(CACHE_TIMEOUT_EDEFAULT);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__MAX_MESSAGE_SIZE:
-                setMaxMessageSize(MAX_MESSAGE_SIZE_EDEFAULT);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_METHODS:
-                setCacheProtocolMethods(CACHE_PROTOCOL_METHODS_EDEFAULT);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__MAX_ENTRY_COUNT:
-                setMaxEntryCount(MAX_ENTRY_COUNT_EDEFAULT);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__SEQUENCE_TYPE:
-                setSequenceType(SEQUENCE_TYPE_EDEFAULT);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY:
-                setSequenceKey((RegistryKeyProperty)null);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR:
-                setInputConnector((CacheMediatorInputConnector)null);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR:
-                setOutputConnector((CacheMediatorOutputConnector)null);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR:
-                setOnHitOutputConnector((CacheMediatorOnHitOutputConnector)null);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW:
-                setMediatorFlow((MediatorFlow)null);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__HEADERS_TO_EXCLUDE_IN_HASH:
-                setHeadersToExcludeInHash(HEADERS_TO_EXCLUDE_IN_HASH_EDEFAULT);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__RESPONSE_CODES:
-                setResponseCodes(RESPONSE_CODES_EDEFAULT);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__ENABLE_CACHE_CONTROL:
-                setEnableCacheControl(ENABLE_CACHE_CONTROL_EDEFAULT);
-                return;
-            case EsbPackage.CACHE_MEDIATOR__INCLUDE_AGE_HEADER:
-                setIncludeAgeHeader(INCLUDE_AGE_HEADER_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_TYPE:
+				setCacheProtocolType(CACHE_PROTOCOL_TYPE_EDEFAULT);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__CACHE_TYPE:
+				setCacheType(CACHE_TYPE_EDEFAULT);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__HASH_GENERATOR:
+				setHashGenerator(HASH_GENERATOR_EDEFAULT);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__CACHE_TIMEOUT:
+				setCacheTimeout(CACHE_TIMEOUT_EDEFAULT);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__MAX_MESSAGE_SIZE:
+				setMaxMessageSize(MAX_MESSAGE_SIZE_EDEFAULT);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_METHODS:
+				setCacheProtocolMethods(CACHE_PROTOCOL_METHODS_EDEFAULT);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__MAX_ENTRY_COUNT:
+				setMaxEntryCount(MAX_ENTRY_COUNT_EDEFAULT);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__SEQUENCE_TYPE:
+				setSequenceType(SEQUENCE_TYPE_EDEFAULT);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY:
+				setSequenceKey((RegistryKeyProperty)null);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR:
+				setInputConnector((CacheMediatorInputConnector)null);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR:
+				setOutputConnector((CacheMediatorOutputConnector)null);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR:
+				setOnHitOutputConnector((CacheMediatorOnHitOutputConnector)null);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW:
+				setMediatorFlow((MediatorFlow)null);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__HEADERS_TO_EXCLUDE_IN_HASH:
+				setHeadersToExcludeInHash(HEADERS_TO_EXCLUDE_IN_HASH_EDEFAULT);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__RESPONSE_CODES:
+				setResponseCodes(RESPONSE_CODES_EDEFAULT);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__ENABLE_CACHE_CONTROL:
+				setEnableCacheControl(ENABLE_CACHE_CONTROL_EDEFAULT);
+				return;
+			case EsbPackage.CACHE_MEDIATOR__INCLUDE_AGE_HEADER:
+				setIncludeAgeHeader(INCLUDE_AGE_HEADER_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_TYPE:
-                return cacheProtocolType != CACHE_PROTOCOL_TYPE_EDEFAULT;
-            case EsbPackage.CACHE_MEDIATOR__CACHE_TYPE:
-                return cacheType != CACHE_TYPE_EDEFAULT;
-            case EsbPackage.CACHE_MEDIATOR__HASH_GENERATOR:
-                return HASH_GENERATOR_EDEFAULT == null ? hashGenerator != null : !HASH_GENERATOR_EDEFAULT.equals(hashGenerator);
-            case EsbPackage.CACHE_MEDIATOR__CACHE_TIMEOUT:
-                return cacheTimeout != CACHE_TIMEOUT_EDEFAULT;
-            case EsbPackage.CACHE_MEDIATOR__MAX_MESSAGE_SIZE:
-                return maxMessageSize != MAX_MESSAGE_SIZE_EDEFAULT;
-            case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_METHODS:
-                return CACHE_PROTOCOL_METHODS_EDEFAULT == null ? cacheProtocolMethods != null : !CACHE_PROTOCOL_METHODS_EDEFAULT.equals(cacheProtocolMethods);
-            case EsbPackage.CACHE_MEDIATOR__MAX_ENTRY_COUNT:
-                return maxEntryCount != MAX_ENTRY_COUNT_EDEFAULT;
-            case EsbPackage.CACHE_MEDIATOR__SEQUENCE_TYPE:
-                return sequenceType != SEQUENCE_TYPE_EDEFAULT;
-            case EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY:
-                return sequenceKey != null;
-            case EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR:
-                return inputConnector != null;
-            case EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR:
-                return outputConnector != null;
-            case EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR:
-                return onHitOutputConnector != null;
-            case EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW:
-                return mediatorFlow != null;
-            case EsbPackage.CACHE_MEDIATOR__HEADERS_TO_EXCLUDE_IN_HASH:
-                return HEADERS_TO_EXCLUDE_IN_HASH_EDEFAULT == null ? headersToExcludeInHash != null : !HEADERS_TO_EXCLUDE_IN_HASH_EDEFAULT.equals(headersToExcludeInHash);
-            case EsbPackage.CACHE_MEDIATOR__RESPONSE_CODES:
-                return RESPONSE_CODES_EDEFAULT == null ? responseCodes != null : !RESPONSE_CODES_EDEFAULT.equals(responseCodes);
-            case EsbPackage.CACHE_MEDIATOR__ENABLE_CACHE_CONTROL:
-                return enableCacheControl != ENABLE_CACHE_CONTROL_EDEFAULT;
-            case EsbPackage.CACHE_MEDIATOR__INCLUDE_AGE_HEADER:
-                return includeAgeHeader != INCLUDE_AGE_HEADER_EDEFAULT;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_TYPE:
+				return cacheProtocolType != CACHE_PROTOCOL_TYPE_EDEFAULT;
+			case EsbPackage.CACHE_MEDIATOR__CACHE_TYPE:
+				return cacheType != CACHE_TYPE_EDEFAULT;
+			case EsbPackage.CACHE_MEDIATOR__HASH_GENERATOR:
+				return HASH_GENERATOR_EDEFAULT == null ? hashGenerator != null : !HASH_GENERATOR_EDEFAULT.equals(hashGenerator);
+			case EsbPackage.CACHE_MEDIATOR__CACHE_TIMEOUT:
+				return cacheTimeout != CACHE_TIMEOUT_EDEFAULT;
+			case EsbPackage.CACHE_MEDIATOR__MAX_MESSAGE_SIZE:
+				return maxMessageSize != MAX_MESSAGE_SIZE_EDEFAULT;
+			case EsbPackage.CACHE_MEDIATOR__CACHE_PROTOCOL_METHODS:
+				return CACHE_PROTOCOL_METHODS_EDEFAULT == null ? cacheProtocolMethods != null : !CACHE_PROTOCOL_METHODS_EDEFAULT.equals(cacheProtocolMethods);
+			case EsbPackage.CACHE_MEDIATOR__MAX_ENTRY_COUNT:
+				return maxEntryCount != MAX_ENTRY_COUNT_EDEFAULT;
+			case EsbPackage.CACHE_MEDIATOR__SEQUENCE_TYPE:
+				return sequenceType != SEQUENCE_TYPE_EDEFAULT;
+			case EsbPackage.CACHE_MEDIATOR__SEQUENCE_KEY:
+				return sequenceKey != null;
+			case EsbPackage.CACHE_MEDIATOR__INPUT_CONNECTOR:
+				return inputConnector != null;
+			case EsbPackage.CACHE_MEDIATOR__OUTPUT_CONNECTOR:
+				return outputConnector != null;
+			case EsbPackage.CACHE_MEDIATOR__ON_HIT_OUTPUT_CONNECTOR:
+				return onHitOutputConnector != null;
+			case EsbPackage.CACHE_MEDIATOR__MEDIATOR_FLOW:
+				return mediatorFlow != null;
+			case EsbPackage.CACHE_MEDIATOR__HEADERS_TO_EXCLUDE_IN_HASH:
+				return HEADERS_TO_EXCLUDE_IN_HASH_EDEFAULT == null ? headersToExcludeInHash != null : !HEADERS_TO_EXCLUDE_IN_HASH_EDEFAULT.equals(headersToExcludeInHash);
+			case EsbPackage.CACHE_MEDIATOR__RESPONSE_CODES:
+				return RESPONSE_CODES_EDEFAULT == null ? responseCodes != null : !RESPONSE_CODES_EDEFAULT.equals(responseCodes);
+			case EsbPackage.CACHE_MEDIATOR__ENABLE_CACHE_CONTROL:
+				return enableCacheControl != ENABLE_CACHE_CONTROL_EDEFAULT;
+			case EsbPackage.CACHE_MEDIATOR__INCLUDE_AGE_HEADER:
+				return includeAgeHeader != INCLUDE_AGE_HEADER_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (cacheProtocolType: ");
-        result.append(cacheProtocolType);
-        result.append(", cacheType: ");
-        result.append(cacheType);
-        result.append(", hashGenerator: ");
-        result.append(hashGenerator);
-        result.append(", cacheTimeout: ");
-        result.append(cacheTimeout);
-        result.append(", maxMessageSize: ");
-        result.append(maxMessageSize);
-        result.append(", cacheProtocolMethods: ");
-        result.append(cacheProtocolMethods);
-        result.append(", maxEntryCount: ");
-        result.append(maxEntryCount);
-        result.append(", sequenceType: ");
-        result.append(sequenceType);
-        result.append(", headersToExcludeInHash: ");
-        result.append(headersToExcludeInHash);
-        result.append(", responseCodes: ");
-        result.append(responseCodes);
-        result.append(", enableCacheControl: ");
-        result.append(enableCacheControl);
-        result.append(", includeAgeHeader: ");
-        result.append(includeAgeHeader);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (cacheProtocolType: ");
+		result.append(cacheProtocolType);
+		result.append(", cacheType: ");
+		result.append(cacheType);
+		result.append(", hashGenerator: ");
+		result.append(hashGenerator);
+		result.append(", cacheTimeout: ");
+		result.append(cacheTimeout);
+		result.append(", maxMessageSize: ");
+		result.append(maxMessageSize);
+		result.append(", cacheProtocolMethods: ");
+		result.append(cacheProtocolMethods);
+		result.append(", maxEntryCount: ");
+		result.append(maxEntryCount);
+		result.append(", sequenceType: ");
+		result.append(sequenceType);
+		result.append(", headersToExcludeInHash: ");
+		result.append(headersToExcludeInHash);
+		result.append(", responseCodes: ");
+		result.append(responseCodes);
+		result.append(", enableCacheControl: ");
+		result.append(enableCacheControl);
+		result.append(", includeAgeHeader: ");
+		result.append(includeAgeHeader);
+		result.append(')');
+		return result.toString();
+	}
 
 } // CacheMediatorImpl

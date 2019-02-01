@@ -20,22 +20,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.RouterMediatorInputConnector;
  */
 public class RouterMediatorInputConnectorImpl extends InputConnectorImpl implements RouterMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected RouterMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.ROUTER_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.ROUTER_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // RouterMediatorInputConnectorImpl

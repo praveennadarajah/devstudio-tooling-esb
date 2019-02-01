@@ -20,23 +20,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.XSLTProperty;
  */
 public class XSLTPropertyImpl extends AbstractNameValueExpressionPropertyImpl implements XSLTProperty {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected XSLTPropertyImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.XSLT_PROPERTY;
-    }
+		return EsbPackage.Literals.XSLT_PROPERTY;
+	}
 
 } // XSLTPropertyImpl

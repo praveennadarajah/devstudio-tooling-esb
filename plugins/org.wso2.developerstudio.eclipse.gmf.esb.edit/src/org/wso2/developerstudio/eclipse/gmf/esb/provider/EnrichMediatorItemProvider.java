@@ -36,14 +36,14 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
  */
 public class EnrichMediatorItemProvider extends MediatorItemProvider {
     /**
-     * This constructs an instance from a factory and a notifier.
-     * <!-- begin-user-doc -->
+	 * This constructs an instance from a factory and a notifier.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EnrichMediatorItemProvider(AdapterFactory adapterFactory) {
-        super(adapterFactory);
-    }
+		super(adapterFactory);
+	}
 
     /**
      * This returns the property descriptors for the adapted class.
@@ -281,162 +281,162 @@ public class EnrichMediatorItemProvider extends MediatorItemProvider {
     }
 
     /**
-     * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
-     * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
-     * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
-     * <!-- begin-user-doc -->
+	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
+	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
+	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
-        if (childrenFeatures == null) {
-            super.getChildrenFeatures(object);
-            childrenFeatures.add(EsbPackage.Literals.ENRICH_MEDIATOR__SOURCE_XPATH);
-            childrenFeatures.add(EsbPackage.Literals.ENRICH_MEDIATOR__TARGET_XPATH);
-            childrenFeatures.add(EsbPackage.Literals.ENRICH_MEDIATOR__INLINE_REGISTRY_KEY);
-            childrenFeatures.add(EsbPackage.Literals.ENRICH_MEDIATOR__INPUT_CONNECTOR);
-            childrenFeatures.add(EsbPackage.Literals.ENRICH_MEDIATOR__OUTPUT_CONNECTOR);
-        }
-        return childrenFeatures;
-    }
+		if (childrenFeatures == null) {
+			super.getChildrenFeatures(object);
+			childrenFeatures.add(EsbPackage.Literals.ENRICH_MEDIATOR__SOURCE_XPATH);
+			childrenFeatures.add(EsbPackage.Literals.ENRICH_MEDIATOR__TARGET_XPATH);
+			childrenFeatures.add(EsbPackage.Literals.ENRICH_MEDIATOR__INLINE_REGISTRY_KEY);
+			childrenFeatures.add(EsbPackage.Literals.ENRICH_MEDIATOR__INPUT_CONNECTOR);
+			childrenFeatures.add(EsbPackage.Literals.ENRICH_MEDIATOR__OUTPUT_CONNECTOR);
+		}
+		return childrenFeatures;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EStructuralFeature getChildFeature(Object object, Object child) {
-        // Check the type of the specified child object and return the proper feature to use for
-        // adding (see {@link AddCommand}) it as a child.
+		// Check the type of the specified child object and return the proper feature to use for
+		// adding (see {@link AddCommand}) it as a child.
 
-        return super.getChildFeature(object, child);
-    }
+		return super.getChildFeature(object, child);
+	}
 
     /**
-     * This returns EnrichMediator.gif.
-     * <!-- begin-user-doc -->
+	 * This returns EnrichMediator.gif.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Object getImage(Object object) {
-        return overlayImage(object, getResourceLocator().getImage("full/obj16/EnrichMediator"));
-    }
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/EnrichMediator"));
+	}
 
     /**
-     * This returns the label text for the adapted class.
-     * <!-- begin-user-doc -->
+	 * This returns the label text for the adapted class.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public String getText(Object object) {
-        String label = ((EnrichMediator)object).getDescription();
-        return label == null || label.length() == 0 ?
-            getString("_UI_EnrichMediator_type") :
-            getString("_UI_EnrichMediator_type") + " " + label;
-    }
+		String label = ((EnrichMediator)object).getDescription();
+		return label == null || label.length() == 0 ?
+			getString("_UI_EnrichMediator_type") :
+			getString("_UI_EnrichMediator_type") + " " + label;
+	}
 
     /**
-     * This handles model notifications by calling {@link #updateChildren} to update any cached
-     * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
-     * <!-- begin-user-doc -->
+	 * This handles model notifications by calling {@link #updateChildren} to update any cached
+	 * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void notifyChanged(Notification notification) {
-        updateChildren(notification);
+		updateChildren(notification);
 
-        switch (notification.getFeatureID(EnrichMediator.class)) {
-            case EsbPackage.ENRICH_MEDIATOR__CLONE_SOURCE:
-            case EsbPackage.ENRICH_MEDIATOR__SOURCE_TYPE:
-            case EsbPackage.ENRICH_MEDIATOR__SOURCE_PROPERTY:
-            case EsbPackage.ENRICH_MEDIATOR__SOURCE_XML:
-            case EsbPackage.ENRICH_MEDIATOR__TARGET_ACTION:
-            case EsbPackage.ENRICH_MEDIATOR__TARGET_TYPE:
-            case EsbPackage.ENRICH_MEDIATOR__TARGET_PROPERTY:
-            case EsbPackage.ENRICH_MEDIATOR__INLINE_TYPE:
-                fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-                return;
-            case EsbPackage.ENRICH_MEDIATOR__SOURCE_XPATH:
-            case EsbPackage.ENRICH_MEDIATOR__TARGET_XPATH:
-            case EsbPackage.ENRICH_MEDIATOR__INLINE_REGISTRY_KEY:
-            case EsbPackage.ENRICH_MEDIATOR__INPUT_CONNECTOR:
-            case EsbPackage.ENRICH_MEDIATOR__OUTPUT_CONNECTOR:
-                fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
-                return;
-        }
-        super.notifyChanged(notification);
-    }
+		switch (notification.getFeatureID(EnrichMediator.class)) {
+			case EsbPackage.ENRICH_MEDIATOR__CLONE_SOURCE:
+			case EsbPackage.ENRICH_MEDIATOR__SOURCE_TYPE:
+			case EsbPackage.ENRICH_MEDIATOR__SOURCE_PROPERTY:
+			case EsbPackage.ENRICH_MEDIATOR__SOURCE_XML:
+			case EsbPackage.ENRICH_MEDIATOR__TARGET_ACTION:
+			case EsbPackage.ENRICH_MEDIATOR__TARGET_TYPE:
+			case EsbPackage.ENRICH_MEDIATOR__TARGET_PROPERTY:
+			case EsbPackage.ENRICH_MEDIATOR__INLINE_TYPE:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+			case EsbPackage.ENRICH_MEDIATOR__SOURCE_XPATH:
+			case EsbPackage.ENRICH_MEDIATOR__TARGET_XPATH:
+			case EsbPackage.ENRICH_MEDIATOR__INLINE_REGISTRY_KEY:
+			case EsbPackage.ENRICH_MEDIATOR__INPUT_CONNECTOR:
+			case EsbPackage.ENRICH_MEDIATOR__OUTPUT_CONNECTOR:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+				return;
+		}
+		super.notifyChanged(notification);
+	}
 
     /**
-     * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
-     * that can be created under this object.
-     * <!-- begin-user-doc -->
+	 * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
+	 * that can be created under this object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
-        super.collectNewChildDescriptors(newChildDescriptors, object);
+		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.ENRICH_MEDIATOR__SOURCE_XPATH,
-                 EsbFactory.eINSTANCE.createNamespacedProperty()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.ENRICH_MEDIATOR__SOURCE_XPATH,
+				 EsbFactory.eINSTANCE.createNamespacedProperty()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.ENRICH_MEDIATOR__TARGET_XPATH,
-                 EsbFactory.eINSTANCE.createNamespacedProperty()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.ENRICH_MEDIATOR__TARGET_XPATH,
+				 EsbFactory.eINSTANCE.createNamespacedProperty()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.ENRICH_MEDIATOR__INLINE_REGISTRY_KEY,
-                 EsbFactory.eINSTANCE.createRegistryKeyProperty()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.ENRICH_MEDIATOR__INLINE_REGISTRY_KEY,
+				 EsbFactory.eINSTANCE.createRegistryKeyProperty()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.ENRICH_MEDIATOR__INPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createEnrichMediatorInputConnector()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.ENRICH_MEDIATOR__INPUT_CONNECTOR,
+				 EsbFactory.eINSTANCE.createEnrichMediatorInputConnector()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.ENRICH_MEDIATOR__OUTPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createEnrichMediatorOutputConnector()));
-    }
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.ENRICH_MEDIATOR__OUTPUT_CONNECTOR,
+				 EsbFactory.eINSTANCE.createEnrichMediatorOutputConnector()));
+	}
 
     /**
-     * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
-     * <!-- begin-user-doc -->
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
-        Object childFeature = feature;
-        Object childObject = child;
+		Object childFeature = feature;
+		Object childObject = child;
 
-        boolean qualify =
-            childFeature == EsbPackage.Literals.ENRICH_MEDIATOR__SOURCE_XPATH ||
-            childFeature == EsbPackage.Literals.ENRICH_MEDIATOR__TARGET_XPATH;
+		boolean qualify =
+			childFeature == EsbPackage.Literals.ENRICH_MEDIATOR__SOURCE_XPATH ||
+			childFeature == EsbPackage.Literals.ENRICH_MEDIATOR__TARGET_XPATH;
 
-        if (qualify) {
-            return getString
-                ("_UI_CreateChild_text2",
-                 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
-        }
-        return super.getCreateChildText(owner, feature, child, selection);
-    }
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
+	}
 
 }

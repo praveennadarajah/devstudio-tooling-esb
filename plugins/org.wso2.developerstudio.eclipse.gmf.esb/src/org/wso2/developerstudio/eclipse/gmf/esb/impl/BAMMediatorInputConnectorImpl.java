@@ -29,22 +29,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
  */
 public class BAMMediatorInputConnectorImpl extends InputConnectorImpl implements BAMMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected BAMMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.BAM_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.BAM_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // BAMMediatorInputConnectorImpl

@@ -35,14 +35,14 @@ import org.wso2.developerstudio.eclipse.gmf.esb.XSLTMediator;
  */
 public class XSLTMediatorItemProvider extends MediatorItemProvider {
     /**
-     * This constructs an instance from a factory and a notifier.
-     * <!-- begin-user-doc -->
+	 * This constructs an instance from a factory and a notifier.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public XSLTMediatorItemProvider(AdapterFactory adapterFactory) {
-        super(adapterFactory);
-    }
+		super(adapterFactory);
+	}
 
     /**
      * This returns the property descriptors for the adapted class.
@@ -79,26 +79,26 @@ public class XSLTMediatorItemProvider extends MediatorItemProvider {
     }
 
     /**
-     * This adds a property descriptor for the Xslt Schema Key Type feature.
-     * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Xslt Schema Key Type feature.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected void addXsltSchemaKeyTypePropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_XSLTMediator_xsltSchemaKeyType_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_XSLTMediator_xsltSchemaKeyType_feature", "_UI_XSLTMediator_type"),
-                 EsbPackage.Literals.XSLT_MEDIATOR__XSLT_SCHEMA_KEY_TYPE,
-                 true,
-                 false,
-                 false,
-                 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-                 null,
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_XSLTMediator_xsltSchemaKeyType_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_XSLTMediator_xsltSchemaKeyType_feature", "_UI_XSLTMediator_type"),
+				 EsbPackage.Literals.XSLT_MEDIATOR__XSLT_SCHEMA_KEY_TYPE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
 
     /**
      * This adds a property descriptor for the Xslt Key feature.
@@ -201,184 +201,184 @@ public class XSLTMediatorItemProvider extends MediatorItemProvider {
     }
 
     /**
-     * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
-     * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
-     * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
-     * <!-- begin-user-doc -->
+	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
+	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
+	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
-        if (childrenFeatures == null) {
-            super.getChildrenFeatures(object);
-            childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__INPUT_CONNECTOR);
-            childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__OUTPUT_CONNECTOR);
-            childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__XSLT_STATIC_SCHEMA_KEY);
-            childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__XSLT_DYNAMIC_SCHEMA_KEY);
-            childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__XSLT_KEY);
-            childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__SOURCE_XPATH);
-            childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__PROPERTIES);
-            childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__FEATURES);
-            childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__RESOURCES);
-        }
-        return childrenFeatures;
-    }
+		if (childrenFeatures == null) {
+			super.getChildrenFeatures(object);
+			childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__INPUT_CONNECTOR);
+			childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__OUTPUT_CONNECTOR);
+			childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__XSLT_STATIC_SCHEMA_KEY);
+			childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__XSLT_DYNAMIC_SCHEMA_KEY);
+			childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__XSLT_KEY);
+			childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__SOURCE_XPATH);
+			childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__PROPERTIES);
+			childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__FEATURES);
+			childrenFeatures.add(EsbPackage.Literals.XSLT_MEDIATOR__RESOURCES);
+		}
+		return childrenFeatures;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EStructuralFeature getChildFeature(Object object, Object child) {
-        // Check the type of the specified child object and return the proper feature to use for
-        // adding (see {@link AddCommand}) it as a child.
+		// Check the type of the specified child object and return the proper feature to use for
+		// adding (see {@link AddCommand}) it as a child.
 
-        return super.getChildFeature(object, child);
-    }
+		return super.getChildFeature(object, child);
+	}
 
     /**
-     * This returns XSLTMediator.gif.
-     * <!-- begin-user-doc -->
+	 * This returns XSLTMediator.gif.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Object getImage(Object object) {
-        return overlayImage(object, getResourceLocator().getImage("full/obj16/XSLTMediator"));
-    }
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/XSLTMediator"));
+	}
 
     /**
-     * This returns the label text for the adapted class.
-     * <!-- begin-user-doc -->
+	 * This returns the label text for the adapted class.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public String getText(Object object) {
-        String label = ((XSLTMediator)object).getDescription();
-        return label == null || label.length() == 0 ?
-            getString("_UI_XSLTMediator_type") :
-            getString("_UI_XSLTMediator_type") + " " + label;
-    }
+		String label = ((XSLTMediator)object).getDescription();
+		return label == null || label.length() == 0 ?
+			getString("_UI_XSLTMediator_type") :
+			getString("_UI_XSLTMediator_type") + " " + label;
+	}
 
     /**
-     * This handles model notifications by calling {@link #updateChildren} to update any cached
-     * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
-     * <!-- begin-user-doc -->
+	 * This handles model notifications by calling {@link #updateChildren} to update any cached
+	 * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void notifyChanged(Notification notification) {
-        updateChildren(notification);
+		updateChildren(notification);
 
-        switch (notification.getFeatureID(XSLTMediator.class)) {
-            case EsbPackage.XSLT_MEDIATOR__XSLT_SCHEMA_KEY_TYPE:
-                fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-                return;
-            case EsbPackage.XSLT_MEDIATOR__INPUT_CONNECTOR:
-            case EsbPackage.XSLT_MEDIATOR__OUTPUT_CONNECTOR:
-            case EsbPackage.XSLT_MEDIATOR__XSLT_STATIC_SCHEMA_KEY:
-            case EsbPackage.XSLT_MEDIATOR__XSLT_DYNAMIC_SCHEMA_KEY:
-            case EsbPackage.XSLT_MEDIATOR__XSLT_KEY:
-            case EsbPackage.XSLT_MEDIATOR__SOURCE_XPATH:
-            case EsbPackage.XSLT_MEDIATOR__PROPERTIES:
-            case EsbPackage.XSLT_MEDIATOR__FEATURES:
-            case EsbPackage.XSLT_MEDIATOR__RESOURCES:
-                fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
-                return;
-        }
-        super.notifyChanged(notification);
-    }
+		switch (notification.getFeatureID(XSLTMediator.class)) {
+			case EsbPackage.XSLT_MEDIATOR__XSLT_SCHEMA_KEY_TYPE:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+			case EsbPackage.XSLT_MEDIATOR__INPUT_CONNECTOR:
+			case EsbPackage.XSLT_MEDIATOR__OUTPUT_CONNECTOR:
+			case EsbPackage.XSLT_MEDIATOR__XSLT_STATIC_SCHEMA_KEY:
+			case EsbPackage.XSLT_MEDIATOR__XSLT_DYNAMIC_SCHEMA_KEY:
+			case EsbPackage.XSLT_MEDIATOR__XSLT_KEY:
+			case EsbPackage.XSLT_MEDIATOR__SOURCE_XPATH:
+			case EsbPackage.XSLT_MEDIATOR__PROPERTIES:
+			case EsbPackage.XSLT_MEDIATOR__FEATURES:
+			case EsbPackage.XSLT_MEDIATOR__RESOURCES:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+				return;
+		}
+		super.notifyChanged(notification);
+	}
 
     /**
-     * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
-     * that can be created under this object.
-     * <!-- begin-user-doc -->
+	 * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
+	 * that can be created under this object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
-        super.collectNewChildDescriptors(newChildDescriptors, object);
+		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.XSLT_MEDIATOR__INPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createXSLTMediatorInputConnector()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.XSLT_MEDIATOR__INPUT_CONNECTOR,
+				 EsbFactory.eINSTANCE.createXSLTMediatorInputConnector()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.XSLT_MEDIATOR__OUTPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createXSLTMediatorOutputConnector()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.XSLT_MEDIATOR__OUTPUT_CONNECTOR,
+				 EsbFactory.eINSTANCE.createXSLTMediatorOutputConnector()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.XSLT_MEDIATOR__XSLT_STATIC_SCHEMA_KEY,
-                 EsbFactory.eINSTANCE.createRegistryKeyProperty()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.XSLT_MEDIATOR__XSLT_STATIC_SCHEMA_KEY,
+				 EsbFactory.eINSTANCE.createRegistryKeyProperty()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.XSLT_MEDIATOR__XSLT_DYNAMIC_SCHEMA_KEY,
-                 EsbFactory.eINSTANCE.createNamespacedProperty()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.XSLT_MEDIATOR__XSLT_DYNAMIC_SCHEMA_KEY,
+				 EsbFactory.eINSTANCE.createNamespacedProperty()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.XSLT_MEDIATOR__XSLT_KEY,
-                 EsbFactory.eINSTANCE.createRegistryKeyProperty()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.XSLT_MEDIATOR__XSLT_KEY,
+				 EsbFactory.eINSTANCE.createRegistryKeyProperty()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.XSLT_MEDIATOR__SOURCE_XPATH,
-                 EsbFactory.eINSTANCE.createNamespacedProperty()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.XSLT_MEDIATOR__SOURCE_XPATH,
+				 EsbFactory.eINSTANCE.createNamespacedProperty()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.XSLT_MEDIATOR__PROPERTIES,
-                 EsbFactory.eINSTANCE.createXSLTProperty()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.XSLT_MEDIATOR__PROPERTIES,
+				 EsbFactory.eINSTANCE.createXSLTProperty()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.XSLT_MEDIATOR__FEATURES,
-                 EsbFactory.eINSTANCE.createXSLTFeature()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.XSLT_MEDIATOR__FEATURES,
+				 EsbFactory.eINSTANCE.createXSLTFeature()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.XSLT_MEDIATOR__RESOURCES,
-                 EsbFactory.eINSTANCE.createXSLTResource()));
-    }
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.XSLT_MEDIATOR__RESOURCES,
+				 EsbFactory.eINSTANCE.createXSLTResource()));
+	}
 
     /**
-     * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
-     * <!-- begin-user-doc -->
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
-        Object childFeature = feature;
-        Object childObject = child;
+		Object childFeature = feature;
+		Object childObject = child;
 
-        boolean qualify =
-            childFeature == EsbPackage.Literals.XSLT_MEDIATOR__XSLT_STATIC_SCHEMA_KEY ||
-            childFeature == EsbPackage.Literals.XSLT_MEDIATOR__XSLT_KEY ||
-            childFeature == EsbPackage.Literals.XSLT_MEDIATOR__XSLT_DYNAMIC_SCHEMA_KEY ||
-            childFeature == EsbPackage.Literals.XSLT_MEDIATOR__SOURCE_XPATH;
+		boolean qualify =
+			childFeature == EsbPackage.Literals.XSLT_MEDIATOR__XSLT_STATIC_SCHEMA_KEY ||
+			childFeature == EsbPackage.Literals.XSLT_MEDIATOR__XSLT_KEY ||
+			childFeature == EsbPackage.Literals.XSLT_MEDIATOR__XSLT_DYNAMIC_SCHEMA_KEY ||
+			childFeature == EsbPackage.Literals.XSLT_MEDIATOR__SOURCE_XPATH;
 
-        if (qualify) {
-            return getString
-                ("_UI_CreateChild_text2",
-                 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
-        }
-        return super.getCreateChildText(owner, feature, child, selection);
-    }
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
+	}
 
 }

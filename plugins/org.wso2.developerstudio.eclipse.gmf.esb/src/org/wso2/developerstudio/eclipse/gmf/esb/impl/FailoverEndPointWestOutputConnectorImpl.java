@@ -21,22 +21,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.FailoverEndPointWestOutputConnec
 public class FailoverEndPointWestOutputConnectorImpl extends OutputConnectorImpl
         implements FailoverEndPointWestOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected FailoverEndPointWestOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.FAILOVER_END_POINT_WEST_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.FAILOVER_END_POINT_WEST_OUTPUT_CONNECTOR;
+	}
 
 } // FailoverEndPointWestOutputConnectorImpl

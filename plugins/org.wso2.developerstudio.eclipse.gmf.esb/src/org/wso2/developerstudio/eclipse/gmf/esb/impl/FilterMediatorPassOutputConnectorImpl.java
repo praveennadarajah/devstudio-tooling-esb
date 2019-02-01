@@ -21,23 +21,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.FilterMediatorPassOutputConnecto
 public class FilterMediatorPassOutputConnectorImpl extends OutputConnectorImpl
         implements FilterMediatorPassOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected FilterMediatorPassOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.FILTER_MEDIATOR_PASS_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.FILTER_MEDIATOR_PASS_OUTPUT_CONNECTOR;
+	}
 
 } // FilterMediatorPassOutputConnectorImpl

@@ -21,22 +21,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.ValidateMediatorOutputConnector;
 public class ValidateMediatorOutputConnectorImpl extends OutputConnectorImpl
         implements ValidateMediatorOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ValidateMediatorOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.VALIDATE_MEDIATOR_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.VALIDATE_MEDIATOR_OUTPUT_CONNECTOR;
+	}
 
 } // ValidateMediatorOutputConnectorImpl

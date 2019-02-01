@@ -46,13 +46,13 @@ public class ValidateResourceImpl extends AbstractLocationKeyResourceImpl implem
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.VALIDATE_RESOURCE;
-    }
+		return EsbPackage.Literals.VALIDATE_RESOURCE;
+	}
 
 } // ValidateResourceImpl

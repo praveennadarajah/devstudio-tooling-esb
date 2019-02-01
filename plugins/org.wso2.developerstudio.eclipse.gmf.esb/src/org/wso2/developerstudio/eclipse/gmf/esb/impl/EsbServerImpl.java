@@ -43,43 +43,43 @@ import org.wso2.developerstudio.eclipse.gmf.esb.MessageMediator;
  */
 public class EsbServerImpl extends EsbNodeImpl implements EsbServer {
     /**
-     * The cached value of the '{@link #getChildren() <em>Children</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getChildren() <em>Children</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getChildren()
-     * @generated
-     * @ordered
-     */
+	 * @see #getChildren()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<EsbElement> children;
 
     /**
-     * The cached value of the '{@link #getMessageMediator() <em>Message Mediator</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getMessageMediator() <em>Message Mediator</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getMessageMediator()
-     * @generated
-     * @ordered
-     */
+	 * @see #getMessageMediator()
+	 * @generated
+	 * @ordered
+	 */
     protected MessageMediator messageMediator;
 
     /**
-     * The default value of the '{@link #getType() <em>Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getType() <em>Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getType()
+	 * @generated
+	 * @ordered
+	 */
     protected static final ArtifactType TYPE_EDEFAULT = ArtifactType.SYNAPSE_CONFIG;
 
     /**
-     * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getType()
+	 * @generated
+	 * @ordered
+	 */
     protected ArtifactType type = TYPE_EDEFAULT;
 
     /**
@@ -88,217 +88,217 @@ public class EsbServerImpl extends EsbNodeImpl implements EsbServer {
     private boolean lockmode;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected EsbServerImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.ESB_SERVER;
-    }
+		return EsbPackage.Literals.ESB_SERVER;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EList<EsbElement> getChildren() {
-        if (children == null) {
-            children = new EObjectContainmentEList<EsbElement>(EsbElement.class, this, EsbPackage.ESB_SERVER__CHILDREN);
-        }
-        return children;
-    }
+		if (children == null) {
+			children = new EObjectContainmentEList<EsbElement>(EsbElement.class, this, EsbPackage.ESB_SERVER__CHILDREN);
+		}
+		return children;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public MessageMediator getMessageMediator() {
-        return messageMediator;
-    }
+		return messageMediator;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetMessageMediator(MessageMediator newMessageMediator, NotificationChain msgs) {
-        MessageMediator oldMessageMediator = messageMediator;
-        messageMediator = newMessageMediator;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR, oldMessageMediator, newMessageMediator);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		MessageMediator oldMessageMediator = messageMediator;
+		messageMediator = newMessageMediator;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR, oldMessageMediator, newMessageMediator);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setMessageMediator(MessageMediator newMessageMediator) {
-        if (newMessageMediator != messageMediator) {
-            NotificationChain msgs = null;
-            if (messageMediator != null)
-                msgs = ((InternalEObject)messageMediator).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR, null, msgs);
-            if (newMessageMediator != null)
-                msgs = ((InternalEObject)newMessageMediator).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR, null, msgs);
-            msgs = basicSetMessageMediator(newMessageMediator, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR, newMessageMediator, newMessageMediator));
-    }
+		if (newMessageMediator != messageMediator) {
+			NotificationChain msgs = null;
+			if (messageMediator != null)
+				msgs = ((InternalEObject)messageMediator).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR, null, msgs);
+			if (newMessageMediator != null)
+				msgs = ((InternalEObject)newMessageMediator).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR, null, msgs);
+			msgs = basicSetMessageMediator(newMessageMediator, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR, newMessageMediator, newMessageMediator));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public ArtifactType getType() {
-        return type;
-    }
+		return type;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setType(ArtifactType newType) {
-        ArtifactType oldType = type;
-        type = newType == null ? TYPE_EDEFAULT : newType;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SERVER__TYPE, oldType, type));
-    }
+		ArtifactType oldType = type;
+		type = newType == null ? TYPE_EDEFAULT : newType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SERVER__TYPE, oldType, type));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.ESB_SERVER__CHILDREN:
-                return ((InternalEList<?>)getChildren()).basicRemove(otherEnd, msgs);
-            case EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR:
-                return basicSetMessageMediator(null, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_SERVER__CHILDREN:
+				return ((InternalEList<?>)getChildren()).basicRemove(otherEnd, msgs);
+			case EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR:
+				return basicSetMessageMediator(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.ESB_SERVER__CHILDREN:
-                return getChildren();
-            case EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR:
-                return getMessageMediator();
-            case EsbPackage.ESB_SERVER__TYPE:
-                return getType();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_SERVER__CHILDREN:
+				return getChildren();
+			case EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR:
+				return getMessageMediator();
+			case EsbPackage.ESB_SERVER__TYPE:
+				return getType();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
 
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.ESB_SERVER__CHILDREN:
-                getChildren().clear();
-                getChildren().addAll((Collection<? extends EsbElement>)newValue);
-                return;
-            case EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR:
-                setMessageMediator((MessageMediator)newValue);
-                return;
-            case EsbPackage.ESB_SERVER__TYPE:
-                setType((ArtifactType)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_SERVER__CHILDREN:
+				getChildren().clear();
+				getChildren().addAll((Collection<? extends EsbElement>)newValue);
+				return;
+			case EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR:
+				setMessageMediator((MessageMediator)newValue);
+				return;
+			case EsbPackage.ESB_SERVER__TYPE:
+				setType((ArtifactType)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.ESB_SERVER__CHILDREN:
-                getChildren().clear();
-                return;
-            case EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR:
-                setMessageMediator((MessageMediator)null);
-                return;
-            case EsbPackage.ESB_SERVER__TYPE:
-                setType(TYPE_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_SERVER__CHILDREN:
+				getChildren().clear();
+				return;
+			case EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR:
+				setMessageMediator((MessageMediator)null);
+				return;
+			case EsbPackage.ESB_SERVER__TYPE:
+				setType(TYPE_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.ESB_SERVER__CHILDREN:
-                return children != null && !children.isEmpty();
-            case EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR:
-                return messageMediator != null;
-            case EsbPackage.ESB_SERVER__TYPE:
-                return type != TYPE_EDEFAULT;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_SERVER__CHILDREN:
+				return children != null && !children.isEmpty();
+			case EsbPackage.ESB_SERVER__MESSAGE_MEDIATOR:
+				return messageMediator != null;
+			case EsbPackage.ESB_SERVER__TYPE:
+				return type != TYPE_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (type: ");
-        result.append(type);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (type: ");
+		result.append(type);
+		result.append(')');
+		return result.toString();
+	}
 
     /**
      * Sets the status of the lock attribute.

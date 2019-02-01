@@ -30,22 +30,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
 public class ComplexEndpointsOutputConnectorImpl extends OutputConnectorImpl
         implements ComplexEndpointsOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ComplexEndpointsOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.COMPLEX_ENDPOINTS_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.COMPLEX_ENDPOINTS_OUTPUT_CONNECTOR;
+	}
 
 } // ComplexEndpointsOutputConnectorImpl

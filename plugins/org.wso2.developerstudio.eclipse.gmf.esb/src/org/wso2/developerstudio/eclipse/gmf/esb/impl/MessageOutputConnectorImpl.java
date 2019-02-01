@@ -20,23 +20,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.MessageOutputConnector;
  */
 public class MessageOutputConnectorImpl extends OutputConnectorImpl implements MessageOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected MessageOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.MESSAGE_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.MESSAGE_OUTPUT_CONNECTOR;
+	}
 
 } // MessageOutputConnectorImpl

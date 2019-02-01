@@ -44,214 +44,214 @@ import org.wso2.developerstudio.eclipse.gmf.esb.LoopBackMediatorOutputConnector;
  */
 public class LoopBackMediatorImpl extends MediatorImpl implements LoopBackMediator {
     /**
-     * The cached value of the '{@link #getInputConnector() <em>Input Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getInputConnector() <em>Input Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getInputConnector()
-     * @generated
-     * @ordered
-     */
+	 * @see #getInputConnector()
+	 * @generated
+	 * @ordered
+	 */
     protected LoopBackMediatorInputConnector inputConnector;
 
     /**
-     * The cached value of the '{@link #getOutputConnector() <em>Output Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOutputConnector() <em>Output Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutputConnector()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutputConnector()
+	 * @generated
+	 * @ordered
+	 */
     protected LoopBackMediatorOutputConnector outputConnector;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected LoopBackMediatorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.LOOP_BACK_MEDIATOR;
-    }
+		return EsbPackage.Literals.LOOP_BACK_MEDIATOR;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public LoopBackMediatorInputConnector getInputConnector() {
-        return inputConnector;
-    }
+		return inputConnector;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetInputConnector(LoopBackMediatorInputConnector newInputConnector,
             NotificationChain msgs) {
-        LoopBackMediatorInputConnector oldInputConnector = inputConnector;
-        inputConnector = newInputConnector;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR, oldInputConnector, newInputConnector);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		LoopBackMediatorInputConnector oldInputConnector = inputConnector;
+		inputConnector = newInputConnector;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR, oldInputConnector, newInputConnector);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setInputConnector(LoopBackMediatorInputConnector newInputConnector) {
-        if (newInputConnector != inputConnector) {
-            NotificationChain msgs = null;
-            if (inputConnector != null)
-                msgs = ((InternalEObject)inputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR, null, msgs);
-            if (newInputConnector != null)
-                msgs = ((InternalEObject)newInputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR, null, msgs);
-            msgs = basicSetInputConnector(newInputConnector, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR, newInputConnector, newInputConnector));
-    }
+		if (newInputConnector != inputConnector) {
+			NotificationChain msgs = null;
+			if (inputConnector != null)
+				msgs = ((InternalEObject)inputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR, null, msgs);
+			if (newInputConnector != null)
+				msgs = ((InternalEObject)newInputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR, null, msgs);
+			msgs = basicSetInputConnector(newInputConnector, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR, newInputConnector, newInputConnector));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public LoopBackMediatorOutputConnector getOutputConnector() {
-        return outputConnector;
-    }
+		return outputConnector;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetOutputConnector(LoopBackMediatorOutputConnector newOutputConnector,
             NotificationChain msgs) {
-        LoopBackMediatorOutputConnector oldOutputConnector = outputConnector;
-        outputConnector = newOutputConnector;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR, oldOutputConnector, newOutputConnector);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		LoopBackMediatorOutputConnector oldOutputConnector = outputConnector;
+		outputConnector = newOutputConnector;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR, oldOutputConnector, newOutputConnector);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setOutputConnector(LoopBackMediatorOutputConnector newOutputConnector) {
-        if (newOutputConnector != outputConnector) {
-            NotificationChain msgs = null;
-            if (outputConnector != null)
-                msgs = ((InternalEObject)outputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
-            if (newOutputConnector != null)
-                msgs = ((InternalEObject)newOutputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
-            msgs = basicSetOutputConnector(newOutputConnector, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR, newOutputConnector, newOutputConnector));
-    }
+		if (newOutputConnector != outputConnector) {
+			NotificationChain msgs = null;
+			if (outputConnector != null)
+				msgs = ((InternalEObject)outputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
+			if (newOutputConnector != null)
+				msgs = ((InternalEObject)newOutputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
+			msgs = basicSetOutputConnector(newOutputConnector, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR, newOutputConnector, newOutputConnector));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR:
-                return basicSetInputConnector(null, msgs);
-            case EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR:
-                return basicSetOutputConnector(null, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR:
+				return basicSetInputConnector(null, msgs);
+			case EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR:
+				return basicSetOutputConnector(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR:
-                return getInputConnector();
-            case EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR:
-                return getOutputConnector();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR:
+				return getInputConnector();
+			case EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR:
+				return getOutputConnector();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR:
-                setInputConnector((LoopBackMediatorInputConnector)newValue);
-                return;
-            case EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR:
-                setOutputConnector((LoopBackMediatorOutputConnector)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR:
+				setInputConnector((LoopBackMediatorInputConnector)newValue);
+				return;
+			case EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR:
+				setOutputConnector((LoopBackMediatorOutputConnector)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR:
-                setInputConnector((LoopBackMediatorInputConnector)null);
-                return;
-            case EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR:
-                setOutputConnector((LoopBackMediatorOutputConnector)null);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR:
+				setInputConnector((LoopBackMediatorInputConnector)null);
+				return;
+			case EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR:
+				setOutputConnector((LoopBackMediatorOutputConnector)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR:
-                return inputConnector != null;
-            case EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR:
-                return outputConnector != null;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.LOOP_BACK_MEDIATOR__INPUT_CONNECTOR:
+				return inputConnector != null;
+			case EsbPackage.LOOP_BACK_MEDIATOR__OUTPUT_CONNECTOR:
+				return outputConnector != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } // LoopBackMediatorImpl

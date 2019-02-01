@@ -20,22 +20,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.RuleMediatorInputConnector;
  */
 public class RuleMediatorInputConnectorImpl extends InputConnectorImpl implements RuleMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected RuleMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.RULE_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.RULE_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // RuleMediatorInputConnectorImpl

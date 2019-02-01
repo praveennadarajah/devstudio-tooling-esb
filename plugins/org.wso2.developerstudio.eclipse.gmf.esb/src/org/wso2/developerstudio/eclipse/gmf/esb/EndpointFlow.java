@@ -26,19 +26,19 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface EndpointFlow extends EsbNode {
     /**
-     * Returns the value of the '<em><b>Children</b></em>' containment reference list.
-     * The list contents are of type {@link org.wso2.developerstudio.eclipse.gmf.esb.EsbElement}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Children</b></em>' containment reference list.
+	 * The list contents are of type {@link org.wso2.developerstudio.eclipse.gmf.esb.EsbElement}.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Children</em>' containment reference list isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Children</em>' containment reference list.
-     * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getEndpointFlow_Children()
-     * @model containment="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Children</em>' containment reference list.
+	 * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getEndpointFlow_Children()
+	 * @model containment="true"
+	 * @generated
+	 */
     EList<EsbElement> getChildren();
 
 } // EndpointFlow

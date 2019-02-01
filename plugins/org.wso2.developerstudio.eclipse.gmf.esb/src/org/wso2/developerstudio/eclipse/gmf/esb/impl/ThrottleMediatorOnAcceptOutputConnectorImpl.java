@@ -21,22 +21,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.ThrottleMediatorOnAcceptOutputCo
 public class ThrottleMediatorOnAcceptOutputConnectorImpl extends OutputConnectorImpl
         implements ThrottleMediatorOnAcceptOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ThrottleMediatorOnAcceptOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.THROTTLE_MEDIATOR_ON_ACCEPT_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.THROTTLE_MEDIATOR_ON_ACCEPT_OUTPUT_CONNECTOR;
+	}
 
 } // ThrottleMediatorOnAcceptOutputConnectorImpl

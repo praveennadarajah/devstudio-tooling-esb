@@ -20,23 +20,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.FaultMediatorOutputConnector;
  */
 public class FaultMediatorOutputConnectorImpl extends OutputConnectorImpl implements FaultMediatorOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected FaultMediatorOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.FAULT_MEDIATOR_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.FAULT_MEDIATOR_OUTPUT_CONNECTOR;
+	}
 
 } // FaultMediatorOutputConnectorImpl

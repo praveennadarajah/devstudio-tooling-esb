@@ -35,19 +35,19 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface SwitchCaseParentContainer extends EsbNode {
     /**
-     * Returns the value of the '<em><b>Switch Case Container</b></em>' containment reference list.
-     * The list contents are of type {@link org.wso2.developerstudio.eclipse.gmf.esb.SwitchCaseContainer}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Switch Case Container</b></em>' containment reference list.
+	 * The list contents are of type {@link org.wso2.developerstudio.eclipse.gmf.esb.SwitchCaseContainer}.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Switch Case Container</em>' containment reference list isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Switch Case Container</em>' containment reference list.
-     * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getSwitchCaseParentContainer_SwitchCaseContainer()
-     * @model containment="true" required="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Switch Case Container</em>' containment reference list.
+	 * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getSwitchCaseParentContainer_SwitchCaseContainer()
+	 * @model containment="true" required="true"
+	 * @generated
+	 */
     EList<SwitchCaseContainer> getSwitchCaseContainer();
 
 } // SwitchCaseParentContainer

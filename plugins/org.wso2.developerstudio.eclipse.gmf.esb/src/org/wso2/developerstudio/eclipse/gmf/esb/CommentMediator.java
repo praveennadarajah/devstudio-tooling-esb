@@ -33,30 +33,30 @@ package org.wso2.developerstudio.eclipse.gmf.esb;
  */
 public interface CommentMediator extends Mediator {
     /**
-     * Returns the value of the '<em><b>Comment Text</b></em>' attribute.
-     * The default value is <code>"class_name"</code>.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Comment Text</b></em>' attribute.
+	 * The default value is <code>"class_name"</code>.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Comment Text</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Comment Text</em>' attribute.
-     * @see #setCommentText(String)
-     * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getCommentMediator_CommentText()
-     * @model default="class_name"
-     * @generated
-     */
+	 * @return the value of the '<em>Comment Text</em>' attribute.
+	 * @see #setCommentText(String)
+	 * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getCommentMediator_CommentText()
+	 * @model default="class_name"
+	 * @generated
+	 */
     String getCommentText();
 
     /**
-     * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.CommentMediator#getCommentText <em>Comment Text</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.CommentMediator#getCommentText <em>Comment Text</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Comment Text</em>' attribute.
-     * @see #getCommentText()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Comment Text</em>' attribute.
+	 * @see #getCommentText()
+	 * @generated
+	 */
     void setCommentText(String value);
 
 } // CommentMediator

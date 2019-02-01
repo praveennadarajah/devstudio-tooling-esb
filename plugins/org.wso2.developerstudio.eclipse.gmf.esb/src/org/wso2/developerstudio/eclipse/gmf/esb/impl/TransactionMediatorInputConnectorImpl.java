@@ -21,22 +21,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.TransactionMediatorInputConnecto
 public class TransactionMediatorInputConnectorImpl extends InputConnectorImpl
         implements TransactionMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected TransactionMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.TRANSACTION_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.TRANSACTION_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // TransactionMediatorInputConnectorImpl

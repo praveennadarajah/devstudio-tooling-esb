@@ -20,22 +20,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.TaskProperty;
  */
 public class TaskPropertyImpl extends NameValueTypePropertyImpl implements TaskProperty {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected TaskPropertyImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.TASK_PROPERTY;
-    }
+		return EsbPackage.Literals.TASK_PROPERTY;
+	}
 
 } // TaskPropertyImpl

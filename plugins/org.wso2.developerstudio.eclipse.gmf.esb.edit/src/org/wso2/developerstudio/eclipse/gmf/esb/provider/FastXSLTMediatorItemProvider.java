@@ -42,14 +42,14 @@ import org.wso2.developerstudio.eclipse.gmf.esb.FastXSLTMediator;
  */
 public class FastXSLTMediatorItemProvider extends MediatorItemProvider {
     /**
-     * This constructs an instance from a factory and a notifier.
-     * <!-- begin-user-doc -->
+	 * This constructs an instance from a factory and a notifier.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public FastXSLTMediatorItemProvider(AdapterFactory adapterFactory) {
-        super(adapterFactory);
-    }
+		super(adapterFactory);
+	}
 
     /**
      * This returns the property descriptors for the adapted class.
@@ -116,163 +116,163 @@ public class FastXSLTMediatorItemProvider extends MediatorItemProvider {
     }
 
     /**
-     * This adds a property descriptor for the Fast Xslt Static Schema Key feature.
-     * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Fast Xslt Static Schema Key feature.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected void addFastXsltStaticSchemaKeyPropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_FastXSLTMediator_fastXsltStaticSchemaKey_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_FastXSLTMediator_fastXsltStaticSchemaKey_feature", "_UI_FastXSLTMediator_type"),
-                 EsbPackage.Literals.FAST_XSLT_MEDIATOR__FAST_XSLT_STATIC_SCHEMA_KEY,
-                 true,
-                 false,
-                 false,
-                 null,
-                 null,
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_FastXSLTMediator_fastXsltStaticSchemaKey_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_FastXSLTMediator_fastXsltStaticSchemaKey_feature", "_UI_FastXSLTMediator_type"),
+				 EsbPackage.Literals.FAST_XSLT_MEDIATOR__FAST_XSLT_STATIC_SCHEMA_KEY,
+				 true,
+				 false,
+				 false,
+				 null,
+				 null,
+				 null));
+	}
 
     /**
-     * This adds a property descriptor for the Fast Xslt Dynamic Schema Key feature.
-     * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Fast Xslt Dynamic Schema Key feature.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected void addFastXsltDynamicSchemaKeyPropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_FastXSLTMediator_fastXsltDynamicSchemaKey_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_FastXSLTMediator_fastXsltDynamicSchemaKey_feature", "_UI_FastXSLTMediator_type"),
-                 EsbPackage.Literals.FAST_XSLT_MEDIATOR__FAST_XSLT_DYNAMIC_SCHEMA_KEY,
-                 true,
-                 false,
-                 false,
-                 null,
-                 null,
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_FastXSLTMediator_fastXsltDynamicSchemaKey_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_FastXSLTMediator_fastXsltDynamicSchemaKey_feature", "_UI_FastXSLTMediator_type"),
+				 EsbPackage.Literals.FAST_XSLT_MEDIATOR__FAST_XSLT_DYNAMIC_SCHEMA_KEY,
+				 true,
+				 false,
+				 false,
+				 null,
+				 null,
+				 null));
+	}
 
     /**
-     * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
-     * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
-     * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
-     * <!-- begin-user-doc -->
+	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
+	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
+	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
-        if (childrenFeatures == null) {
-            super.getChildrenFeatures(object);
-            childrenFeatures.add(EsbPackage.Literals.FAST_XSLT_MEDIATOR__FAST_XSLT_STATIC_SCHEMA_KEY);
-            childrenFeatures.add(EsbPackage.Literals.FAST_XSLT_MEDIATOR__FAST_XSLT_DYNAMIC_SCHEMA_KEY);
-            childrenFeatures.add(EsbPackage.Literals.FAST_XSLT_MEDIATOR__INPUT_CONNECTOR);
-            childrenFeatures.add(EsbPackage.Literals.FAST_XSLT_MEDIATOR__OUTPUT_CONNECTOR);
-        }
-        return childrenFeatures;
-    }
+		if (childrenFeatures == null) {
+			super.getChildrenFeatures(object);
+			childrenFeatures.add(EsbPackage.Literals.FAST_XSLT_MEDIATOR__FAST_XSLT_STATIC_SCHEMA_KEY);
+			childrenFeatures.add(EsbPackage.Literals.FAST_XSLT_MEDIATOR__FAST_XSLT_DYNAMIC_SCHEMA_KEY);
+			childrenFeatures.add(EsbPackage.Literals.FAST_XSLT_MEDIATOR__INPUT_CONNECTOR);
+			childrenFeatures.add(EsbPackage.Literals.FAST_XSLT_MEDIATOR__OUTPUT_CONNECTOR);
+		}
+		return childrenFeatures;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EStructuralFeature getChildFeature(Object object, Object child) {
-        // Check the type of the specified child object and return the proper feature to use for
-        // adding (see {@link AddCommand}) it as a child.
+		// Check the type of the specified child object and return the proper feature to use for
+		// adding (see {@link AddCommand}) it as a child.
 
-        return super.getChildFeature(object, child);
-    }
+		return super.getChildFeature(object, child);
+	}
 
     /**
-     * This returns FastXSLTMediator.gif.
-     * <!-- begin-user-doc -->
+	 * This returns FastXSLTMediator.gif.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object getImage(Object object) {
-        return overlayImage(object, getResourceLocator().getImage("full/obj16/FastXSLTMediator"));
-    }
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/FastXSLTMediator"));
+	}
 
     /**
-     * This returns the label text for the adapted class.
-     * <!-- begin-user-doc -->
+	 * This returns the label text for the adapted class.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String getText(Object object) {
-        String label = ((FastXSLTMediator)object).getDescription();
-        return label == null || label.length() == 0 ?
-            getString("_UI_FastXSLTMediator_type") :
-            getString("_UI_FastXSLTMediator_type") + " " + label;
-    }
+		String label = ((FastXSLTMediator)object).getDescription();
+		return label == null || label.length() == 0 ?
+			getString("_UI_FastXSLTMediator_type") :
+			getString("_UI_FastXSLTMediator_type") + " " + label;
+	}
 
     /**
-     * This handles model notifications by calling {@link #updateChildren} to update any cached
-     * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
-     * <!-- begin-user-doc -->
+	 * This handles model notifications by calling {@link #updateChildren} to update any cached
+	 * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void notifyChanged(Notification notification) {
-        updateChildren(notification);
+		updateChildren(notification);
 
-        switch (notification.getFeatureID(FastXSLTMediator.class)) {
-            case EsbPackage.FAST_XSLT_MEDIATOR__FAST_XSLT_SCHEMA_KEY_TYPE:
-                fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-                return;
-            case EsbPackage.FAST_XSLT_MEDIATOR__FAST_XSLT_STATIC_SCHEMA_KEY:
-            case EsbPackage.FAST_XSLT_MEDIATOR__FAST_XSLT_DYNAMIC_SCHEMA_KEY:
-            case EsbPackage.FAST_XSLT_MEDIATOR__INPUT_CONNECTOR:
-            case EsbPackage.FAST_XSLT_MEDIATOR__OUTPUT_CONNECTOR:
-                fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
-                return;
-        }
-        super.notifyChanged(notification);
-    }
+		switch (notification.getFeatureID(FastXSLTMediator.class)) {
+			case EsbPackage.FAST_XSLT_MEDIATOR__FAST_XSLT_SCHEMA_KEY_TYPE:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+			case EsbPackage.FAST_XSLT_MEDIATOR__FAST_XSLT_STATIC_SCHEMA_KEY:
+			case EsbPackage.FAST_XSLT_MEDIATOR__FAST_XSLT_DYNAMIC_SCHEMA_KEY:
+			case EsbPackage.FAST_XSLT_MEDIATOR__INPUT_CONNECTOR:
+			case EsbPackage.FAST_XSLT_MEDIATOR__OUTPUT_CONNECTOR:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+				return;
+		}
+		super.notifyChanged(notification);
+	}
 
     /**
-     * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
-     * that can be created under this object.
-     * <!-- begin-user-doc -->
+	 * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
+	 * that can be created under this object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
-        super.collectNewChildDescriptors(newChildDescriptors, object);
+		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.FAST_XSLT_MEDIATOR__FAST_XSLT_STATIC_SCHEMA_KEY,
-                 EsbFactory.eINSTANCE.createRegistryKeyProperty()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.FAST_XSLT_MEDIATOR__FAST_XSLT_STATIC_SCHEMA_KEY,
+				 EsbFactory.eINSTANCE.createRegistryKeyProperty()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.FAST_XSLT_MEDIATOR__FAST_XSLT_DYNAMIC_SCHEMA_KEY,
-                 EsbFactory.eINSTANCE.createNamespacedProperty()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.FAST_XSLT_MEDIATOR__FAST_XSLT_DYNAMIC_SCHEMA_KEY,
+				 EsbFactory.eINSTANCE.createNamespacedProperty()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.FAST_XSLT_MEDIATOR__INPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createFastXSLTMediatorInputConnector()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.FAST_XSLT_MEDIATOR__INPUT_CONNECTOR,
+				 EsbFactory.eINSTANCE.createFastXSLTMediatorInputConnector()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.FAST_XSLT_MEDIATOR__OUTPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createFastXSLTMediatorOutputConnector()));
-    }
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.FAST_XSLT_MEDIATOR__OUTPUT_CONNECTOR,
+				 EsbFactory.eINSTANCE.createFastXSLTMediatorOutputConnector()));
+	}
 
     /**
      * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.

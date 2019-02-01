@@ -30,22 +30,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
 public class CloudConnectorOperationOutputConnectorImpl extends OutputConnectorImpl
         implements CloudConnectorOperationOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected CloudConnectorOperationOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.CLOUD_CONNECTOR_OPERATION_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.CLOUD_CONNECTOR_OPERATION_OUTPUT_CONNECTOR;
+	}
 
 } // CloudConnectorOperationOutputConnectorImpl

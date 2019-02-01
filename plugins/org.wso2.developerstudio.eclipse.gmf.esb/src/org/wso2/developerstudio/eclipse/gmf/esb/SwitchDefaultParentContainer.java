@@ -33,29 +33,29 @@ package org.wso2.developerstudio.eclipse.gmf.esb;
  */
 public interface SwitchDefaultParentContainer extends EsbNode {
     /**
-     * Returns the value of the '<em><b>Switch Default Container</b></em>' containment reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Switch Default Container</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Switch Default Container</em>' containment reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Switch Default Container</em>' containment reference.
-     * @see #setSwitchDefaultContainer(SwitchDefaultContainer)
-     * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getSwitchDefaultParentContainer_SwitchDefaultContainer()
-     * @model containment="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Switch Default Container</em>' containment reference.
+	 * @see #setSwitchDefaultContainer(SwitchDefaultContainer)
+	 * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getSwitchDefaultParentContainer_SwitchDefaultContainer()
+	 * @model containment="true"
+	 * @generated
+	 */
     SwitchDefaultContainer getSwitchDefaultContainer();
 
     /**
-     * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.SwitchDefaultParentContainer#getSwitchDefaultContainer <em>Switch Default Container</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.SwitchDefaultParentContainer#getSwitchDefaultContainer <em>Switch Default Container</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Switch Default Container</em>' containment reference.
-     * @see #getSwitchDefaultContainer()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Switch Default Container</em>' containment reference.
+	 * @see #getSwitchDefaultContainer()
+	 * @generated
+	 */
     void setSwitchDefaultContainer(SwitchDefaultContainer value);
 
 } // SwitchDefaultParentContainer

@@ -21,24 +21,24 @@ import org.wso2.developerstudio.eclipse.gmf.esb.OutputConnector;
  */
 public class DefaultEndPointInputConnectorImpl extends InputConnectorImpl implements DefaultEndPointInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected DefaultEndPointInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.DEFAULT_END_POINT_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.DEFAULT_END_POINT_INPUT_CONNECTOR;
+	}
 
     /*
      * public boolean shouldConnect(OutputConnector sourceEnd) {

@@ -28,137 +28,137 @@ import org.wso2.developerstudio.eclipse.gmf.esb.Mediator;
  */
 public abstract class MediatorImpl extends EsbElementImpl implements Mediator {
     /**
-     * The default value of the '{@link #isReverse() <em>Reverse</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #isReverse() <em>Reverse</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #isReverse()
-     * @generated
-     * @ordered
-     */
+	 * @see #isReverse()
+	 * @generated
+	 * @ordered
+	 */
     protected static final boolean REVERSE_EDEFAULT = false;
     /**
-     * The cached value of the '{@link #isReverse() <em>Reverse</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #isReverse() <em>Reverse</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #isReverse()
-     * @generated
-     * @ordered
-     */
+	 * @see #isReverse()
+	 * @generated
+	 * @ordered
+	 */
     protected boolean reverse = REVERSE_EDEFAULT;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected MediatorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.MEDIATOR;
-    }
+		return EsbPackage.Literals.MEDIATOR;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public boolean isReverse() {
-        return reverse;
-    }
+		return reverse;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setReverse(boolean newReverse) {
-        boolean oldReverse = reverse;
-        reverse = newReverse;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MEDIATOR__REVERSE, oldReverse, reverse));
-    }
+		boolean oldReverse = reverse;
+		reverse = newReverse;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MEDIATOR__REVERSE, oldReverse, reverse));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.MEDIATOR__REVERSE:
-                return isReverse();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.MEDIATOR__REVERSE:
+				return isReverse();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.MEDIATOR__REVERSE:
-                setReverse((Boolean)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.MEDIATOR__REVERSE:
+				setReverse((Boolean)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.MEDIATOR__REVERSE:
-                setReverse(REVERSE_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.MEDIATOR__REVERSE:
+				setReverse(REVERSE_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.MEDIATOR__REVERSE:
-                return reverse != REVERSE_EDEFAULT;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.MEDIATOR__REVERSE:
+				return reverse != REVERSE_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (Reverse: ");
-        result.append(reverse);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (Reverse: ");
+		result.append(reverse);
+		result.append(')');
+		return result.toString();
+	}
 
 } // MediatorImpl

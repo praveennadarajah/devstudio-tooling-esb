@@ -32,222 +32,222 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum InboundEndpointBehaviourType implements Enumerator {
     /**
-     * The '<em><b>Polling Inbound Endpoint</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Polling Inbound Endpoint</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #POLLING_INBOUND_ENDPOINT_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #POLLING_INBOUND_ENDPOINT_VALUE
+	 * @generated
+	 * @ordered
+	 */
     POLLING_INBOUND_ENDPOINT(0, "pollingInboundEndpoint", "pollingInboundEndpoint"),
 
     /**
-     * The '<em><b>Listening Inbound Endpoint</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Listening Inbound Endpoint</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #LISTENING_INBOUND_ENDPOINT_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #LISTENING_INBOUND_ENDPOINT_VALUE
+	 * @generated
+	 * @ordered
+	 */
     LISTENING_INBOUND_ENDPOINT(1, "listeningInboundEndpoint", "listeningInboundEndpoint"),
 
     /**
-     * The '<em><b>Event Based Inbound Endpoint</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Event Based Inbound Endpoint</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #EVENT_BASED_INBOUND_ENDPOINT_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #EVENT_BASED_INBOUND_ENDPOINT_VALUE
+	 * @generated
+	 * @ordered
+	 */
     EVENT_BASED_INBOUND_ENDPOINT(2, "eventBasedInboundEndpoint", "eventBasedInboundEndpoint");
 
     /**
-     * The '<em><b>Polling Inbound Endpoint</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Polling Inbound Endpoint</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Polling Inbound Endpoint</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #POLLING_INBOUND_ENDPOINT
-     * @model name="pollingInboundEndpoint"
-     * @generated
-     * @ordered
-     */
+	 * @see #POLLING_INBOUND_ENDPOINT
+	 * @model name="pollingInboundEndpoint"
+	 * @generated
+	 * @ordered
+	 */
     public static final int POLLING_INBOUND_ENDPOINT_VALUE = 0;
 
     /**
-     * The '<em><b>Listening Inbound Endpoint</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Listening Inbound Endpoint</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Listening Inbound Endpoint</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #LISTENING_INBOUND_ENDPOINT
-     * @model name="listeningInboundEndpoint"
-     * @generated
-     * @ordered
-     */
+	 * @see #LISTENING_INBOUND_ENDPOINT
+	 * @model name="listeningInboundEndpoint"
+	 * @generated
+	 * @ordered
+	 */
     public static final int LISTENING_INBOUND_ENDPOINT_VALUE = 1;
 
     /**
-     * The '<em><b>Event Based Inbound Endpoint</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Event Based Inbound Endpoint</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Event Based Inbound Endpoint</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #EVENT_BASED_INBOUND_ENDPOINT
-     * @model name="eventBasedInboundEndpoint"
-     * @generated
-     * @ordered
-     */
+	 * @see #EVENT_BASED_INBOUND_ENDPOINT
+	 * @model name="eventBasedInboundEndpoint"
+	 * @generated
+	 * @ordered
+	 */
     public static final int EVENT_BASED_INBOUND_ENDPOINT_VALUE = 2;
 
     /**
-     * An array of all the '<em><b>Inbound Endpoint Behaviour Type</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * An array of all the '<em><b>Inbound Endpoint Behaviour Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private static final InboundEndpointBehaviourType[] VALUES_ARRAY = new InboundEndpointBehaviourType[] {
-            POLLING_INBOUND_ENDPOINT,
-            LISTENING_INBOUND_ENDPOINT,
-            EVENT_BASED_INBOUND_ENDPOINT,
-        };
+			POLLING_INBOUND_ENDPOINT,
+			LISTENING_INBOUND_ENDPOINT,
+			EVENT_BASED_INBOUND_ENDPOINT,
+		};
 
     /**
-     * A public read-only list of all the '<em><b>Inbound Endpoint Behaviour Type</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * A public read-only list of all the '<em><b>Inbound Endpoint Behaviour Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public static final List<InboundEndpointBehaviourType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
     /**
-     * Returns the '<em><b>Inbound Endpoint Behaviour Type</b></em>' literal with the specified literal value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Inbound Endpoint Behaviour Type</b></em>' literal with the specified literal value.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param literal the literal.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static InboundEndpointBehaviourType get(String literal) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            InboundEndpointBehaviourType result = VALUES_ARRAY[i];
-            if (result.toString().equals(literal)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			InboundEndpointBehaviourType result = VALUES_ARRAY[i];
+			if (result.toString().equals(literal)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
     /**
-     * Returns the '<em><b>Inbound Endpoint Behaviour Type</b></em>' literal with the specified name.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Inbound Endpoint Behaviour Type</b></em>' literal with the specified name.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param name the name.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static InboundEndpointBehaviourType getByName(String name) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            InboundEndpointBehaviourType result = VALUES_ARRAY[i];
-            if (result.getName().equals(name)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			InboundEndpointBehaviourType result = VALUES_ARRAY[i];
+			if (result.getName().equals(name)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
     /**
-     * Returns the '<em><b>Inbound Endpoint Behaviour Type</b></em>' literal with the specified integer value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Inbound Endpoint Behaviour Type</b></em>' literal with the specified integer value.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the integer value.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static InboundEndpointBehaviourType get(int value) {
-        switch (value) {
-            case POLLING_INBOUND_ENDPOINT_VALUE: return POLLING_INBOUND_ENDPOINT;
-            case LISTENING_INBOUND_ENDPOINT_VALUE: return LISTENING_INBOUND_ENDPOINT;
-            case EVENT_BASED_INBOUND_ENDPOINT_VALUE: return EVENT_BASED_INBOUND_ENDPOINT;
-        }
-        return null;
-    }
+		switch (value) {
+			case POLLING_INBOUND_ENDPOINT_VALUE: return POLLING_INBOUND_ENDPOINT;
+			case LISTENING_INBOUND_ENDPOINT_VALUE: return LISTENING_INBOUND_ENDPOINT;
+			case EVENT_BASED_INBOUND_ENDPOINT_VALUE: return EVENT_BASED_INBOUND_ENDPOINT;
+		}
+		return null;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final int value;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final String name;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final String literal;
 
     /**
-     * Only this class can construct instances.
-     * <!-- begin-user-doc -->
+	 * Only this class can construct instances.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private InboundEndpointBehaviourType(int value, String name, String literal) {
-        this.value = value;
-        this.name = name;
-        this.literal = literal;
-    }
+		this.value = value;
+		this.name = name;
+		this.literal = literal;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public int getValue() {
-      return value;
-    }
+	  return value;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getName() {
-      return name;
-    }
+	  return name;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getLiteral() {
-      return literal;
-    }
+	  return literal;
+	}
 
     /**
-     * Returns the literal value of the enumerator, which is its string representation.
-     * <!-- begin-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string representation.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        return literal;
-    }
+		return literal;
+	}
 
 } // InboundEndpointBehaviourType

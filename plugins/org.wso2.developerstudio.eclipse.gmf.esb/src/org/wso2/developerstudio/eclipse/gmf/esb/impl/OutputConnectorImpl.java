@@ -37,99 +37,99 @@ import org.wso2.developerstudio.eclipse.gmf.esb.OutputConnector;
  */
 public abstract class OutputConnectorImpl extends EsbConnectorImpl implements OutputConnector {
     /**
-     * The cached value of the '{@link #getOutgoingLink() <em>Outgoing Link</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOutgoingLink() <em>Outgoing Link</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutgoingLink()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutgoingLink()
+	 * @generated
+	 * @ordered
+	 */
     protected EsbLink outgoingLink;
 
     /**
-     * The cached value of the '{@link #getCommentMediators() <em>Comment Mediators</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getCommentMediators() <em>Comment Mediators</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getCommentMediators()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCommentMediators()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<CommentMediator> commentMediators;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected OutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.OUTPUT_CONNECTOR;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EsbLink getOutgoingLink() {
-        return outgoingLink;
-    }
+		return outgoingLink;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetOutgoingLink(EsbLink newOutgoingLink, NotificationChain msgs) {
-        EsbLink oldOutgoingLink = outgoingLink;
-        outgoingLink = newOutgoingLink;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK, oldOutgoingLink, newOutgoingLink);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		EsbLink oldOutgoingLink = outgoingLink;
+		outgoingLink = newOutgoingLink;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK, oldOutgoingLink, newOutgoingLink);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setOutgoingLink(EsbLink newOutgoingLink) {
-        if (newOutgoingLink != outgoingLink) {
-            NotificationChain msgs = null;
-            if (outgoingLink != null)
-                msgs = ((InternalEObject)outgoingLink).eInverseRemove(this, EsbPackage.ESB_LINK__SOURCE, EsbLink.class, msgs);
-            if (newOutgoingLink != null)
-                msgs = ((InternalEObject)newOutgoingLink).eInverseAdd(this, EsbPackage.ESB_LINK__SOURCE, EsbLink.class, msgs);
-            msgs = basicSetOutgoingLink(newOutgoingLink, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK, newOutgoingLink, newOutgoingLink));
-    }
+		if (newOutgoingLink != outgoingLink) {
+			NotificationChain msgs = null;
+			if (outgoingLink != null)
+				msgs = ((InternalEObject)outgoingLink).eInverseRemove(this, EsbPackage.ESB_LINK__SOURCE, EsbLink.class, msgs);
+			if (newOutgoingLink != null)
+				msgs = ((InternalEObject)newOutgoingLink).eInverseAdd(this, EsbPackage.ESB_LINK__SOURCE, EsbLink.class, msgs);
+			msgs = basicSetOutgoingLink(newOutgoingLink, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK, newOutgoingLink, newOutgoingLink));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EList<CommentMediator> getCommentMediators() {
-        if (commentMediators == null) {
-            commentMediators = new EObjectContainmentEList<CommentMediator>(CommentMediator.class, this, EsbPackage.OUTPUT_CONNECTOR__COMMENT_MEDIATORS);
-        }
-        return commentMediators;
-    }
+		if (commentMediators == null) {
+			commentMediators = new EObjectContainmentEList<CommentMediator>(CommentMediator.class, this, EsbPackage.OUTPUT_CONNECTOR__COMMENT_MEDIATORS);
+		}
+		return commentMediators;
+	}
 
     /**
      * <!-- begin-user-doc -->
@@ -143,111 +143,111 @@ public abstract class OutputConnectorImpl extends EsbConnectorImpl implements Ou
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK:
-                if (outgoingLink != null)
-                    msgs = ((InternalEObject)outgoingLink).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK, null, msgs);
-                return basicSetOutgoingLink((EsbLink)otherEnd, msgs);
-        }
-        return super.eInverseAdd(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK:
+				if (outgoingLink != null)
+					msgs = ((InternalEObject)outgoingLink).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK, null, msgs);
+				return basicSetOutgoingLink((EsbLink)otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK:
-                return basicSetOutgoingLink(null, msgs);
-            case EsbPackage.OUTPUT_CONNECTOR__COMMENT_MEDIATORS:
-                return ((InternalEList<?>)getCommentMediators()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK:
+				return basicSetOutgoingLink(null, msgs);
+			case EsbPackage.OUTPUT_CONNECTOR__COMMENT_MEDIATORS:
+				return ((InternalEList<?>)getCommentMediators()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK:
-                return getOutgoingLink();
-            case EsbPackage.OUTPUT_CONNECTOR__COMMENT_MEDIATORS:
-                return getCommentMediators();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK:
+				return getOutgoingLink();
+			case EsbPackage.OUTPUT_CONNECTOR__COMMENT_MEDIATORS:
+				return getCommentMediators();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK:
-                setOutgoingLink((EsbLink)newValue);
-                return;
-            case EsbPackage.OUTPUT_CONNECTOR__COMMENT_MEDIATORS:
-                getCommentMediators().clear();
-                getCommentMediators().addAll((Collection<? extends CommentMediator>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK:
+				setOutgoingLink((EsbLink)newValue);
+				return;
+			case EsbPackage.OUTPUT_CONNECTOR__COMMENT_MEDIATORS:
+				getCommentMediators().clear();
+				getCommentMediators().addAll((Collection<? extends CommentMediator>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK:
-                setOutgoingLink((EsbLink)null);
-                return;
-            case EsbPackage.OUTPUT_CONNECTOR__COMMENT_MEDIATORS:
-                getCommentMediators().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK:
+				setOutgoingLink((EsbLink)null);
+				return;
+			case EsbPackage.OUTPUT_CONNECTOR__COMMENT_MEDIATORS:
+				getCommentMediators().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK:
-                return outgoingLink != null;
-            case EsbPackage.OUTPUT_CONNECTOR__COMMENT_MEDIATORS:
-                return commentMediators != null && !commentMediators.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.OUTPUT_CONNECTOR__OUTGOING_LINK:
+				return outgoingLink != null;
+			case EsbPackage.OUTPUT_CONNECTOR__COMMENT_MEDIATORS:
+				return commentMediators != null && !commentMediators.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } // OutputConnectorImpl

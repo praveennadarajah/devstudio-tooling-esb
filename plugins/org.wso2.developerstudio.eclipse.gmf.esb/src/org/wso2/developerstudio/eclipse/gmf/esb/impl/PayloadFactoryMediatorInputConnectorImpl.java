@@ -21,22 +21,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.PayloadFactoryMediatorInputConne
 public class PayloadFactoryMediatorInputConnectorImpl extends InputConnectorImpl
         implements PayloadFactoryMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected PayloadFactoryMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.PAYLOAD_FACTORY_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.PAYLOAD_FACTORY_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // PayloadFactoryMediatorInputConnectorImpl

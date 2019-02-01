@@ -34,55 +34,55 @@ package org.wso2.developerstudio.eclipse.gmf.esb;
  */
 public interface LoopBackMediator extends Mediator {
     /**
-     * Returns the value of the '<em><b>Input Connector</b></em>' containment reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Input Connector</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Input Connector</em>' containment reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Input Connector</em>' containment reference.
-     * @see #setInputConnector(LoopBackMediatorInputConnector)
-     * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getLoopBackMediator_InputConnector()
-     * @model containment="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Input Connector</em>' containment reference.
+	 * @see #setInputConnector(LoopBackMediatorInputConnector)
+	 * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getLoopBackMediator_InputConnector()
+	 * @model containment="true"
+	 * @generated
+	 */
     LoopBackMediatorInputConnector getInputConnector();
 
     /**
-     * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.LoopBackMediator#getInputConnector <em>Input Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.LoopBackMediator#getInputConnector <em>Input Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Input Connector</em>' containment reference.
-     * @see #getInputConnector()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Input Connector</em>' containment reference.
+	 * @see #getInputConnector()
+	 * @generated
+	 */
     void setInputConnector(LoopBackMediatorInputConnector value);
 
     /**
-     * Returns the value of the '<em><b>Output Connector</b></em>' containment reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Output Connector</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Output Connector</em>' containment reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Output Connector</em>' containment reference.
-     * @see #setOutputConnector(LoopBackMediatorOutputConnector)
-     * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getLoopBackMediator_OutputConnector()
-     * @model containment="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Output Connector</em>' containment reference.
+	 * @see #setOutputConnector(LoopBackMediatorOutputConnector)
+	 * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getLoopBackMediator_OutputConnector()
+	 * @model containment="true"
+	 * @generated
+	 */
     LoopBackMediatorOutputConnector getOutputConnector();
 
     /**
-     * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.LoopBackMediator#getOutputConnector <em>Output Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.LoopBackMediator#getOutputConnector <em>Output Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Output Connector</em>' containment reference.
-     * @see #getOutputConnector()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Output Connector</em>' containment reference.
+	 * @see #getOutputConnector()
+	 * @generated
+	 */
     void setOutputConnector(LoopBackMediatorOutputConnector value);
 
 } // LoopBackMediator

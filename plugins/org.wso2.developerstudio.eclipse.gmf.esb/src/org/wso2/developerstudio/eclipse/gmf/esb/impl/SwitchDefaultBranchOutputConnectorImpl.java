@@ -21,23 +21,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.SwitchDefaultBranchOutputConnect
 public class SwitchDefaultBranchOutputConnectorImpl extends OutputConnectorImpl
         implements SwitchDefaultBranchOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected SwitchDefaultBranchOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.SWITCH_DEFAULT_BRANCH_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.SWITCH_DEFAULT_BRANCH_OUTPUT_CONNECTOR;
+	}
 
 } // SwitchDefaultBranchOutputConnectorImpl

@@ -49,46 +49,46 @@ import org.wso2.developerstudio.eclipse.gmf.esb.SendMediatorOutputConnector;
  */
 public abstract class InputConnectorImpl extends EsbConnectorImpl implements InputConnector {
     /**
-     * The cached value of the '{@link #getIncomingLinks() <em>Incoming Links</em>}' reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getIncomingLinks() <em>Incoming Links</em>}' reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getIncomingLinks()
-     * @generated
-     * @ordered
-     */
+	 * @see #getIncomingLinks()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<EsbLink> incomingLinks;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected InputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.INPUT_CONNECTOR;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EList<EsbLink> getIncomingLinks() {
-        if (incomingLinks == null) {
-            incomingLinks = new EObjectWithInverseResolvingEList<EsbLink>(EsbLink.class, this, EsbPackage.INPUT_CONNECTOR__INCOMING_LINKS, EsbPackage.ESB_LINK__TARGET);
-        }
-        return incomingLinks;
-    }
+		if (incomingLinks == null) {
+			incomingLinks = new EObjectWithInverseResolvingEList<EsbLink>(EsbLink.class, this, EsbPackage.INPUT_CONNECTOR__INCOMING_LINKS, EsbPackage.ESB_LINK__TARGET);
+		}
+		return incomingLinks;
+	}
 
     /**
      * <!-- begin-user-doc -->
@@ -160,98 +160,98 @@ public abstract class InputConnectorImpl extends EsbConnectorImpl implements Inp
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
 
     public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.INPUT_CONNECTOR__INCOMING_LINKS:
-                return ((InternalEList<InternalEObject>)(InternalEList<?>)getIncomingLinks()).basicAdd(otherEnd, msgs);
-        }
-        return super.eInverseAdd(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.INPUT_CONNECTOR__INCOMING_LINKS:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getIncomingLinks()).basicAdd(otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.INPUT_CONNECTOR__INCOMING_LINKS:
-                return ((InternalEList<?>)getIncomingLinks()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.INPUT_CONNECTOR__INCOMING_LINKS:
+				return ((InternalEList<?>)getIncomingLinks()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.INPUT_CONNECTOR__INCOMING_LINKS:
-                return getIncomingLinks();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.INPUT_CONNECTOR__INCOMING_LINKS:
+				return getIncomingLinks();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
 
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.INPUT_CONNECTOR__INCOMING_LINKS:
-                getIncomingLinks().clear();
-                getIncomingLinks().addAll((Collection<? extends EsbLink>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.INPUT_CONNECTOR__INCOMING_LINKS:
+				getIncomingLinks().clear();
+				getIncomingLinks().addAll((Collection<? extends EsbLink>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.INPUT_CONNECTOR__INCOMING_LINKS:
-                getIncomingLinks().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.INPUT_CONNECTOR__INCOMING_LINKS:
+				getIncomingLinks().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.INPUT_CONNECTOR__INCOMING_LINKS:
-                return incomingLinks != null && !incomingLinks.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.INPUT_CONNECTOR__INCOMING_LINKS:
+				return incomingLinks != null && !incomingLinks.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } // InputConnectorImpl

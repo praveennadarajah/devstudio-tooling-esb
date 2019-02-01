@@ -20,23 +20,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.SpringMediatorOutputConnector;
  */
 public class SpringMediatorOutputConnectorImpl extends OutputConnectorImpl implements SpringMediatorOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected SpringMediatorOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.SPRING_MEDIATOR_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.SPRING_MEDIATOR_OUTPUT_CONNECTOR;
+	}
 
 } // SpringMediatorOutputConnectorImpl

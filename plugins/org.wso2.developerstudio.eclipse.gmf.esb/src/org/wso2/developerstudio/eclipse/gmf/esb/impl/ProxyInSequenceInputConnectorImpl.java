@@ -29,22 +29,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.ProxyInSequenceInputConnector;
  */
 public class ProxyInSequenceInputConnectorImpl extends InputConnectorImpl implements ProxyInSequenceInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ProxyInSequenceInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.PROXY_IN_SEQUENCE_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.PROXY_IN_SEQUENCE_INPUT_CONNECTOR;
+	}
 
 } // ProxyInSequenceInputConnectorImpl

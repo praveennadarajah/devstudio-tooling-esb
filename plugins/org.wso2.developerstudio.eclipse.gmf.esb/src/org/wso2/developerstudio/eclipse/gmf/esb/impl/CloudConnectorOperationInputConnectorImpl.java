@@ -30,22 +30,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
 public class CloudConnectorOperationInputConnectorImpl extends InputConnectorImpl
         implements CloudConnectorOperationInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected CloudConnectorOperationInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.CLOUD_CONNECTOR_OPERATION_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.CLOUD_CONNECTOR_OPERATION_INPUT_CONNECTOR;
+	}
 
 } // CloudConnectorOperationInputConnectorImpl

@@ -36,107 +36,107 @@ package org.wso2.developerstudio.eclipse.gmf.esb;
  */
 public interface EntitlementContainer extends EsbNode {
     /**
-     * Returns the value of the '<em><b>On Reject Container</b></em>' containment reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>On Reject Container</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>On Reject Container</em>' containment reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>On Reject Container</em>' containment reference.
-     * @see #setOnRejectContainer(EntitlementOnRejectContainer)
-     * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getEntitlementContainer_OnRejectContainer()
-     * @model containment="true"
-     * @generated
-     */
+	 * @return the value of the '<em>On Reject Container</em>' containment reference.
+	 * @see #setOnRejectContainer(EntitlementOnRejectContainer)
+	 * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getEntitlementContainer_OnRejectContainer()
+	 * @model containment="true"
+	 * @generated
+	 */
     EntitlementOnRejectContainer getOnRejectContainer();
 
     /**
-     * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.EntitlementContainer#getOnRejectContainer <em>On Reject Container</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.EntitlementContainer#getOnRejectContainer <em>On Reject Container</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>On Reject Container</em>' containment reference.
-     * @see #getOnRejectContainer()
-     * @generated
-     */
+	 * @param value the new value of the '<em>On Reject Container</em>' containment reference.
+	 * @see #getOnRejectContainer()
+	 * @generated
+	 */
     void setOnRejectContainer(EntitlementOnRejectContainer value);
 
     /**
-     * Returns the value of the '<em><b>On Accept Container</b></em>' containment reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>On Accept Container</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>On Accept Container</em>' containment reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>On Accept Container</em>' containment reference.
-     * @see #setOnAcceptContainer(EntitlementOnAcceptContainer)
-     * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getEntitlementContainer_OnAcceptContainer()
-     * @model containment="true"
-     * @generated
-     */
+	 * @return the value of the '<em>On Accept Container</em>' containment reference.
+	 * @see #setOnAcceptContainer(EntitlementOnAcceptContainer)
+	 * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getEntitlementContainer_OnAcceptContainer()
+	 * @model containment="true"
+	 * @generated
+	 */
     EntitlementOnAcceptContainer getOnAcceptContainer();
 
     /**
-     * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.EntitlementContainer#getOnAcceptContainer <em>On Accept Container</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.EntitlementContainer#getOnAcceptContainer <em>On Accept Container</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>On Accept Container</em>' containment reference.
-     * @see #getOnAcceptContainer()
-     * @generated
-     */
+	 * @param value the new value of the '<em>On Accept Container</em>' containment reference.
+	 * @see #getOnAcceptContainer()
+	 * @generated
+	 */
     void setOnAcceptContainer(EntitlementOnAcceptContainer value);
 
     /**
-     * Returns the value of the '<em><b>Advice Container</b></em>' containment reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Advice Container</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Advice Container</em>' containment reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Advice Container</em>' containment reference.
-     * @see #setAdviceContainer(EntitlementAdviceContainer)
-     * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getEntitlementContainer_AdviceContainer()
-     * @model containment="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Advice Container</em>' containment reference.
+	 * @see #setAdviceContainer(EntitlementAdviceContainer)
+	 * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getEntitlementContainer_AdviceContainer()
+	 * @model containment="true"
+	 * @generated
+	 */
     EntitlementAdviceContainer getAdviceContainer();
 
     /**
-     * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.EntitlementContainer#getAdviceContainer <em>Advice Container</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.EntitlementContainer#getAdviceContainer <em>Advice Container</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Advice Container</em>' containment reference.
-     * @see #getAdviceContainer()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Advice Container</em>' containment reference.
+	 * @see #getAdviceContainer()
+	 * @generated
+	 */
     void setAdviceContainer(EntitlementAdviceContainer value);
 
     /**
-     * Returns the value of the '<em><b>Obligations Container</b></em>' containment reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Obligations Container</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Obligations Container</em>' containment reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Obligations Container</em>' containment reference.
-     * @see #setObligationsContainer(EntitlementObligationsContainer)
-     * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getEntitlementContainer_ObligationsContainer()
-     * @model containment="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Obligations Container</em>' containment reference.
+	 * @see #setObligationsContainer(EntitlementObligationsContainer)
+	 * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getEntitlementContainer_ObligationsContainer()
+	 * @model containment="true"
+	 * @generated
+	 */
     EntitlementObligationsContainer getObligationsContainer();
 
     /**
-     * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.EntitlementContainer#getObligationsContainer <em>Obligations Container</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.EntitlementContainer#getObligationsContainer <em>Obligations Container</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Obligations Container</em>' containment reference.
-     * @see #getObligationsContainer()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Obligations Container</em>' containment reference.
+	 * @see #getObligationsContainer()
+	 * @generated
+	 */
     void setObligationsContainer(EntitlementObligationsContainer value);
 
 } // EntitlementContainer

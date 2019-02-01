@@ -20,22 +20,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
  */
 public class CacheMediatorInputConnectorImpl extends InputConnectorImpl implements CacheMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected CacheMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.CACHE_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.CACHE_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // CacheMediatorInputConnectorImpl

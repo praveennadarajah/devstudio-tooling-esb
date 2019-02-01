@@ -32,243 +32,243 @@ import org.wso2.developerstudio.eclipse.gmf.esb.MessageBuilder;
  */
 public class MessageBuilderImpl extends EsbNodeImpl implements MessageBuilder {
     /**
-     * The default value of the '{@link #getContentType() <em>Content Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getContentType() <em>Content Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getContentType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getContentType()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String CONTENT_TYPE_EDEFAULT = null;
 
     /**
-     * The cached value of the '{@link #getContentType() <em>Content Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getContentType() <em>Content Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getContentType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getContentType()
+	 * @generated
+	 * @ordered
+	 */
     protected String contentType = CONTENT_TYPE_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getBuilderClass() <em>Builder Class</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getBuilderClass() <em>Builder Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getBuilderClass()
-     * @generated
-     * @ordered
-     */
+	 * @see #getBuilderClass()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String BUILDER_CLASS_EDEFAULT = null;
 
     /**
-     * The cached value of the '{@link #getBuilderClass() <em>Builder Class</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getBuilderClass() <em>Builder Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getBuilderClass()
-     * @generated
-     * @ordered
-     */
+	 * @see #getBuilderClass()
+	 * @generated
+	 * @ordered
+	 */
     protected String builderClass = BUILDER_CLASS_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getFormatterClass() <em>Formatter Class</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getFormatterClass() <em>Formatter Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getFormatterClass()
-     * @generated
-     * @ordered
-     */
+	 * @see #getFormatterClass()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String FORMATTER_CLASS_EDEFAULT = null;
 
     /**
-     * The cached value of the '{@link #getFormatterClass() <em>Formatter Class</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getFormatterClass() <em>Formatter Class</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getFormatterClass()
-     * @generated
-     * @ordered
-     */
+	 * @see #getFormatterClass()
+	 * @generated
+	 * @ordered
+	 */
     protected String formatterClass = FORMATTER_CLASS_EDEFAULT;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected MessageBuilderImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.MESSAGE_BUILDER;
-    }
+		return EsbPackage.Literals.MESSAGE_BUILDER;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getContentType() {
-        return contentType;
-    }
+		return contentType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setContentType(String newContentType) {
-        String oldContentType = contentType;
-        contentType = newContentType;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_BUILDER__CONTENT_TYPE, oldContentType, contentType));
-    }
+		String oldContentType = contentType;
+		contentType = newContentType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_BUILDER__CONTENT_TYPE, oldContentType, contentType));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getBuilderClass() {
-        return builderClass;
-    }
+		return builderClass;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setBuilderClass(String newBuilderClass) {
-        String oldBuilderClass = builderClass;
-        builderClass = newBuilderClass;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_BUILDER__BUILDER_CLASS, oldBuilderClass, builderClass));
-    }
+		String oldBuilderClass = builderClass;
+		builderClass = newBuilderClass;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_BUILDER__BUILDER_CLASS, oldBuilderClass, builderClass));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getFormatterClass() {
-        return formatterClass;
-    }
+		return formatterClass;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setFormatterClass(String newFormatterClass) {
-        String oldFormatterClass = formatterClass;
-        formatterClass = newFormatterClass;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_BUILDER__FORMATTER_CLASS, oldFormatterClass, formatterClass));
-    }
+		String oldFormatterClass = formatterClass;
+		formatterClass = newFormatterClass;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_BUILDER__FORMATTER_CLASS, oldFormatterClass, formatterClass));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.MESSAGE_BUILDER__CONTENT_TYPE:
-                return getContentType();
-            case EsbPackage.MESSAGE_BUILDER__BUILDER_CLASS:
-                return getBuilderClass();
-            case EsbPackage.MESSAGE_BUILDER__FORMATTER_CLASS:
-                return getFormatterClass();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.MESSAGE_BUILDER__CONTENT_TYPE:
+				return getContentType();
+			case EsbPackage.MESSAGE_BUILDER__BUILDER_CLASS:
+				return getBuilderClass();
+			case EsbPackage.MESSAGE_BUILDER__FORMATTER_CLASS:
+				return getFormatterClass();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.MESSAGE_BUILDER__CONTENT_TYPE:
-                setContentType((String)newValue);
-                return;
-            case EsbPackage.MESSAGE_BUILDER__BUILDER_CLASS:
-                setBuilderClass((String)newValue);
-                return;
-            case EsbPackage.MESSAGE_BUILDER__FORMATTER_CLASS:
-                setFormatterClass((String)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.MESSAGE_BUILDER__CONTENT_TYPE:
+				setContentType((String)newValue);
+				return;
+			case EsbPackage.MESSAGE_BUILDER__BUILDER_CLASS:
+				setBuilderClass((String)newValue);
+				return;
+			case EsbPackage.MESSAGE_BUILDER__FORMATTER_CLASS:
+				setFormatterClass((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.MESSAGE_BUILDER__CONTENT_TYPE:
-                setContentType(CONTENT_TYPE_EDEFAULT);
-                return;
-            case EsbPackage.MESSAGE_BUILDER__BUILDER_CLASS:
-                setBuilderClass(BUILDER_CLASS_EDEFAULT);
-                return;
-            case EsbPackage.MESSAGE_BUILDER__FORMATTER_CLASS:
-                setFormatterClass(FORMATTER_CLASS_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.MESSAGE_BUILDER__CONTENT_TYPE:
+				setContentType(CONTENT_TYPE_EDEFAULT);
+				return;
+			case EsbPackage.MESSAGE_BUILDER__BUILDER_CLASS:
+				setBuilderClass(BUILDER_CLASS_EDEFAULT);
+				return;
+			case EsbPackage.MESSAGE_BUILDER__FORMATTER_CLASS:
+				setFormatterClass(FORMATTER_CLASS_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.MESSAGE_BUILDER__CONTENT_TYPE:
-                return CONTENT_TYPE_EDEFAULT == null ? contentType != null : !CONTENT_TYPE_EDEFAULT.equals(contentType);
-            case EsbPackage.MESSAGE_BUILDER__BUILDER_CLASS:
-                return BUILDER_CLASS_EDEFAULT == null ? builderClass != null : !BUILDER_CLASS_EDEFAULT.equals(builderClass);
-            case EsbPackage.MESSAGE_BUILDER__FORMATTER_CLASS:
-                return FORMATTER_CLASS_EDEFAULT == null ? formatterClass != null : !FORMATTER_CLASS_EDEFAULT.equals(formatterClass);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.MESSAGE_BUILDER__CONTENT_TYPE:
+				return CONTENT_TYPE_EDEFAULT == null ? contentType != null : !CONTENT_TYPE_EDEFAULT.equals(contentType);
+			case EsbPackage.MESSAGE_BUILDER__BUILDER_CLASS:
+				return BUILDER_CLASS_EDEFAULT == null ? builderClass != null : !BUILDER_CLASS_EDEFAULT.equals(builderClass);
+			case EsbPackage.MESSAGE_BUILDER__FORMATTER_CLASS:
+				return FORMATTER_CLASS_EDEFAULT == null ? formatterClass != null : !FORMATTER_CLASS_EDEFAULT.equals(formatterClass);
+		}
+		return super.eIsSet(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (contentType: ");
-        result.append(contentType);
-        result.append(", builderClass: ");
-        result.append(builderClass);
-        result.append(", formatterClass: ");
-        result.append(formatterClass);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (contentType: ");
+		result.append(contentType);
+		result.append(", builderClass: ");
+		result.append(builderClass);
+		result.append(", formatterClass: ");
+		result.append(formatterClass);
+		result.append(')');
+		return result.toString();
+	}
 
 } // MessageBuilderImpl

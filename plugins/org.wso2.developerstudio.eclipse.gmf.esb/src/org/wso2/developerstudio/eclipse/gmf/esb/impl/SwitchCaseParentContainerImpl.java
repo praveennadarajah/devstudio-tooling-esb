@@ -46,118 +46,118 @@ import org.wso2.developerstudio.eclipse.gmf.esb.SwitchCaseParentContainer;
  */
 public class SwitchCaseParentContainerImpl extends EsbNodeImpl implements SwitchCaseParentContainer {
     /**
-     * The cached value of the '{@link #getSwitchCaseContainer() <em>Switch Case Container</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getSwitchCaseContainer() <em>Switch Case Container</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getSwitchCaseContainer()
-     * @generated
-     * @ordered
-     */
+	 * @see #getSwitchCaseContainer()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<SwitchCaseContainer> switchCaseContainer;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected SwitchCaseParentContainerImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.SWITCH_CASE_PARENT_CONTAINER;
-    }
+		return EsbPackage.Literals.SWITCH_CASE_PARENT_CONTAINER;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EList<SwitchCaseContainer> getSwitchCaseContainer() {
-        if (switchCaseContainer == null) {
-            switchCaseContainer = new EObjectContainmentEList<SwitchCaseContainer>(SwitchCaseContainer.class, this, EsbPackage.SWITCH_CASE_PARENT_CONTAINER__SWITCH_CASE_CONTAINER);
-        }
-        return switchCaseContainer;
-    }
+		if (switchCaseContainer == null) {
+			switchCaseContainer = new EObjectContainmentEList<SwitchCaseContainer>(SwitchCaseContainer.class, this, EsbPackage.SWITCH_CASE_PARENT_CONTAINER__SWITCH_CASE_CONTAINER);
+		}
+		return switchCaseContainer;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.SWITCH_CASE_PARENT_CONTAINER__SWITCH_CASE_CONTAINER:
-                return ((InternalEList<?>)getSwitchCaseContainer()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.SWITCH_CASE_PARENT_CONTAINER__SWITCH_CASE_CONTAINER:
+				return ((InternalEList<?>)getSwitchCaseContainer()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.SWITCH_CASE_PARENT_CONTAINER__SWITCH_CASE_CONTAINER:
-                return getSwitchCaseContainer();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.SWITCH_CASE_PARENT_CONTAINER__SWITCH_CASE_CONTAINER:
+				return getSwitchCaseContainer();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.SWITCH_CASE_PARENT_CONTAINER__SWITCH_CASE_CONTAINER:
-                getSwitchCaseContainer().clear();
-                getSwitchCaseContainer().addAll((Collection<? extends SwitchCaseContainer>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.SWITCH_CASE_PARENT_CONTAINER__SWITCH_CASE_CONTAINER:
+				getSwitchCaseContainer().clear();
+				getSwitchCaseContainer().addAll((Collection<? extends SwitchCaseContainer>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.SWITCH_CASE_PARENT_CONTAINER__SWITCH_CASE_CONTAINER:
-                getSwitchCaseContainer().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.SWITCH_CASE_PARENT_CONTAINER__SWITCH_CASE_CONTAINER:
+				getSwitchCaseContainer().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.SWITCH_CASE_PARENT_CONTAINER__SWITCH_CASE_CONTAINER:
-                return switchCaseContainer != null && !switchCaseContainer.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.SWITCH_CASE_PARENT_CONTAINER__SWITCH_CASE_CONTAINER:
+				return switchCaseContainer != null && !switchCaseContainer.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } // SwitchCaseParentContainerImpl

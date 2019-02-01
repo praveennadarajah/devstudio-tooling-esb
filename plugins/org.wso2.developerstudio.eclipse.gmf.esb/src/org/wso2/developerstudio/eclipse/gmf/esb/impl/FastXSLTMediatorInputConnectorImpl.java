@@ -29,22 +29,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.FastXSLTMediatorInputConnector;
  */
 public class FastXSLTMediatorInputConnectorImpl extends InputConnectorImpl implements FastXSLTMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected FastXSLTMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.FAST_XSLT_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.FAST_XSLT_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // FastXSLTMediatorInputConnectorImpl

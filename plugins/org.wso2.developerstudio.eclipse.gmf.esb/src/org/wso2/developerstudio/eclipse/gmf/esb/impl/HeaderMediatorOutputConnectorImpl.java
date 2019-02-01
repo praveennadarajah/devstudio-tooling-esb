@@ -20,22 +20,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.HeaderMediatorOutputConnector;
  */
 public class HeaderMediatorOutputConnectorImpl extends OutputConnectorImpl implements HeaderMediatorOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected HeaderMediatorOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.HEADER_MEDIATOR_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.HEADER_MEDIATOR_OUTPUT_CONNECTOR;
+	}
 
 } // HeaderMediatorOutputConnectorImpl

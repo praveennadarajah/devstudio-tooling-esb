@@ -21,22 +21,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.RMSequenceMediatorOutputConnecto
 public class RMSequenceMediatorOutputConnectorImpl extends OutputConnectorImpl
         implements RMSequenceMediatorOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected RMSequenceMediatorOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.RM_SEQUENCE_MEDIATOR_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.RM_SEQUENCE_MEDIATOR_OUTPUT_CONNECTOR;
+	}
 
 } // RMSequenceMediatorOutputConnectorImpl

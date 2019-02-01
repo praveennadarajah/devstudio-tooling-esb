@@ -39,124 +39,124 @@ import org.wso2.developerstudio.eclipse.gmf.esb.RuleResultsConfiguration;
  */
 public class RuleResultsConfigurationImpl extends EObjectImpl implements RuleResultsConfiguration {
     /**
-     * The cached value of the '{@link #getResults() <em>Results</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getResults() <em>Results</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getResults()
-     * @generated
-     * @ordered
-     */
+	 * @see #getResults()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<RuleResult> results;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected RuleResultsConfigurationImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.RULE_RESULTS_CONFIGURATION;
-    }
+		return EsbPackage.Literals.RULE_RESULTS_CONFIGURATION;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EList<RuleResult> getResults() {
-        if (results == null) {
-            results = new EObjectContainmentEList<RuleResult>(RuleResult.class, this, EsbPackage.RULE_RESULTS_CONFIGURATION__RESULTS);
-        }
-        return results;
-    }
+		if (results == null) {
+			results = new EObjectContainmentEList<RuleResult>(RuleResult.class, this, EsbPackage.RULE_RESULTS_CONFIGURATION__RESULTS);
+		}
+		return results;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.RULE_RESULTS_CONFIGURATION__RESULTS:
-                return ((InternalEList<?>)getResults()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.RULE_RESULTS_CONFIGURATION__RESULTS:
+				return ((InternalEList<?>)getResults()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.RULE_RESULTS_CONFIGURATION__RESULTS:
-                return getResults();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.RULE_RESULTS_CONFIGURATION__RESULTS:
+				return getResults();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
 
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.RULE_RESULTS_CONFIGURATION__RESULTS:
-                getResults().clear();
-                getResults().addAll((Collection<? extends RuleResult>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.RULE_RESULTS_CONFIGURATION__RESULTS:
+				getResults().clear();
+				getResults().addAll((Collection<? extends RuleResult>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.RULE_RESULTS_CONFIGURATION__RESULTS:
-                getResults().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.RULE_RESULTS_CONFIGURATION__RESULTS:
+				getResults().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.RULE_RESULTS_CONFIGURATION__RESULTS:
-                return results != null && !results.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.RULE_RESULTS_CONFIGURATION__RESULTS:
+				return results != null && !results.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } // RuleResultsConfigurationImpl

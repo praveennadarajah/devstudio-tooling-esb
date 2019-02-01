@@ -20,23 +20,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.MergeNodeOutputConnector;
  */
 public class MergeNodeOutputConnectorImpl extends OutputConnectorImpl implements MergeNodeOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected MergeNodeOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.MERGE_NODE_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.MERGE_NODE_OUTPUT_CONNECTOR;
+	}
 
 } // MergeNodeOutputConnectorImpl

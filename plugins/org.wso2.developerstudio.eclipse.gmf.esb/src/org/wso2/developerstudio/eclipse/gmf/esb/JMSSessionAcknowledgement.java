@@ -32,249 +32,249 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum JMSSessionAcknowledgement implements Enumerator {
     /**
-     * The '<em><b>AUTO ACKNOWLEDGE</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>AUTO ACKNOWLEDGE</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #AUTO_ACKNOWLEDGE_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #AUTO_ACKNOWLEDGE_VALUE
+	 * @generated
+	 * @ordered
+	 */
     AUTO_ACKNOWLEDGE(0, "AUTO_ACKNOWLEDGE", "AUTO_ACKNOWLEDGE"),
 
     /**
-     * The '<em><b>CLIENT ACKNOWLEDGE</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>CLIENT ACKNOWLEDGE</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #CLIENT_ACKNOWLEDGE_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #CLIENT_ACKNOWLEDGE_VALUE
+	 * @generated
+	 * @ordered
+	 */
     CLIENT_ACKNOWLEDGE(1, "CLIENT_ACKNOWLEDGE", "CLIENT_ACKNOWLEDGE"),
 
     /**
-     * The '<em><b>DUPS OK ACKNOWLEDGE</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>DUPS OK ACKNOWLEDGE</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #DUPS_OK_ACKNOWLEDGE_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #DUPS_OK_ACKNOWLEDGE_VALUE
+	 * @generated
+	 * @ordered
+	 */
     DUPS_OK_ACKNOWLEDGE(2, "DUPS_OK_ACKNOWLEDGE", "DUPS_OK_ACKNOWLEDGE"),
 
     /**
-     * The '<em><b>SESSION TRANSACTED</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>SESSION TRANSACTED</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #SESSION_TRANSACTED_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #SESSION_TRANSACTED_VALUE
+	 * @generated
+	 * @ordered
+	 */
     SESSION_TRANSACTED(3, "SESSION_TRANSACTED", "SESSION_TRANSACTED");
 
     /**
-     * The '<em><b>AUTO ACKNOWLEDGE</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>AUTO ACKNOWLEDGE</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>AUTO ACKNOWLEDGE</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #AUTO_ACKNOWLEDGE
-     * @model
-     * @generated
-     * @ordered
-     */
+	 * @see #AUTO_ACKNOWLEDGE
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
     public static final int AUTO_ACKNOWLEDGE_VALUE = 0;
 
     /**
-     * The '<em><b>CLIENT ACKNOWLEDGE</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>CLIENT ACKNOWLEDGE</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>CLIENT ACKNOWLEDGE</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #CLIENT_ACKNOWLEDGE
-     * @model
-     * @generated
-     * @ordered
-     */
+	 * @see #CLIENT_ACKNOWLEDGE
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
     public static final int CLIENT_ACKNOWLEDGE_VALUE = 1;
 
     /**
-     * The '<em><b>DUPS OK ACKNOWLEDGE</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>DUPS OK ACKNOWLEDGE</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>DUPS OK ACKNOWLEDGE</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #DUPS_OK_ACKNOWLEDGE
-     * @model
-     * @generated
-     * @ordered
-     */
+	 * @see #DUPS_OK_ACKNOWLEDGE
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
     public static final int DUPS_OK_ACKNOWLEDGE_VALUE = 2;
 
     /**
-     * The '<em><b>SESSION TRANSACTED</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>SESSION TRANSACTED</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>SESSION TRANSACTED</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #SESSION_TRANSACTED
-     * @model
-     * @generated
-     * @ordered
-     */
+	 * @see #SESSION_TRANSACTED
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
     public static final int SESSION_TRANSACTED_VALUE = 3;
 
     /**
-     * An array of all the '<em><b>JMS Session Acknowledgement</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * An array of all the '<em><b>JMS Session Acknowledgement</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private static final JMSSessionAcknowledgement[] VALUES_ARRAY = new JMSSessionAcknowledgement[] {
-            AUTO_ACKNOWLEDGE,
-            CLIENT_ACKNOWLEDGE,
-            DUPS_OK_ACKNOWLEDGE,
-            SESSION_TRANSACTED,
-        };
+			AUTO_ACKNOWLEDGE,
+			CLIENT_ACKNOWLEDGE,
+			DUPS_OK_ACKNOWLEDGE,
+			SESSION_TRANSACTED,
+		};
 
     /**
-     * A public read-only list of all the '<em><b>JMS Session Acknowledgement</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * A public read-only list of all the '<em><b>JMS Session Acknowledgement</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public static final List<JMSSessionAcknowledgement> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
     /**
-     * Returns the '<em><b>JMS Session Acknowledgement</b></em>' literal with the specified literal value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>JMS Session Acknowledgement</b></em>' literal with the specified literal value.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param literal the literal.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static JMSSessionAcknowledgement get(String literal) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            JMSSessionAcknowledgement result = VALUES_ARRAY[i];
-            if (result.toString().equals(literal)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			JMSSessionAcknowledgement result = VALUES_ARRAY[i];
+			if (result.toString().equals(literal)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
     /**
-     * Returns the '<em><b>JMS Session Acknowledgement</b></em>' literal with the specified name.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>JMS Session Acknowledgement</b></em>' literal with the specified name.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param name the name.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static JMSSessionAcknowledgement getByName(String name) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            JMSSessionAcknowledgement result = VALUES_ARRAY[i];
-            if (result.getName().equals(name)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			JMSSessionAcknowledgement result = VALUES_ARRAY[i];
+			if (result.getName().equals(name)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
     /**
-     * Returns the '<em><b>JMS Session Acknowledgement</b></em>' literal with the specified integer value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>JMS Session Acknowledgement</b></em>' literal with the specified integer value.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the integer value.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static JMSSessionAcknowledgement get(int value) {
-        switch (value) {
-            case AUTO_ACKNOWLEDGE_VALUE: return AUTO_ACKNOWLEDGE;
-            case CLIENT_ACKNOWLEDGE_VALUE: return CLIENT_ACKNOWLEDGE;
-            case DUPS_OK_ACKNOWLEDGE_VALUE: return DUPS_OK_ACKNOWLEDGE;
-            case SESSION_TRANSACTED_VALUE: return SESSION_TRANSACTED;
-        }
-        return null;
-    }
+		switch (value) {
+			case AUTO_ACKNOWLEDGE_VALUE: return AUTO_ACKNOWLEDGE;
+			case CLIENT_ACKNOWLEDGE_VALUE: return CLIENT_ACKNOWLEDGE;
+			case DUPS_OK_ACKNOWLEDGE_VALUE: return DUPS_OK_ACKNOWLEDGE;
+			case SESSION_TRANSACTED_VALUE: return SESSION_TRANSACTED;
+		}
+		return null;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final int value;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final String name;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final String literal;
 
     /**
-     * Only this class can construct instances.
-     * <!-- begin-user-doc -->
+	 * Only this class can construct instances.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private JMSSessionAcknowledgement(int value, String name, String literal) {
-        this.value = value;
-        this.name = name;
-        this.literal = literal;
-    }
+		this.value = value;
+		this.name = name;
+		this.literal = literal;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public int getValue() {
-      return value;
-    }
+	  return value;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getName() {
-      return name;
-    }
+	  return name;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getLiteral() {
-      return literal;
-    }
+	  return literal;
+	}
 
     /**
-     * Returns the literal value of the enumerator, which is its string representation.
-     * <!-- begin-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string representation.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        return literal;
-    }
+		return literal;
+	}
 
 } // JMSSessionAcknowledgement

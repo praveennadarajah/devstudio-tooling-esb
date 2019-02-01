@@ -20,23 +20,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.ScriptMediatorInputConnector;
  */
 public class ScriptMediatorInputConnectorImpl extends InputConnectorImpl implements ScriptMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ScriptMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.SCRIPT_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.SCRIPT_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // ScriptMediatorInputConnectorImpl

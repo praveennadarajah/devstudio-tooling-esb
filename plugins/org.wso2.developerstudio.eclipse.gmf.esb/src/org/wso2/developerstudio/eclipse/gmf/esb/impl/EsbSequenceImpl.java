@@ -47,322 +47,322 @@ import org.wso2.developerstudio.eclipse.gmf.esb.Mediator;
  */
 public class EsbSequenceImpl extends EsbNodeImpl implements EsbSequence {
     /**
-     * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String NAME_EDEFAULT = ",";
 
     /**
-     * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
     protected String name = NAME_EDEFAULT;
 
     /**
-     * The cached value of the '{@link #getInput() <em>Input</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getInput() <em>Input</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getInput()
-     * @generated
-     * @ordered
-     */
+	 * @see #getInput()
+	 * @generated
+	 * @ordered
+	 */
     protected EsbSequenceInputConnector input;
 
     /**
-     * The cached value of the '{@link #getOutput() <em>Output</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOutput() <em>Output</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutput()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutput()
+	 * @generated
+	 * @ordered
+	 */
     protected EsbSequenceOutputConnector output;
 
     /**
-     * The cached value of the '{@link #getChildMediators() <em>Child Mediators</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getChildMediators() <em>Child Mediators</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getChildMediators()
-     * @generated
-     * @ordered
-     */
+	 * @see #getChildMediators()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<Mediator> childMediators;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected EsbSequenceImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.ESB_SEQUENCE;
-    }
+		return EsbPackage.Literals.ESB_SEQUENCE;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getName() {
-        return name;
-    }
+		return name;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setName(String newName) {
-        String oldName = name;
-        name = newName;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SEQUENCE__NAME, oldName, name));
-    }
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SEQUENCE__NAME, oldName, name));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EsbSequenceInputConnector getInput() {
-        return input;
-    }
+		return input;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetInput(EsbSequenceInputConnector newInput, NotificationChain msgs) {
-        EsbSequenceInputConnector oldInput = input;
-        input = newInput;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SEQUENCE__INPUT, oldInput, newInput);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		EsbSequenceInputConnector oldInput = input;
+		input = newInput;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SEQUENCE__INPUT, oldInput, newInput);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setInput(EsbSequenceInputConnector newInput) {
-        if (newInput != input) {
-            NotificationChain msgs = null;
-            if (input != null)
-                msgs = ((InternalEObject)input).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_SEQUENCE__INPUT, null, msgs);
-            if (newInput != null)
-                msgs = ((InternalEObject)newInput).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_SEQUENCE__INPUT, null, msgs);
-            msgs = basicSetInput(newInput, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SEQUENCE__INPUT, newInput, newInput));
-    }
+		if (newInput != input) {
+			NotificationChain msgs = null;
+			if (input != null)
+				msgs = ((InternalEObject)input).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_SEQUENCE__INPUT, null, msgs);
+			if (newInput != null)
+				msgs = ((InternalEObject)newInput).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_SEQUENCE__INPUT, null, msgs);
+			msgs = basicSetInput(newInput, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SEQUENCE__INPUT, newInput, newInput));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EsbSequenceOutputConnector getOutput() {
-        return output;
-    }
+		return output;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetOutput(EsbSequenceOutputConnector newOutput, NotificationChain msgs) {
-        EsbSequenceOutputConnector oldOutput = output;
-        output = newOutput;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SEQUENCE__OUTPUT, oldOutput, newOutput);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		EsbSequenceOutputConnector oldOutput = output;
+		output = newOutput;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SEQUENCE__OUTPUT, oldOutput, newOutput);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setOutput(EsbSequenceOutputConnector newOutput) {
-        if (newOutput != output) {
-            NotificationChain msgs = null;
-            if (output != null)
-                msgs = ((InternalEObject)output).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_SEQUENCE__OUTPUT, null, msgs);
-            if (newOutput != null)
-                msgs = ((InternalEObject)newOutput).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_SEQUENCE__OUTPUT, null, msgs);
-            msgs = basicSetOutput(newOutput, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SEQUENCE__OUTPUT, newOutput, newOutput));
-    }
+		if (newOutput != output) {
+			NotificationChain msgs = null;
+			if (output != null)
+				msgs = ((InternalEObject)output).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_SEQUENCE__OUTPUT, null, msgs);
+			if (newOutput != null)
+				msgs = ((InternalEObject)newOutput).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_SEQUENCE__OUTPUT, null, msgs);
+			msgs = basicSetOutput(newOutput, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_SEQUENCE__OUTPUT, newOutput, newOutput));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EList<Mediator> getChildMediators() {
-        if (childMediators == null) {
-            childMediators = new EObjectContainmentEList<Mediator>(Mediator.class, this, EsbPackage.ESB_SEQUENCE__CHILD_MEDIATORS);
-        }
-        return childMediators;
-    }
+		if (childMediators == null) {
+			childMediators = new EObjectContainmentEList<Mediator>(Mediator.class, this, EsbPackage.ESB_SEQUENCE__CHILD_MEDIATORS);
+		}
+		return childMediators;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.ESB_SEQUENCE__INPUT:
-                return basicSetInput(null, msgs);
-            case EsbPackage.ESB_SEQUENCE__OUTPUT:
-                return basicSetOutput(null, msgs);
-            case EsbPackage.ESB_SEQUENCE__CHILD_MEDIATORS:
-                return ((InternalEList<?>)getChildMediators()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_SEQUENCE__INPUT:
+				return basicSetInput(null, msgs);
+			case EsbPackage.ESB_SEQUENCE__OUTPUT:
+				return basicSetOutput(null, msgs);
+			case EsbPackage.ESB_SEQUENCE__CHILD_MEDIATORS:
+				return ((InternalEList<?>)getChildMediators()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.ESB_SEQUENCE__NAME:
-                return getName();
-            case EsbPackage.ESB_SEQUENCE__INPUT:
-                return getInput();
-            case EsbPackage.ESB_SEQUENCE__OUTPUT:
-                return getOutput();
-            case EsbPackage.ESB_SEQUENCE__CHILD_MEDIATORS:
-                return getChildMediators();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_SEQUENCE__NAME:
+				return getName();
+			case EsbPackage.ESB_SEQUENCE__INPUT:
+				return getInput();
+			case EsbPackage.ESB_SEQUENCE__OUTPUT:
+				return getOutput();
+			case EsbPackage.ESB_SEQUENCE__CHILD_MEDIATORS:
+				return getChildMediators();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
 
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.ESB_SEQUENCE__NAME:
-                setName((String)newValue);
-                return;
-            case EsbPackage.ESB_SEQUENCE__INPUT:
-                setInput((EsbSequenceInputConnector)newValue);
-                return;
-            case EsbPackage.ESB_SEQUENCE__OUTPUT:
-                setOutput((EsbSequenceOutputConnector)newValue);
-                return;
-            case EsbPackage.ESB_SEQUENCE__CHILD_MEDIATORS:
-                getChildMediators().clear();
-                getChildMediators().addAll((Collection<? extends Mediator>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_SEQUENCE__NAME:
+				setName((String)newValue);
+				return;
+			case EsbPackage.ESB_SEQUENCE__INPUT:
+				setInput((EsbSequenceInputConnector)newValue);
+				return;
+			case EsbPackage.ESB_SEQUENCE__OUTPUT:
+				setOutput((EsbSequenceOutputConnector)newValue);
+				return;
+			case EsbPackage.ESB_SEQUENCE__CHILD_MEDIATORS:
+				getChildMediators().clear();
+				getChildMediators().addAll((Collection<? extends Mediator>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.ESB_SEQUENCE__NAME:
-                setName(NAME_EDEFAULT);
-                return;
-            case EsbPackage.ESB_SEQUENCE__INPUT:
-                setInput((EsbSequenceInputConnector)null);
-                return;
-            case EsbPackage.ESB_SEQUENCE__OUTPUT:
-                setOutput((EsbSequenceOutputConnector)null);
-                return;
-            case EsbPackage.ESB_SEQUENCE__CHILD_MEDIATORS:
-                getChildMediators().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_SEQUENCE__NAME:
+				setName(NAME_EDEFAULT);
+				return;
+			case EsbPackage.ESB_SEQUENCE__INPUT:
+				setInput((EsbSequenceInputConnector)null);
+				return;
+			case EsbPackage.ESB_SEQUENCE__OUTPUT:
+				setOutput((EsbSequenceOutputConnector)null);
+				return;
+			case EsbPackage.ESB_SEQUENCE__CHILD_MEDIATORS:
+				getChildMediators().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.ESB_SEQUENCE__NAME:
-                return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-            case EsbPackage.ESB_SEQUENCE__INPUT:
-                return input != null;
-            case EsbPackage.ESB_SEQUENCE__OUTPUT:
-                return output != null;
-            case EsbPackage.ESB_SEQUENCE__CHILD_MEDIATORS:
-                return childMediators != null && !childMediators.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_SEQUENCE__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case EsbPackage.ESB_SEQUENCE__INPUT:
+				return input != null;
+			case EsbPackage.ESB_SEQUENCE__OUTPUT:
+				return output != null;
+			case EsbPackage.ESB_SEQUENCE__CHILD_MEDIATORS:
+				return childMediators != null && !childMediators.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (name: ");
-        result.append(name);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(')');
+		return result.toString();
+	}
 
 } // EsbSequenceImpl

@@ -42,83 +42,83 @@ import org.wso2.developerstudio.eclipse.gmf.esb.RMSpecVersion;
  */
 public class RMSequenceMediatorImpl extends MediatorImpl implements RMSequenceMediator {
     /**
-     * The default value of the '{@link #getRmSpecVersion() <em>Rm Spec Version</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getRmSpecVersion() <em>Rm Spec Version</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getRmSpecVersion()
-     * @generated
-     * @ordered
-     */
+	 * @see #getRmSpecVersion()
+	 * @generated
+	 * @ordered
+	 */
     protected static final RMSpecVersion RM_SPEC_VERSION_EDEFAULT = RMSpecVersion.VERSION_10;
 
     /**
-     * The cached value of the '{@link #getRmSpecVersion() <em>Rm Spec Version</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getRmSpecVersion() <em>Rm Spec Version</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getRmSpecVersion()
-     * @generated
-     * @ordered
-     */
+	 * @see #getRmSpecVersion()
+	 * @generated
+	 * @ordered
+	 */
     protected RMSpecVersion rmSpecVersion = RM_SPEC_VERSION_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getSequenceType() <em>Sequence Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getSequenceType() <em>Sequence Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getSequenceType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getSequenceType()
+	 * @generated
+	 * @ordered
+	 */
     protected static final RMSequenceType SEQUENCE_TYPE_EDEFAULT = RMSequenceType.SINGLE_MESSAGE;
 
     /**
-     * The cached value of the '{@link #getSequenceType() <em>Sequence Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getSequenceType() <em>Sequence Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getSequenceType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getSequenceType()
+	 * @generated
+	 * @ordered
+	 */
     protected RMSequenceType sequenceType = SEQUENCE_TYPE_EDEFAULT;
 
     /**
-     * The cached value of the '{@link #getCorrelationXpath() <em>Correlation Xpath</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getCorrelationXpath() <em>Correlation Xpath</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getCorrelationXpath()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCorrelationXpath()
+	 * @generated
+	 * @ordered
+	 */
     protected NamespacedProperty correlationXpath;
 
     /**
-     * The cached value of the '{@link #getLastMessageXpath() <em>Last Message Xpath</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getLastMessageXpath() <em>Last Message Xpath</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getLastMessageXpath()
-     * @generated
-     * @ordered
-     */
+	 * @see #getLastMessageXpath()
+	 * @generated
+	 * @ordered
+	 */
     protected NamespacedProperty lastMessageXpath;
 
     /**
-     * The cached value of the '{@link #getInputConnector() <em>Input Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getInputConnector() <em>Input Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getInputConnector()
-     * @generated
-     * @ordered
-     */
+	 * @see #getInputConnector()
+	 * @generated
+	 * @ordered
+	 */
     protected RMSequenceMediatorInputConnector inputConnector;
 
     /**
-     * The cached value of the '{@link #getOutputConnector() <em>Output Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOutputConnector() <em>Output Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutputConnector()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutputConnector()
+	 * @generated
+	 * @ordered
+	 */
     protected RMSequenceMediatorOutputConnector outputConnector;
 
     /**
@@ -146,381 +146,381 @@ public class RMSequenceMediatorImpl extends MediatorImpl implements RMSequenceMe
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.RM_SEQUENCE_MEDIATOR;
-    }
+		return EsbPackage.Literals.RM_SEQUENCE_MEDIATOR;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public RMSpecVersion getRmSpecVersion() {
-        return rmSpecVersion;
-    }
+		return rmSpecVersion;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setRmSpecVersion(RMSpecVersion newRmSpecVersion) {
-        RMSpecVersion oldRmSpecVersion = rmSpecVersion;
-        rmSpecVersion = newRmSpecVersion == null ? RM_SPEC_VERSION_EDEFAULT : newRmSpecVersion;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__RM_SPEC_VERSION, oldRmSpecVersion, rmSpecVersion));
-    }
+		RMSpecVersion oldRmSpecVersion = rmSpecVersion;
+		rmSpecVersion = newRmSpecVersion == null ? RM_SPEC_VERSION_EDEFAULT : newRmSpecVersion;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__RM_SPEC_VERSION, oldRmSpecVersion, rmSpecVersion));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public RMSequenceType getSequenceType() {
-        return sequenceType;
-    }
+		return sequenceType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setSequenceType(RMSequenceType newSequenceType) {
-        RMSequenceType oldSequenceType = sequenceType;
-        sequenceType = newSequenceType == null ? SEQUENCE_TYPE_EDEFAULT : newSequenceType;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__SEQUENCE_TYPE, oldSequenceType, sequenceType));
-    }
+		RMSequenceType oldSequenceType = sequenceType;
+		sequenceType = newSequenceType == null ? SEQUENCE_TYPE_EDEFAULT : newSequenceType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__SEQUENCE_TYPE, oldSequenceType, sequenceType));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NamespacedProperty getCorrelationXpath() {
-        return correlationXpath;
-    }
+		return correlationXpath;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetCorrelationXpath(NamespacedProperty newCorrelationXpath, NotificationChain msgs) {
-        NamespacedProperty oldCorrelationXpath = correlationXpath;
-        correlationXpath = newCorrelationXpath;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH, oldCorrelationXpath, newCorrelationXpath);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		NamespacedProperty oldCorrelationXpath = correlationXpath;
+		correlationXpath = newCorrelationXpath;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH, oldCorrelationXpath, newCorrelationXpath);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setCorrelationXpath(NamespacedProperty newCorrelationXpath) {
-        if (newCorrelationXpath != correlationXpath) {
-            NotificationChain msgs = null;
-            if (correlationXpath != null)
-                msgs = ((InternalEObject)correlationXpath).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH, null, msgs);
-            if (newCorrelationXpath != null)
-                msgs = ((InternalEObject)newCorrelationXpath).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH, null, msgs);
-            msgs = basicSetCorrelationXpath(newCorrelationXpath, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH, newCorrelationXpath, newCorrelationXpath));
-    }
+		if (newCorrelationXpath != correlationXpath) {
+			NotificationChain msgs = null;
+			if (correlationXpath != null)
+				msgs = ((InternalEObject)correlationXpath).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH, null, msgs);
+			if (newCorrelationXpath != null)
+				msgs = ((InternalEObject)newCorrelationXpath).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH, null, msgs);
+			msgs = basicSetCorrelationXpath(newCorrelationXpath, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH, newCorrelationXpath, newCorrelationXpath));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NamespacedProperty getLastMessageXpath() {
-        return lastMessageXpath;
-    }
+		return lastMessageXpath;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetLastMessageXpath(NamespacedProperty newLastMessageXpath, NotificationChain msgs) {
-        NamespacedProperty oldLastMessageXpath = lastMessageXpath;
-        lastMessageXpath = newLastMessageXpath;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH, oldLastMessageXpath, newLastMessageXpath);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		NamespacedProperty oldLastMessageXpath = lastMessageXpath;
+		lastMessageXpath = newLastMessageXpath;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH, oldLastMessageXpath, newLastMessageXpath);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setLastMessageXpath(NamespacedProperty newLastMessageXpath) {
-        if (newLastMessageXpath != lastMessageXpath) {
-            NotificationChain msgs = null;
-            if (lastMessageXpath != null)
-                msgs = ((InternalEObject)lastMessageXpath).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH, null, msgs);
-            if (newLastMessageXpath != null)
-                msgs = ((InternalEObject)newLastMessageXpath).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH, null, msgs);
-            msgs = basicSetLastMessageXpath(newLastMessageXpath, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH, newLastMessageXpath, newLastMessageXpath));
-    }
+		if (newLastMessageXpath != lastMessageXpath) {
+			NotificationChain msgs = null;
+			if (lastMessageXpath != null)
+				msgs = ((InternalEObject)lastMessageXpath).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH, null, msgs);
+			if (newLastMessageXpath != null)
+				msgs = ((InternalEObject)newLastMessageXpath).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH, null, msgs);
+			msgs = basicSetLastMessageXpath(newLastMessageXpath, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH, newLastMessageXpath, newLastMessageXpath));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public RMSequenceMediatorInputConnector getInputConnector() {
-        return inputConnector;
-    }
+		return inputConnector;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetInputConnector(RMSequenceMediatorInputConnector newInputConnector,
             NotificationChain msgs) {
-        RMSequenceMediatorInputConnector oldInputConnector = inputConnector;
-        inputConnector = newInputConnector;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR, oldInputConnector, newInputConnector);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		RMSequenceMediatorInputConnector oldInputConnector = inputConnector;
+		inputConnector = newInputConnector;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR, oldInputConnector, newInputConnector);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setInputConnector(RMSequenceMediatorInputConnector newInputConnector) {
-        if (newInputConnector != inputConnector) {
-            NotificationChain msgs = null;
-            if (inputConnector != null)
-                msgs = ((InternalEObject)inputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR, null, msgs);
-            if (newInputConnector != null)
-                msgs = ((InternalEObject)newInputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR, null, msgs);
-            msgs = basicSetInputConnector(newInputConnector, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR, newInputConnector, newInputConnector));
-    }
+		if (newInputConnector != inputConnector) {
+			NotificationChain msgs = null;
+			if (inputConnector != null)
+				msgs = ((InternalEObject)inputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR, null, msgs);
+			if (newInputConnector != null)
+				msgs = ((InternalEObject)newInputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR, null, msgs);
+			msgs = basicSetInputConnector(newInputConnector, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR, newInputConnector, newInputConnector));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public RMSequenceMediatorOutputConnector getOutputConnector() {
-        return outputConnector;
-    }
+		return outputConnector;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetOutputConnector(RMSequenceMediatorOutputConnector newOutputConnector,
             NotificationChain msgs) {
-        RMSequenceMediatorOutputConnector oldOutputConnector = outputConnector;
-        outputConnector = newOutputConnector;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR, oldOutputConnector, newOutputConnector);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		RMSequenceMediatorOutputConnector oldOutputConnector = outputConnector;
+		outputConnector = newOutputConnector;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR, oldOutputConnector, newOutputConnector);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setOutputConnector(RMSequenceMediatorOutputConnector newOutputConnector) {
-        if (newOutputConnector != outputConnector) {
-            NotificationChain msgs = null;
-            if (outputConnector != null)
-                msgs = ((InternalEObject)outputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
-            if (newOutputConnector != null)
-                msgs = ((InternalEObject)newOutputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
-            msgs = basicSetOutputConnector(newOutputConnector, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR, newOutputConnector, newOutputConnector));
-    }
+		if (newOutputConnector != outputConnector) {
+			NotificationChain msgs = null;
+			if (outputConnector != null)
+				msgs = ((InternalEObject)outputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
+			if (newOutputConnector != null)
+				msgs = ((InternalEObject)newOutputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
+			msgs = basicSetOutputConnector(newOutputConnector, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR, newOutputConnector, newOutputConnector));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH:
-                return basicSetCorrelationXpath(null, msgs);
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH:
-                return basicSetLastMessageXpath(null, msgs);
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR:
-                return basicSetInputConnector(null, msgs);
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR:
-                return basicSetOutputConnector(null, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH:
+				return basicSetCorrelationXpath(null, msgs);
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH:
+				return basicSetLastMessageXpath(null, msgs);
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR:
+				return basicSetInputConnector(null, msgs);
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR:
+				return basicSetOutputConnector(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__RM_SPEC_VERSION:
-                return getRmSpecVersion();
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__SEQUENCE_TYPE:
-                return getSequenceType();
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH:
-                return getCorrelationXpath();
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH:
-                return getLastMessageXpath();
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR:
-                return getInputConnector();
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR:
-                return getOutputConnector();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__RM_SPEC_VERSION:
+				return getRmSpecVersion();
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__SEQUENCE_TYPE:
+				return getSequenceType();
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH:
+				return getCorrelationXpath();
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH:
+				return getLastMessageXpath();
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR:
+				return getInputConnector();
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR:
+				return getOutputConnector();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__RM_SPEC_VERSION:
-                setRmSpecVersion((RMSpecVersion)newValue);
-                return;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__SEQUENCE_TYPE:
-                setSequenceType((RMSequenceType)newValue);
-                return;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH:
-                setCorrelationXpath((NamespacedProperty)newValue);
-                return;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH:
-                setLastMessageXpath((NamespacedProperty)newValue);
-                return;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR:
-                setInputConnector((RMSequenceMediatorInputConnector)newValue);
-                return;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR:
-                setOutputConnector((RMSequenceMediatorOutputConnector)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__RM_SPEC_VERSION:
+				setRmSpecVersion((RMSpecVersion)newValue);
+				return;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__SEQUENCE_TYPE:
+				setSequenceType((RMSequenceType)newValue);
+				return;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH:
+				setCorrelationXpath((NamespacedProperty)newValue);
+				return;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH:
+				setLastMessageXpath((NamespacedProperty)newValue);
+				return;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR:
+				setInputConnector((RMSequenceMediatorInputConnector)newValue);
+				return;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR:
+				setOutputConnector((RMSequenceMediatorOutputConnector)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__RM_SPEC_VERSION:
-                setRmSpecVersion(RM_SPEC_VERSION_EDEFAULT);
-                return;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__SEQUENCE_TYPE:
-                setSequenceType(SEQUENCE_TYPE_EDEFAULT);
-                return;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH:
-                setCorrelationXpath((NamespacedProperty)null);
-                return;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH:
-                setLastMessageXpath((NamespacedProperty)null);
-                return;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR:
-                setInputConnector((RMSequenceMediatorInputConnector)null);
-                return;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR:
-                setOutputConnector((RMSequenceMediatorOutputConnector)null);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__RM_SPEC_VERSION:
+				setRmSpecVersion(RM_SPEC_VERSION_EDEFAULT);
+				return;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__SEQUENCE_TYPE:
+				setSequenceType(SEQUENCE_TYPE_EDEFAULT);
+				return;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH:
+				setCorrelationXpath((NamespacedProperty)null);
+				return;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH:
+				setLastMessageXpath((NamespacedProperty)null);
+				return;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR:
+				setInputConnector((RMSequenceMediatorInputConnector)null);
+				return;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR:
+				setOutputConnector((RMSequenceMediatorOutputConnector)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__RM_SPEC_VERSION:
-                return rmSpecVersion != RM_SPEC_VERSION_EDEFAULT;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__SEQUENCE_TYPE:
-                return sequenceType != SEQUENCE_TYPE_EDEFAULT;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH:
-                return correlationXpath != null;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH:
-                return lastMessageXpath != null;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR:
-                return inputConnector != null;
-            case EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR:
-                return outputConnector != null;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__RM_SPEC_VERSION:
+				return rmSpecVersion != RM_SPEC_VERSION_EDEFAULT;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__SEQUENCE_TYPE:
+				return sequenceType != SEQUENCE_TYPE_EDEFAULT;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__CORRELATION_XPATH:
+				return correlationXpath != null;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__LAST_MESSAGE_XPATH:
+				return lastMessageXpath != null;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__INPUT_CONNECTOR:
+				return inputConnector != null;
+			case EsbPackage.RM_SEQUENCE_MEDIATOR__OUTPUT_CONNECTOR:
+				return outputConnector != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (rmSpecVersion: ");
-        result.append(rmSpecVersion);
-        result.append(", sequenceType: ");
-        result.append(sequenceType);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (rmSpecVersion: ");
+		result.append(rmSpecVersion);
+		result.append(", sequenceType: ");
+		result.append(sequenceType);
+		result.append(')');
+		return result.toString();
+	}
 
 } // RMSequenceMediatorImpl

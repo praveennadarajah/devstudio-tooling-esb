@@ -30,22 +30,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.LoopBackMediatorOutputConnector;
 public class LoopBackMediatorOutputConnectorImpl extends OutputConnectorImpl
         implements LoopBackMediatorOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected LoopBackMediatorOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.LOOP_BACK_MEDIATOR_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.LOOP_BACK_MEDIATOR_OUTPUT_CONNECTOR;
+	}
 
 } // LoopBackMediatorOutputConnectorImpl

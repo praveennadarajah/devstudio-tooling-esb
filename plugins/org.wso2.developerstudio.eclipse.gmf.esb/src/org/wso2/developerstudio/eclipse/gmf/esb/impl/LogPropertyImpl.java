@@ -25,23 +25,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.LogProperty;
  */
 public class LogPropertyImpl extends AbstractNameValueExpressionPropertyImpl implements LogProperty {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected LogPropertyImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.LOG_PROPERTY;
-    }
+		return EsbPackage.Literals.LOG_PROPERTY;
+	}
 
 } // LogPropertyImpl

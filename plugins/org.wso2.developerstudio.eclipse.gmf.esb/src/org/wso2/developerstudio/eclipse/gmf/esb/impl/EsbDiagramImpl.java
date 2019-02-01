@@ -35,13 +35,13 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbServer;
  */
 public class EsbDiagramImpl extends EObjectImpl implements EsbDiagram {
     /**
-     * The cached value of the '{@link #getServer() <em>Server</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getServer() <em>Server</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getServer()
-     * @generated
-     * @ordered
-     */
+	 * @see #getServer()
+	 * @generated
+	 * @ordered
+	 */
     protected EsbServer server;
 
     /**
@@ -55,200 +55,200 @@ public class EsbDiagramImpl extends EObjectImpl implements EsbDiagram {
      */
     protected static final Integer TEST_EDEFAULT = 0;
     /**
-     * The cached value of the '{@link #getTest() <em>Test</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTest() <em>Test</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getTest()
-     * @generated
-     * @ordered
-     */
+	 * @see #getTest()
+	 * @generated
+	 * @ordered
+	 */
     protected Integer test = TEST_EDEFAULT;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected EsbDiagramImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.ESB_DIAGRAM;
-    }
+		return EsbPackage.Literals.ESB_DIAGRAM;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EsbServer getServer() {
-        return server;
-    }
+		return server;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetServer(EsbServer newServer, NotificationChain msgs) {
-        EsbServer oldServer = server;
-        server = newServer;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_DIAGRAM__SERVER, oldServer, newServer);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		EsbServer oldServer = server;
+		server = newServer;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_DIAGRAM__SERVER, oldServer, newServer);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setServer(EsbServer newServer) {
-        if (newServer != server) {
-            NotificationChain msgs = null;
-            if (server != null)
-                msgs = ((InternalEObject)server).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_DIAGRAM__SERVER, null, msgs);
-            if (newServer != null)
-                msgs = ((InternalEObject)newServer).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_DIAGRAM__SERVER, null, msgs);
-            msgs = basicSetServer(newServer, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_DIAGRAM__SERVER, newServer, newServer));
-    }
+		if (newServer != server) {
+			NotificationChain msgs = null;
+			if (server != null)
+				msgs = ((InternalEObject)server).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_DIAGRAM__SERVER, null, msgs);
+			if (newServer != null)
+				msgs = ((InternalEObject)newServer).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ESB_DIAGRAM__SERVER, null, msgs);
+			msgs = basicSetServer(newServer, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_DIAGRAM__SERVER, newServer, newServer));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public Integer getTest() {
-        return test;
-    }
+		return test;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setTest(Integer newTest) {
-        Integer oldTest = test;
-        test = newTest;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_DIAGRAM__TEST, oldTest, test));
-    }
+		Integer oldTest = test;
+		test = newTest;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ESB_DIAGRAM__TEST, oldTest, test));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.ESB_DIAGRAM__SERVER:
-                return basicSetServer(null, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_DIAGRAM__SERVER:
+				return basicSetServer(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.ESB_DIAGRAM__SERVER:
-                return getServer();
-            case EsbPackage.ESB_DIAGRAM__TEST:
-                return getTest();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_DIAGRAM__SERVER:
+				return getServer();
+			case EsbPackage.ESB_DIAGRAM__TEST:
+				return getTest();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.ESB_DIAGRAM__SERVER:
-                setServer((EsbServer)newValue);
-                return;
-            case EsbPackage.ESB_DIAGRAM__TEST:
-                setTest((Integer)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_DIAGRAM__SERVER:
+				setServer((EsbServer)newValue);
+				return;
+			case EsbPackage.ESB_DIAGRAM__TEST:
+				setTest((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.ESB_DIAGRAM__SERVER:
-                setServer((EsbServer)null);
-                return;
-            case EsbPackage.ESB_DIAGRAM__TEST:
-                setTest(TEST_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_DIAGRAM__SERVER:
+				setServer((EsbServer)null);
+				return;
+			case EsbPackage.ESB_DIAGRAM__TEST:
+				setTest(TEST_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.ESB_DIAGRAM__SERVER:
-                return server != null;
-            case EsbPackage.ESB_DIAGRAM__TEST:
-                return TEST_EDEFAULT == null ? test != null : !TEST_EDEFAULT.equals(test);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.ESB_DIAGRAM__SERVER:
+				return server != null;
+			case EsbPackage.ESB_DIAGRAM__TEST:
+				return TEST_EDEFAULT == null ? test != null : !TEST_EDEFAULT.equals(test);
+		}
+		return super.eIsSet(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (Test: ");
-        result.append(test);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (Test: ");
+		result.append(test);
+		result.append(')');
+		return result.toString();
+	}
 
 } // EsbDiagramImpl

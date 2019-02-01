@@ -30,22 +30,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
 public class APIResourceInSequenceInputConnectorImpl extends InputConnectorImpl
         implements APIResourceInSequenceInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected APIResourceInSequenceInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.API_RESOURCE_IN_SEQUENCE_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.API_RESOURCE_IN_SEQUENCE_INPUT_CONNECTOR;
+	}
 
 } // APIResourceInSequenceInputConnectorImpl

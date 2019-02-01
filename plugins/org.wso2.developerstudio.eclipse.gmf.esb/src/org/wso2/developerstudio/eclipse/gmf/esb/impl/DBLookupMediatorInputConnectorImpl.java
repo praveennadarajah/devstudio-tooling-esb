@@ -20,23 +20,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
  */
 public class DBLookupMediatorInputConnectorImpl extends InputConnectorImpl implements DBLookupMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected DBLookupMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.DB_LOOKUP_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.DB_LOOKUP_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // DBLookupMediatorInputConnectorImpl

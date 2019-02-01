@@ -34,55 +34,55 @@ package org.wso2.developerstudio.eclipse.gmf.esb;
  */
 public interface RespondMediator extends Mediator {
     /**
-     * Returns the value of the '<em><b>Input Connector</b></em>' containment reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Input Connector</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Input Connector</em>' containment reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Input Connector</em>' containment reference.
-     * @see #setInputConnector(RespondMediatorInputConnector)
-     * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getRespondMediator_InputConnector()
-     * @model containment="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Input Connector</em>' containment reference.
+	 * @see #setInputConnector(RespondMediatorInputConnector)
+	 * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getRespondMediator_InputConnector()
+	 * @model containment="true"
+	 * @generated
+	 */
     RespondMediatorInputConnector getInputConnector();
 
     /**
-     * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.RespondMediator#getInputConnector <em>Input Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.RespondMediator#getInputConnector <em>Input Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Input Connector</em>' containment reference.
-     * @see #getInputConnector()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Input Connector</em>' containment reference.
+	 * @see #getInputConnector()
+	 * @generated
+	 */
     void setInputConnector(RespondMediatorInputConnector value);
 
     /**
-     * Returns the value of the '<em><b>Output Connector</b></em>' containment reference.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Output Connector</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Output Connector</em>' containment reference isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Output Connector</em>' containment reference.
-     * @see #setOutputConnector(RespondMediatorOutputConnector)
-     * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getRespondMediator_OutputConnector()
-     * @model containment="true"
-     * @generated
-     */
+	 * @return the value of the '<em>Output Connector</em>' containment reference.
+	 * @see #setOutputConnector(RespondMediatorOutputConnector)
+	 * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getRespondMediator_OutputConnector()
+	 * @model containment="true"
+	 * @generated
+	 */
     RespondMediatorOutputConnector getOutputConnector();
 
     /**
-     * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.RespondMediator#getOutputConnector <em>Output Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.RespondMediator#getOutputConnector <em>Output Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Output Connector</em>' containment reference.
-     * @see #getOutputConnector()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Output Connector</em>' containment reference.
+	 * @see #getOutputConnector()
+	 * @generated
+	 */
     void setOutputConnector(RespondMediatorOutputConnector value);
 
 } // RespondMediator

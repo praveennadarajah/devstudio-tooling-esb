@@ -20,22 +20,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.SwitchMediatorOutputConnector;
  */
 public class SwitchMediatorOutputConnectorImpl extends OutputConnectorImpl implements SwitchMediatorOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected SwitchMediatorOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.SWITCH_MEDIATOR_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.SWITCH_MEDIATOR_OUTPUT_CONNECTOR;
+	}
 
 } // SwitchMediatorOutputConnectorImpl

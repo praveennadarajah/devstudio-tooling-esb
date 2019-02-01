@@ -42,147 +42,147 @@ import org.wso2.developerstudio.eclipse.gmf.esb.MediatorFlow;
  */
 public class EntitlementAdviceContainerImpl extends EsbNodeImpl implements EntitlementAdviceContainer {
     /**
-     * The cached value of the '{@link #getMediatorFlow() <em>Mediator Flow</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getMediatorFlow() <em>Mediator Flow</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getMediatorFlow()
-     * @generated
-     * @ordered
-     */
+	 * @see #getMediatorFlow()
+	 * @generated
+	 * @ordered
+	 */
     protected MediatorFlow mediatorFlow;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected EntitlementAdviceContainerImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.ENTITLEMENT_ADVICE_CONTAINER;
-    }
+		return EsbPackage.Literals.ENTITLEMENT_ADVICE_CONTAINER;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public MediatorFlow getMediatorFlow() {
-        return mediatorFlow;
-    }
+		return mediatorFlow;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetMediatorFlow(MediatorFlow newMediatorFlow, NotificationChain msgs) {
-        MediatorFlow oldMediatorFlow = mediatorFlow;
-        mediatorFlow = newMediatorFlow;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW, oldMediatorFlow, newMediatorFlow);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		MediatorFlow oldMediatorFlow = mediatorFlow;
+		mediatorFlow = newMediatorFlow;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW, oldMediatorFlow, newMediatorFlow);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setMediatorFlow(MediatorFlow newMediatorFlow) {
-        if (newMediatorFlow != mediatorFlow) {
-            NotificationChain msgs = null;
-            if (mediatorFlow != null)
-                msgs = ((InternalEObject)mediatorFlow).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW, null, msgs);
-            if (newMediatorFlow != null)
-                msgs = ((InternalEObject)newMediatorFlow).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW, null, msgs);
-            msgs = basicSetMediatorFlow(newMediatorFlow, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW, newMediatorFlow, newMediatorFlow));
-    }
+		if (newMediatorFlow != mediatorFlow) {
+			NotificationChain msgs = null;
+			if (mediatorFlow != null)
+				msgs = ((InternalEObject)mediatorFlow).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW, null, msgs);
+			if (newMediatorFlow != null)
+				msgs = ((InternalEObject)newMediatorFlow).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW, null, msgs);
+			msgs = basicSetMediatorFlow(newMediatorFlow, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW, newMediatorFlow, newMediatorFlow));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW:
-                return basicSetMediatorFlow(null, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW:
+				return basicSetMediatorFlow(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW:
-                return getMediatorFlow();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW:
+				return getMediatorFlow();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW:
-                setMediatorFlow((MediatorFlow)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW:
+				setMediatorFlow((MediatorFlow)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW:
-                setMediatorFlow((MediatorFlow)null);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW:
+				setMediatorFlow((MediatorFlow)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW:
-                return mediatorFlow != null;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.ENTITLEMENT_ADVICE_CONTAINER__MEDIATOR_FLOW:
+				return mediatorFlow != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } // EntitlementAdviceContainerImpl

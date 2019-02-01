@@ -38,14 +38,14 @@ import org.wso2.developerstudio.eclipse.gmf.esb.Template;
  */
 public class HTTPEndpointItemProvider extends AbstractEndPointItemProvider {
     /**
-     * This constructs an instance from a factory and a notifier.
-     * <!-- begin-user-doc -->
+	 * This constructs an instance from a factory and a notifier.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public HTTPEndpointItemProvider(AdapterFactory adapterFactory) {
-        super(adapterFactory);
-    }
+		super(adapterFactory);
+	}
 
     /**
      * This returns the property descriptors for the adapted class.
@@ -322,128 +322,128 @@ public class HTTPEndpointItemProvider extends AbstractEndPointItemProvider {
     }
 
     /**
-     * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
-     * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
-     * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
-     * <!-- begin-user-doc -->
+	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
+	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
+	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
-        if (childrenFeatures == null) {
-            super.getChildrenFeatures(object);
-            childrenFeatures.add(EsbPackage.Literals.HTTP_ENDPOINT__INPUT_CONNECTOR);
-            childrenFeatures.add(EsbPackage.Literals.HTTP_ENDPOINT__OUTPUT_CONNECTOR);
-        }
-        return childrenFeatures;
-    }
+		if (childrenFeatures == null) {
+			super.getChildrenFeatures(object);
+			childrenFeatures.add(EsbPackage.Literals.HTTP_ENDPOINT__INPUT_CONNECTOR);
+			childrenFeatures.add(EsbPackage.Literals.HTTP_ENDPOINT__OUTPUT_CONNECTOR);
+		}
+		return childrenFeatures;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EStructuralFeature getChildFeature(Object object, Object child) {
-        // Check the type of the specified child object and return the proper feature to use for
-        // adding (see {@link AddCommand}) it as a child.
+		// Check the type of the specified child object and return the proper feature to use for
+		// adding (see {@link AddCommand}) it as a child.
 
-        return super.getChildFeature(object, child);
-    }
+		return super.getChildFeature(object, child);
+	}
 
     /**
-     * This returns HTTPEndpoint.gif.
-     * <!-- begin-user-doc -->
+	 * This returns HTTPEndpoint.gif.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object getImage(Object object) {
-        return overlayImage(object, getResourceLocator().getImage("full/obj16/HTTPEndpoint"));
-    }
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/HTTPEndpoint"));
+	}
 
     /**
-     * This returns the label text for the adapted class.
-     * <!-- begin-user-doc -->
+	 * This returns the label text for the adapted class.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String getText(Object object) {
-        String label = ((HTTPEndpoint)object).getEndPointName();
-        return label == null || label.length() == 0 ?
-            getString("_UI_HTTPEndpoint_type") :
-            getString("_UI_HTTPEndpoint_type") + " " + label;
-    }
+		String label = ((HTTPEndpoint)object).getEndPointName();
+		return label == null || label.length() == 0 ?
+			getString("_UI_HTTPEndpoint_type") :
+			getString("_UI_HTTPEndpoint_type") + " " + label;
+	}
 
     /**
-     * This handles model notifications by calling {@link #updateChildren} to update any cached
-     * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
-     * <!-- begin-user-doc -->
+	 * This handles model notifications by calling {@link #updateChildren} to update any cached
+	 * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void notifyChanged(Notification notification) {
-        updateChildren(notification);
+		updateChildren(notification);
 
-        switch (notification.getFeatureID(HTTPEndpoint.class)) {
-            case EsbPackage.HTTP_ENDPOINT__URI_TEMPLATE:
-            case EsbPackage.HTTP_ENDPOINT__HTTP_METHOD:
-                fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-                return;
-            case EsbPackage.HTTP_ENDPOINT__INPUT_CONNECTOR:
-            case EsbPackage.HTTP_ENDPOINT__OUTPUT_CONNECTOR:
-                fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
-                return;
-        }
-        super.notifyChanged(notification);
-    }
+		switch (notification.getFeatureID(HTTPEndpoint.class)) {
+			case EsbPackage.HTTP_ENDPOINT__URI_TEMPLATE:
+			case EsbPackage.HTTP_ENDPOINT__HTTP_METHOD:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+			case EsbPackage.HTTP_ENDPOINT__INPUT_CONNECTOR:
+			case EsbPackage.HTTP_ENDPOINT__OUTPUT_CONNECTOR:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+				return;
+		}
+		super.notifyChanged(notification);
+	}
 
     /**
-     * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
-     * that can be created under this object.
-     * <!-- begin-user-doc -->
+	 * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
+	 * that can be created under this object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
-        super.collectNewChildDescriptors(newChildDescriptors, object);
+		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.HTTP_ENDPOINT__INPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createHTTPEndPointInputConnector()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.HTTP_ENDPOINT__INPUT_CONNECTOR,
+				 EsbFactory.eINSTANCE.createHTTPEndPointInputConnector()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.HTTP_ENDPOINT__OUTPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createHTTPEndPointOutputConnector()));
-    }
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.HTTP_ENDPOINT__OUTPUT_CONNECTOR,
+				 EsbFactory.eINSTANCE.createHTTPEndPointOutputConnector()));
+	}
 
     /**
-     * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
-     * <!-- begin-user-doc -->
+	 * This returns the label text for {@link org.eclipse.emf.edit.command.CreateChildCommand}.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String getCreateChildText(Object owner, Object feature, Object child, Collection<?> selection) {
-        Object childFeature = feature;
-        Object childObject = child;
+		Object childFeature = feature;
+		Object childObject = child;
 
-        boolean qualify =
-            childFeature == EsbPackage.Literals.ABSTRACT_END_POINT__INBOUND_POLICY ||
-            childFeature == EsbPackage.Literals.ABSTRACT_END_POINT__OUTBOUND_POLICY;
+		boolean qualify =
+			childFeature == EsbPackage.Literals.ABSTRACT_END_POINT__INBOUND_POLICY ||
+			childFeature == EsbPackage.Literals.ABSTRACT_END_POINT__OUTBOUND_POLICY;
 
-        if (qualify) {
-            return getString
-                ("_UI_CreateChild_text2",
-                 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
-        }
-        return super.getCreateChildText(owner, feature, child, selection);
-    }
+		if (qualify) {
+			return getString
+				("_UI_CreateChild_text2",
+				 new Object[] { getTypeText(childObject), getFeatureText(childFeature), getTypeText(owner) });
+		}
+		return super.getCreateChildText(owner, feature, child, selection);
+	}
 
 }

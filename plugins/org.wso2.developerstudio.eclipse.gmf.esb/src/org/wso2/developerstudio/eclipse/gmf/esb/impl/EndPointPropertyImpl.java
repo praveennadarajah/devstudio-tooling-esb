@@ -49,93 +49,93 @@ import org.wso2.developerstudio.eclipse.gmf.esb.PropertyValueType;
  */
 public class EndPointPropertyImpl extends EObjectImpl implements EndPointProperty {
     /**
-     * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String NAME_EDEFAULT = null;
 
     /**
-     * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
     protected String name = NAME_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getValue()
-     * @generated
-     * @ordered
-     */
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String VALUE_EDEFAULT = null;
 
     /**
-     * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getValue()
-     * @generated
-     * @ordered
-     */
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
     protected String value = VALUE_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getScope() <em>Scope</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getScope() <em>Scope</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getScope()
-     * @generated
-     * @ordered
-     */
+	 * @see #getScope()
+	 * @generated
+	 * @ordered
+	 */
     protected static final EndPointPropertyScope SCOPE_EDEFAULT = EndPointPropertyScope.SYNAPSE;
 
     /**
-     * The cached value of the '{@link #getScope() <em>Scope</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getScope() <em>Scope</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getScope()
-     * @generated
-     * @ordered
-     */
+	 * @see #getScope()
+	 * @generated
+	 * @ordered
+	 */
     protected EndPointPropertyScope scope = SCOPE_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getValueType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getValueType()
+	 * @generated
+	 * @ordered
+	 */
     protected static final PropertyValueType VALUE_TYPE_EDEFAULT = PropertyValueType.LITERAL;
 
     /**
-     * The cached value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getValueType() <em>Value Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getValueType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getValueType()
+	 * @generated
+	 * @ordered
+	 */
     protected PropertyValueType valueType = VALUE_TYPE_EDEFAULT;
 
     /**
-     * The cached value of the '{@link #getValueExpression() <em>Value Expression</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getValueExpression() <em>Value Expression</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getValueExpression()
-     * @generated
-     * @ordered
-     */
+	 * @see #getValueExpression()
+	 * @generated
+	 * @ordered
+	 */
     protected NamespacedProperty valueExpression;
 
     /**
@@ -155,274 +155,274 @@ public class EndPointPropertyImpl extends EObjectImpl implements EndPointPropert
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.END_POINT_PROPERTY;
-    }
+		return EsbPackage.Literals.END_POINT_PROPERTY;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getName() {
-        return name;
-    }
+		return name;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setName(String newName) {
-        String oldName = name;
-        name = newName;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.END_POINT_PROPERTY__NAME, oldName, name));
-    }
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.END_POINT_PROPERTY__NAME, oldName, name));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getValue() {
-        return value;
-    }
+		return value;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setValue(String newValue) {
-        String oldValue = value;
-        value = newValue;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.END_POINT_PROPERTY__VALUE, oldValue, value));
-    }
+		String oldValue = value;
+		value = newValue;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.END_POINT_PROPERTY__VALUE, oldValue, value));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EndPointPropertyScope getScope() {
-        return scope;
-    }
+		return scope;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setScope(EndPointPropertyScope newScope) {
-        EndPointPropertyScope oldScope = scope;
-        scope = newScope == null ? SCOPE_EDEFAULT : newScope;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.END_POINT_PROPERTY__SCOPE, oldScope, scope));
-    }
+		EndPointPropertyScope oldScope = scope;
+		scope = newScope == null ? SCOPE_EDEFAULT : newScope;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.END_POINT_PROPERTY__SCOPE, oldScope, scope));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public PropertyValueType getValueType() {
-        return valueType;
-    }
+		return valueType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setValueType(PropertyValueType newValueType) {
-        PropertyValueType oldValueType = valueType;
-        valueType = newValueType == null ? VALUE_TYPE_EDEFAULT : newValueType;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.END_POINT_PROPERTY__VALUE_TYPE, oldValueType, valueType));
-    }
+		PropertyValueType oldValueType = valueType;
+		valueType = newValueType == null ? VALUE_TYPE_EDEFAULT : newValueType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.END_POINT_PROPERTY__VALUE_TYPE, oldValueType, valueType));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NamespacedProperty getValueExpression() {
-        return valueExpression;
-    }
+		return valueExpression;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetValueExpression(NamespacedProperty newValueExpression, NotificationChain msgs) {
-        NamespacedProperty oldValueExpression = valueExpression;
-        valueExpression = newValueExpression;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION, oldValueExpression, newValueExpression);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		NamespacedProperty oldValueExpression = valueExpression;
+		valueExpression = newValueExpression;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION, oldValueExpression, newValueExpression);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setValueExpression(NamespacedProperty newValueExpression) {
-        if (newValueExpression != valueExpression) {
-            NotificationChain msgs = null;
-            if (valueExpression != null)
-                msgs = ((InternalEObject)valueExpression).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION, null, msgs);
-            if (newValueExpression != null)
-                msgs = ((InternalEObject)newValueExpression).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION, null, msgs);
-            msgs = basicSetValueExpression(newValueExpression, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION, newValueExpression, newValueExpression));
-    }
+		if (newValueExpression != valueExpression) {
+			NotificationChain msgs = null;
+			if (valueExpression != null)
+				msgs = ((InternalEObject)valueExpression).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION, null, msgs);
+			if (newValueExpression != null)
+				msgs = ((InternalEObject)newValueExpression).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION, null, msgs);
+			msgs = basicSetValueExpression(newValueExpression, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION, newValueExpression, newValueExpression));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION:
-                return basicSetValueExpression(null, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION:
+				return basicSetValueExpression(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.END_POINT_PROPERTY__NAME:
-                return getName();
-            case EsbPackage.END_POINT_PROPERTY__VALUE:
-                return getValue();
-            case EsbPackage.END_POINT_PROPERTY__SCOPE:
-                return getScope();
-            case EsbPackage.END_POINT_PROPERTY__VALUE_TYPE:
-                return getValueType();
-            case EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION:
-                return getValueExpression();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.END_POINT_PROPERTY__NAME:
+				return getName();
+			case EsbPackage.END_POINT_PROPERTY__VALUE:
+				return getValue();
+			case EsbPackage.END_POINT_PROPERTY__SCOPE:
+				return getScope();
+			case EsbPackage.END_POINT_PROPERTY__VALUE_TYPE:
+				return getValueType();
+			case EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION:
+				return getValueExpression();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.END_POINT_PROPERTY__NAME:
-                setName((String)newValue);
-                return;
-            case EsbPackage.END_POINT_PROPERTY__VALUE:
-                setValue((String)newValue);
-                return;
-            case EsbPackage.END_POINT_PROPERTY__SCOPE:
-                setScope((EndPointPropertyScope)newValue);
-                return;
-            case EsbPackage.END_POINT_PROPERTY__VALUE_TYPE:
-                setValueType((PropertyValueType)newValue);
-                return;
-            case EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION:
-                setValueExpression((NamespacedProperty)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.END_POINT_PROPERTY__NAME:
+				setName((String)newValue);
+				return;
+			case EsbPackage.END_POINT_PROPERTY__VALUE:
+				setValue((String)newValue);
+				return;
+			case EsbPackage.END_POINT_PROPERTY__SCOPE:
+				setScope((EndPointPropertyScope)newValue);
+				return;
+			case EsbPackage.END_POINT_PROPERTY__VALUE_TYPE:
+				setValueType((PropertyValueType)newValue);
+				return;
+			case EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION:
+				setValueExpression((NamespacedProperty)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.END_POINT_PROPERTY__NAME:
-                setName(NAME_EDEFAULT);
-                return;
-            case EsbPackage.END_POINT_PROPERTY__VALUE:
-                setValue(VALUE_EDEFAULT);
-                return;
-            case EsbPackage.END_POINT_PROPERTY__SCOPE:
-                setScope(SCOPE_EDEFAULT);
-                return;
-            case EsbPackage.END_POINT_PROPERTY__VALUE_TYPE:
-                setValueType(VALUE_TYPE_EDEFAULT);
-                return;
-            case EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION:
-                setValueExpression((NamespacedProperty)null);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.END_POINT_PROPERTY__NAME:
+				setName(NAME_EDEFAULT);
+				return;
+			case EsbPackage.END_POINT_PROPERTY__VALUE:
+				setValue(VALUE_EDEFAULT);
+				return;
+			case EsbPackage.END_POINT_PROPERTY__SCOPE:
+				setScope(SCOPE_EDEFAULT);
+				return;
+			case EsbPackage.END_POINT_PROPERTY__VALUE_TYPE:
+				setValueType(VALUE_TYPE_EDEFAULT);
+				return;
+			case EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION:
+				setValueExpression((NamespacedProperty)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.END_POINT_PROPERTY__NAME:
-                return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-            case EsbPackage.END_POINT_PROPERTY__VALUE:
-                return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
-            case EsbPackage.END_POINT_PROPERTY__SCOPE:
-                return scope != SCOPE_EDEFAULT;
-            case EsbPackage.END_POINT_PROPERTY__VALUE_TYPE:
-                return valueType != VALUE_TYPE_EDEFAULT;
-            case EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION:
-                return valueExpression != null;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.END_POINT_PROPERTY__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case EsbPackage.END_POINT_PROPERTY__VALUE:
+				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+			case EsbPackage.END_POINT_PROPERTY__SCOPE:
+				return scope != SCOPE_EDEFAULT;
+			case EsbPackage.END_POINT_PROPERTY__VALUE_TYPE:
+				return valueType != VALUE_TYPE_EDEFAULT;
+			case EsbPackage.END_POINT_PROPERTY__VALUE_EXPRESSION:
+				return valueExpression != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (name: ");
-        result.append(name);
-        result.append(", value: ");
-        result.append(value);
-        result.append(", scope: ");
-        result.append(scope);
-        result.append(", valueType: ");
-        result.append(valueType);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(", value: ");
+		result.append(value);
+		result.append(", scope: ");
+		result.append(scope);
+		result.append(", valueType: ");
+		result.append(valueType);
+		result.append(')');
+		return result.toString();
+	}
 
 } // EndPointPropertyImpl

@@ -20,23 +20,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
  */
 public class AutoscaleInMediatorImpl extends MediatorImpl implements AutoscaleInMediator {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected AutoscaleInMediatorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.AUTOSCALE_IN_MEDIATOR;
-    }
+		return EsbPackage.Literals.AUTOSCALE_IN_MEDIATOR;
+	}
 
 } // AutoscaleInMediatorImpl

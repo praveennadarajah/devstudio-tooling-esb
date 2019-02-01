@@ -30,22 +30,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.PublishEventMediatorOutputConnec
 public class PublishEventMediatorOutputConnectorImpl extends OutputConnectorImpl
         implements PublishEventMediatorOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected PublishEventMediatorOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.PUBLISH_EVENT_MEDIATOR_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.PUBLISH_EVENT_MEDIATOR_OUTPUT_CONNECTOR;
+	}
 
 } // PublishEventMediatorOutputConnectorImpl

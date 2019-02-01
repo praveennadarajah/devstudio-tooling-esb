@@ -54,73 +54,73 @@ import org.wso2.developerstudio.eclipse.platform.core.utils.DeveloperStudioProvi
  */
 public class SmooksMediatorImpl extends MediatorImpl implements SmooksMediator {
     /**
-     * The cached value of the '{@link #getConfigurationKey() <em>Configuration Key</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getConfigurationKey() <em>Configuration Key</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getConfigurationKey()
-     * @generated
-     * @ordered
-     */
+	 * @see #getConfigurationKey()
+	 * @generated
+	 * @ordered
+	 */
     protected RegistryKeyProperty configurationKey;
 
     /**
-     * The default value of the '{@link #getInputType() <em>Input Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getInputType() <em>Input Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getInputType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getInputType()
+	 * @generated
+	 * @ordered
+	 */
     protected static final SmooksIODataType INPUT_TYPE_EDEFAULT = SmooksIODataType.XML;
 
     /**
-     * The cached value of the '{@link #getInputType() <em>Input Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getInputType() <em>Input Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getInputType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getInputType()
+	 * @generated
+	 * @ordered
+	 */
     protected SmooksIODataType inputType = INPUT_TYPE_EDEFAULT;
 
     /**
-     * The cached value of the '{@link #getInputExpression() <em>Input Expression</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getInputExpression() <em>Input Expression</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getInputExpression()
-     * @generated
-     * @ordered
-     */
+	 * @see #getInputExpression()
+	 * @generated
+	 * @ordered
+	 */
     protected NamespacedProperty inputExpression;
 
     /**
-     * The default value of the '{@link #getOutputType() <em>Output Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getOutputType() <em>Output Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutputType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutputType()
+	 * @generated
+	 * @ordered
+	 */
     protected static final SmooksOutputDataType OUTPUT_TYPE_EDEFAULT = SmooksOutputDataType.XML;
 
     /**
-     * The cached value of the '{@link #getOutputType() <em>Output Type</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOutputType() <em>Output Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutputType()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutputType()
+	 * @generated
+	 * @ordered
+	 */
     protected SmooksOutputDataType outputType = OUTPUT_TYPE_EDEFAULT;
 
     /**
-     * The cached value of the '{@link #getOutputExpression() <em>Output Expression</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOutputExpression() <em>Output Expression</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutputExpression()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutputExpression()
+	 * @generated
+	 * @ordered
+	 */
     protected NamespacedProperty outputExpression;
 
     /**
@@ -135,73 +135,73 @@ public class SmooksMediatorImpl extends MediatorImpl implements SmooksMediator {
     protected static final String OUTPUT_PROPERTY_EDEFAULT = "";
 
     /**
-     * The cached value of the '{@link #getOutputProperty() <em>Output Property</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOutputProperty() <em>Output Property</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutputProperty()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutputProperty()
+	 * @generated
+	 * @ordered
+	 */
     protected String outputProperty = OUTPUT_PROPERTY_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getOutputAction() <em>Output Action</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getOutputAction() <em>Output Action</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutputAction()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutputAction()
+	 * @generated
+	 * @ordered
+	 */
     protected static final ExpressionAction OUTPUT_ACTION_EDEFAULT = ExpressionAction.ADD;
 
     /**
-     * The cached value of the '{@link #getOutputAction() <em>Output Action</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOutputAction() <em>Output Action</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutputAction()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutputAction()
+	 * @generated
+	 * @ordered
+	 */
     protected ExpressionAction outputAction = OUTPUT_ACTION_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getOutputMethod() <em>Output Method</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getOutputMethod() <em>Output Method</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutputMethod()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutputMethod()
+	 * @generated
+	 * @ordered
+	 */
     protected static final OutputMethod OUTPUT_METHOD_EDEFAULT = OutputMethod.DEFAULT;
 
     /**
-     * The cached value of the '{@link #getOutputMethod() <em>Output Method</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOutputMethod() <em>Output Method</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutputMethod()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutputMethod()
+	 * @generated
+	 * @ordered
+	 */
     protected OutputMethod outputMethod = OUTPUT_METHOD_EDEFAULT;
 
     /**
-     * The cached value of the '{@link #getInputConnector() <em>Input Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getInputConnector() <em>Input Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getInputConnector()
-     * @generated
-     * @ordered
-     */
+	 * @see #getInputConnector()
+	 * @generated
+	 * @ordered
+	 */
     protected SmooksMediatorInputConnector inputConnector;
 
     /**
-     * The cached value of the '{@link #getOutputConnector() <em>Output Connector</em>}' containment reference.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOutputConnector() <em>Output Connector</em>}' containment reference.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getOutputConnector()
-     * @generated
-     * @ordered
-     */
+	 * @see #getOutputConnector()
+	 * @generated
+	 * @ordered
+	 */
     protected SmooksMediatorOutputConnector outputConnector;
 
     /**
@@ -234,529 +234,529 @@ public class SmooksMediatorImpl extends MediatorImpl implements SmooksMediator {
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.SMOOKS_MEDIATOR;
-    }
+		return EsbPackage.Literals.SMOOKS_MEDIATOR;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public RegistryKeyProperty getConfigurationKey() {
-        return configurationKey;
-    }
+		return configurationKey;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetConfigurationKey(RegistryKeyProperty newConfigurationKey, NotificationChain msgs) {
-        RegistryKeyProperty oldConfigurationKey = configurationKey;
-        configurationKey = newConfigurationKey;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY, oldConfigurationKey, newConfigurationKey);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		RegistryKeyProperty oldConfigurationKey = configurationKey;
+		configurationKey = newConfigurationKey;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY, oldConfigurationKey, newConfigurationKey);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setConfigurationKey(RegistryKeyProperty newConfigurationKey) {
-        if (newConfigurationKey != configurationKey) {
-            NotificationChain msgs = null;
-            if (configurationKey != null)
-                msgs = ((InternalEObject)configurationKey).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY, null, msgs);
-            if (newConfigurationKey != null)
-                msgs = ((InternalEObject)newConfigurationKey).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY, null, msgs);
-            msgs = basicSetConfigurationKey(newConfigurationKey, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY, newConfigurationKey, newConfigurationKey));
-    }
+		if (newConfigurationKey != configurationKey) {
+			NotificationChain msgs = null;
+			if (configurationKey != null)
+				msgs = ((InternalEObject)configurationKey).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY, null, msgs);
+			if (newConfigurationKey != null)
+				msgs = ((InternalEObject)newConfigurationKey).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY, null, msgs);
+			msgs = basicSetConfigurationKey(newConfigurationKey, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY, newConfigurationKey, newConfigurationKey));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public SmooksIODataType getInputType() {
-        return inputType;
-    }
+		return inputType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setInputType(SmooksIODataType newInputType) {
-        SmooksIODataType oldInputType = inputType;
-        inputType = newInputType == null ? INPUT_TYPE_EDEFAULT : newInputType;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__INPUT_TYPE, oldInputType, inputType));
-    }
+		SmooksIODataType oldInputType = inputType;
+		inputType = newInputType == null ? INPUT_TYPE_EDEFAULT : newInputType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__INPUT_TYPE, oldInputType, inputType));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NamespacedProperty getInputExpression() {
-        return inputExpression;
-    }
+		return inputExpression;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetInputExpression(NamespacedProperty newInputExpression, NotificationChain msgs) {
-        NamespacedProperty oldInputExpression = inputExpression;
-        inputExpression = newInputExpression;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION, oldInputExpression, newInputExpression);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		NamespacedProperty oldInputExpression = inputExpression;
+		inputExpression = newInputExpression;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION, oldInputExpression, newInputExpression);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setInputExpression(NamespacedProperty newInputExpression) {
-        if (newInputExpression != inputExpression) {
-            NotificationChain msgs = null;
-            if (inputExpression != null)
-                msgs = ((InternalEObject)inputExpression).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION, null, msgs);
-            if (newInputExpression != null)
-                msgs = ((InternalEObject)newInputExpression).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION, null, msgs);
-            msgs = basicSetInputExpression(newInputExpression, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION, newInputExpression, newInputExpression));
-    }
+		if (newInputExpression != inputExpression) {
+			NotificationChain msgs = null;
+			if (inputExpression != null)
+				msgs = ((InternalEObject)inputExpression).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION, null, msgs);
+			if (newInputExpression != null)
+				msgs = ((InternalEObject)newInputExpression).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION, null, msgs);
+			msgs = basicSetInputExpression(newInputExpression, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION, newInputExpression, newInputExpression));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public SmooksOutputDataType getOutputType() {
-        return outputType;
-    }
+		return outputType;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setOutputType(SmooksOutputDataType newOutputType) {
-        SmooksOutputDataType oldOutputType = outputType;
-        outputType = newOutputType == null ? OUTPUT_TYPE_EDEFAULT : newOutputType;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_TYPE, oldOutputType, outputType));
-    }
+		SmooksOutputDataType oldOutputType = outputType;
+		outputType = newOutputType == null ? OUTPUT_TYPE_EDEFAULT : newOutputType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_TYPE, oldOutputType, outputType));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NamespacedProperty getOutputExpression() {
-        return outputExpression;
-    }
+		return outputExpression;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetOutputExpression(NamespacedProperty newOutputExpression, NotificationChain msgs) {
-        NamespacedProperty oldOutputExpression = outputExpression;
-        outputExpression = newOutputExpression;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION, oldOutputExpression, newOutputExpression);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		NamespacedProperty oldOutputExpression = outputExpression;
+		outputExpression = newOutputExpression;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION, oldOutputExpression, newOutputExpression);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setOutputExpression(NamespacedProperty newOutputExpression) {
-        if (newOutputExpression != outputExpression) {
-            NotificationChain msgs = null;
-            if (outputExpression != null)
-                msgs = ((InternalEObject)outputExpression).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION, null, msgs);
-            if (newOutputExpression != null)
-                msgs = ((InternalEObject)newOutputExpression).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION, null, msgs);
-            msgs = basicSetOutputExpression(newOutputExpression, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION, newOutputExpression, newOutputExpression));
-    }
+		if (newOutputExpression != outputExpression) {
+			NotificationChain msgs = null;
+			if (outputExpression != null)
+				msgs = ((InternalEObject)outputExpression).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION, null, msgs);
+			if (newOutputExpression != null)
+				msgs = ((InternalEObject)newOutputExpression).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION, null, msgs);
+			msgs = basicSetOutputExpression(newOutputExpression, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION, newOutputExpression, newOutputExpression));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getOutputProperty() {
-        return outputProperty;
-    }
+		return outputProperty;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setOutputProperty(String newOutputProperty) {
-        String oldOutputProperty = outputProperty;
-        outputProperty = newOutputProperty;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_PROPERTY, oldOutputProperty, outputProperty));
-    }
+		String oldOutputProperty = outputProperty;
+		outputProperty = newOutputProperty;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_PROPERTY, oldOutputProperty, outputProperty));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public ExpressionAction getOutputAction() {
-        return outputAction;
-    }
+		return outputAction;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setOutputAction(ExpressionAction newOutputAction) {
-        ExpressionAction oldOutputAction = outputAction;
-        outputAction = newOutputAction == null ? OUTPUT_ACTION_EDEFAULT : newOutputAction;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_ACTION, oldOutputAction, outputAction));
-    }
+		ExpressionAction oldOutputAction = outputAction;
+		outputAction = newOutputAction == null ? OUTPUT_ACTION_EDEFAULT : newOutputAction;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_ACTION, oldOutputAction, outputAction));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public OutputMethod getOutputMethod() {
-        return outputMethod;
-    }
+		return outputMethod;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setOutputMethod(OutputMethod newOutputMethod) {
-        OutputMethod oldOutputMethod = outputMethod;
-        outputMethod = newOutputMethod == null ? OUTPUT_METHOD_EDEFAULT : newOutputMethod;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_METHOD, oldOutputMethod, outputMethod));
-    }
+		OutputMethod oldOutputMethod = outputMethod;
+		outputMethod = newOutputMethod == null ? OUTPUT_METHOD_EDEFAULT : newOutputMethod;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_METHOD, oldOutputMethod, outputMethod));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public SmooksMediatorInputConnector getInputConnector() {
-        return inputConnector;
-    }
+		return inputConnector;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetInputConnector(SmooksMediatorInputConnector newInputConnector,
             NotificationChain msgs) {
-        SmooksMediatorInputConnector oldInputConnector = inputConnector;
-        inputConnector = newInputConnector;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR, oldInputConnector, newInputConnector);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		SmooksMediatorInputConnector oldInputConnector = inputConnector;
+		inputConnector = newInputConnector;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR, oldInputConnector, newInputConnector);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setInputConnector(SmooksMediatorInputConnector newInputConnector) {
-        if (newInputConnector != inputConnector) {
-            NotificationChain msgs = null;
-            if (inputConnector != null)
-                msgs = ((InternalEObject)inputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR, null, msgs);
-            if (newInputConnector != null)
-                msgs = ((InternalEObject)newInputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR, null, msgs);
-            msgs = basicSetInputConnector(newInputConnector, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR, newInputConnector, newInputConnector));
-    }
+		if (newInputConnector != inputConnector) {
+			NotificationChain msgs = null;
+			if (inputConnector != null)
+				msgs = ((InternalEObject)inputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR, null, msgs);
+			if (newInputConnector != null)
+				msgs = ((InternalEObject)newInputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR, null, msgs);
+			msgs = basicSetInputConnector(newInputConnector, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR, newInputConnector, newInputConnector));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public SmooksMediatorOutputConnector getOutputConnector() {
-        return outputConnector;
-    }
+		return outputConnector;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public NotificationChain basicSetOutputConnector(SmooksMediatorOutputConnector newOutputConnector,
             NotificationChain msgs) {
-        SmooksMediatorOutputConnector oldOutputConnector = outputConnector;
-        outputConnector = newOutputConnector;
-        if (eNotificationRequired()) {
-            ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR, oldOutputConnector, newOutputConnector);
-            if (msgs == null) msgs = notification; else msgs.add(notification);
-        }
-        return msgs;
-    }
+		SmooksMediatorOutputConnector oldOutputConnector = outputConnector;
+		outputConnector = newOutputConnector;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR, oldOutputConnector, newOutputConnector);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setOutputConnector(SmooksMediatorOutputConnector newOutputConnector) {
-        if (newOutputConnector != outputConnector) {
-            NotificationChain msgs = null;
-            if (outputConnector != null)
-                msgs = ((InternalEObject)outputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
-            if (newOutputConnector != null)
-                msgs = ((InternalEObject)newOutputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
-            msgs = basicSetOutputConnector(newOutputConnector, msgs);
-            if (msgs != null) msgs.dispatch();
-        }
-        else if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR, newOutputConnector, newOutputConnector));
-    }
+		if (newOutputConnector != outputConnector) {
+			NotificationChain msgs = null;
+			if (outputConnector != null)
+				msgs = ((InternalEObject)outputConnector).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
+			if (newOutputConnector != null)
+				msgs = ((InternalEObject)newOutputConnector).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR, null, msgs);
+			msgs = basicSetOutputConnector(newOutputConnector, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR, newOutputConnector, newOutputConnector));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY:
-                return basicSetConfigurationKey(null, msgs);
-            case EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION:
-                return basicSetInputExpression(null, msgs);
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION:
-                return basicSetOutputExpression(null, msgs);
-            case EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR:
-                return basicSetInputConnector(null, msgs);
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR:
-                return basicSetOutputConnector(null, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY:
+				return basicSetConfigurationKey(null, msgs);
+			case EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION:
+				return basicSetInputExpression(null, msgs);
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION:
+				return basicSetOutputExpression(null, msgs);
+			case EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR:
+				return basicSetInputConnector(null, msgs);
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR:
+				return basicSetOutputConnector(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY:
-                return getConfigurationKey();
-            case EsbPackage.SMOOKS_MEDIATOR__INPUT_TYPE:
-                return getInputType();
-            case EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION:
-                return getInputExpression();
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_TYPE:
-                return getOutputType();
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION:
-                return getOutputExpression();
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_PROPERTY:
-                return getOutputProperty();
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_ACTION:
-                return getOutputAction();
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_METHOD:
-                return getOutputMethod();
-            case EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR:
-                return getInputConnector();
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR:
-                return getOutputConnector();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY:
+				return getConfigurationKey();
+			case EsbPackage.SMOOKS_MEDIATOR__INPUT_TYPE:
+				return getInputType();
+			case EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION:
+				return getInputExpression();
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_TYPE:
+				return getOutputType();
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION:
+				return getOutputExpression();
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_PROPERTY:
+				return getOutputProperty();
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_ACTION:
+				return getOutputAction();
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_METHOD:
+				return getOutputMethod();
+			case EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR:
+				return getInputConnector();
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR:
+				return getOutputConnector();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY:
-                setConfigurationKey((RegistryKeyProperty)newValue);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__INPUT_TYPE:
-                setInputType((SmooksIODataType)newValue);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION:
-                setInputExpression((NamespacedProperty)newValue);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_TYPE:
-                setOutputType((SmooksOutputDataType)newValue);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION:
-                setOutputExpression((NamespacedProperty)newValue);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_PROPERTY:
-                setOutputProperty((String)newValue);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_ACTION:
-                setOutputAction((ExpressionAction)newValue);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_METHOD:
-                setOutputMethod((OutputMethod)newValue);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR:
-                setInputConnector((SmooksMediatorInputConnector)newValue);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR:
-                setOutputConnector((SmooksMediatorOutputConnector)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY:
+				setConfigurationKey((RegistryKeyProperty)newValue);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__INPUT_TYPE:
+				setInputType((SmooksIODataType)newValue);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION:
+				setInputExpression((NamespacedProperty)newValue);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_TYPE:
+				setOutputType((SmooksOutputDataType)newValue);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION:
+				setOutputExpression((NamespacedProperty)newValue);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_PROPERTY:
+				setOutputProperty((String)newValue);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_ACTION:
+				setOutputAction((ExpressionAction)newValue);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_METHOD:
+				setOutputMethod((OutputMethod)newValue);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR:
+				setInputConnector((SmooksMediatorInputConnector)newValue);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR:
+				setOutputConnector((SmooksMediatorOutputConnector)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY:
-                setConfigurationKey((RegistryKeyProperty)null);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__INPUT_TYPE:
-                setInputType(INPUT_TYPE_EDEFAULT);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION:
-                setInputExpression((NamespacedProperty)null);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_TYPE:
-                setOutputType(OUTPUT_TYPE_EDEFAULT);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION:
-                setOutputExpression((NamespacedProperty)null);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_PROPERTY:
-                setOutputProperty(OUTPUT_PROPERTY_EDEFAULT);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_ACTION:
-                setOutputAction(OUTPUT_ACTION_EDEFAULT);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_METHOD:
-                setOutputMethod(OUTPUT_METHOD_EDEFAULT);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR:
-                setInputConnector((SmooksMediatorInputConnector)null);
-                return;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR:
-                setOutputConnector((SmooksMediatorOutputConnector)null);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY:
+				setConfigurationKey((RegistryKeyProperty)null);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__INPUT_TYPE:
+				setInputType(INPUT_TYPE_EDEFAULT);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION:
+				setInputExpression((NamespacedProperty)null);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_TYPE:
+				setOutputType(OUTPUT_TYPE_EDEFAULT);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION:
+				setOutputExpression((NamespacedProperty)null);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_PROPERTY:
+				setOutputProperty(OUTPUT_PROPERTY_EDEFAULT);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_ACTION:
+				setOutputAction(OUTPUT_ACTION_EDEFAULT);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_METHOD:
+				setOutputMethod(OUTPUT_METHOD_EDEFAULT);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR:
+				setInputConnector((SmooksMediatorInputConnector)null);
+				return;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR:
+				setOutputConnector((SmooksMediatorOutputConnector)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY:
-                return configurationKey != null;
-            case EsbPackage.SMOOKS_MEDIATOR__INPUT_TYPE:
-                return inputType != INPUT_TYPE_EDEFAULT;
-            case EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION:
-                return inputExpression != null;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_TYPE:
-                return outputType != OUTPUT_TYPE_EDEFAULT;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION:
-                return outputExpression != null;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_PROPERTY:
-                return OUTPUT_PROPERTY_EDEFAULT == null ? outputProperty != null : !OUTPUT_PROPERTY_EDEFAULT.equals(outputProperty);
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_ACTION:
-                return outputAction != OUTPUT_ACTION_EDEFAULT;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_METHOD:
-                return outputMethod != OUTPUT_METHOD_EDEFAULT;
-            case EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR:
-                return inputConnector != null;
-            case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR:
-                return outputConnector != null;
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.SMOOKS_MEDIATOR__CONFIGURATION_KEY:
+				return configurationKey != null;
+			case EsbPackage.SMOOKS_MEDIATOR__INPUT_TYPE:
+				return inputType != INPUT_TYPE_EDEFAULT;
+			case EsbPackage.SMOOKS_MEDIATOR__INPUT_EXPRESSION:
+				return inputExpression != null;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_TYPE:
+				return outputType != OUTPUT_TYPE_EDEFAULT;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_EXPRESSION:
+				return outputExpression != null;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_PROPERTY:
+				return OUTPUT_PROPERTY_EDEFAULT == null ? outputProperty != null : !OUTPUT_PROPERTY_EDEFAULT.equals(outputProperty);
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_ACTION:
+				return outputAction != OUTPUT_ACTION_EDEFAULT;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_METHOD:
+				return outputMethod != OUTPUT_METHOD_EDEFAULT;
+			case EsbPackage.SMOOKS_MEDIATOR__INPUT_CONNECTOR:
+				return inputConnector != null;
+			case EsbPackage.SMOOKS_MEDIATOR__OUTPUT_CONNECTOR:
+				return outputConnector != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (inputType: ");
-        result.append(inputType);
-        result.append(", outputType: ");
-        result.append(outputType);
-        result.append(", outputProperty: ");
-        result.append(outputProperty);
-        result.append(", outputAction: ");
-        result.append(outputAction);
-        result.append(", outputMethod: ");
-        result.append(outputMethod);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (inputType: ");
+		result.append(inputType);
+		result.append(", outputType: ");
+		result.append(outputType);
+		result.append(", outputProperty: ");
+		result.append(outputProperty);
+		result.append(", outputAction: ");
+		result.append(outputAction);
+		result.append(", outputMethod: ");
+		result.append(outputMethod);
+		result.append(')');
+		return result.toString();
+	}
 
 } // SmooksMediatorImpl

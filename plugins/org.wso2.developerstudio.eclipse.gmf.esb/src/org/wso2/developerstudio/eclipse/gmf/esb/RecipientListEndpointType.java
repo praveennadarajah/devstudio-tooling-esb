@@ -32,221 +32,221 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum RecipientListEndpointType implements Enumerator {
     /**
-     * The '<em><b>INLINE</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>INLINE</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #INLINE_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #INLINE_VALUE
+	 * @generated
+	 * @ordered
+	 */
     INLINE(0, "INLINE", "Inline"),
 
     /**
-     * The '<em><b>VALUE</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>VALUE</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #VALUE_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #VALUE_VALUE
+	 * @generated
+	 * @ordered
+	 */
     VALUE(1, "VALUE", "Value"),
     /**
-     * The '<em><b>XPATH</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>XPATH</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #XPATH_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #XPATH_VALUE
+	 * @generated
+	 * @ordered
+	 */
     XPATH(2, "XPATH", "XPath");
 
     /**
-     * The '<em><b>INLINE</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>INLINE</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>INLINE</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #INLINE
-     * @model literal="Inline"
-     * @generated
-     * @ordered
-     */
+	 * @see #INLINE
+	 * @model literal="Inline"
+	 * @generated
+	 * @ordered
+	 */
     public static final int INLINE_VALUE = 0;
 
     /**
-     * The '<em><b>VALUE</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>VALUE</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>VALUE</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #VALUE
-     * @model literal="Value"
-     * @generated
-     * @ordered
-     */
+	 * @see #VALUE
+	 * @model literal="Value"
+	 * @generated
+	 * @ordered
+	 */
     public static final int VALUE_VALUE = 1;
 
     /**
-     * The '<em><b>XPATH</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>XPATH</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>XPATH</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #XPATH
-     * @model literal="XPath"
-     * @generated
-     * @ordered
-     */
+	 * @see #XPATH
+	 * @model literal="XPath"
+	 * @generated
+	 * @ordered
+	 */
     public static final int XPATH_VALUE = 2;
 
     /**
-     * An array of all the '<em><b>Recipient List Endpoint Type</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * An array of all the '<em><b>Recipient List Endpoint Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private static final RecipientListEndpointType[] VALUES_ARRAY = new RecipientListEndpointType[] {
-            INLINE,
-            VALUE,
-            XPATH,
-        };
+			INLINE,
+			VALUE,
+			XPATH,
+		};
 
     /**
-     * A public read-only list of all the '<em><b>Recipient List Endpoint Type</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * A public read-only list of all the '<em><b>Recipient List Endpoint Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public static final List<RecipientListEndpointType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
     /**
-     * Returns the '<em><b>Recipient List Endpoint Type</b></em>' literal with the specified literal value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Recipient List Endpoint Type</b></em>' literal with the specified literal value.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param literal the literal.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static RecipientListEndpointType get(String literal) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            RecipientListEndpointType result = VALUES_ARRAY[i];
-            if (result.toString().equals(literal)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			RecipientListEndpointType result = VALUES_ARRAY[i];
+			if (result.toString().equals(literal)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
     /**
-     * Returns the '<em><b>Recipient List Endpoint Type</b></em>' literal with the specified name.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Recipient List Endpoint Type</b></em>' literal with the specified name.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param name the name.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static RecipientListEndpointType getByName(String name) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            RecipientListEndpointType result = VALUES_ARRAY[i];
-            if (result.getName().equals(name)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			RecipientListEndpointType result = VALUES_ARRAY[i];
+			if (result.getName().equals(name)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
     /**
-     * Returns the '<em><b>Recipient List Endpoint Type</b></em>' literal with the specified integer value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Recipient List Endpoint Type</b></em>' literal with the specified integer value.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the integer value.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static RecipientListEndpointType get(int value) {
-        switch (value) {
-            case INLINE_VALUE: return INLINE;
-            case VALUE_VALUE: return VALUE;
-            case XPATH_VALUE: return XPATH;
-        }
-        return null;
-    }
+		switch (value) {
+			case INLINE_VALUE: return INLINE;
+			case VALUE_VALUE: return VALUE;
+			case XPATH_VALUE: return XPATH;
+		}
+		return null;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final int value;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final String name;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final String literal;
 
     /**
-     * Only this class can construct instances.
-     * <!-- begin-user-doc -->
+	 * Only this class can construct instances.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private RecipientListEndpointType(int value, String name, String literal) {
-        this.value = value;
-        this.name = name;
-        this.literal = literal;
-    }
+		this.value = value;
+		this.name = name;
+		this.literal = literal;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public int getValue() {
-      return value;
-    }
+	  return value;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getName() {
-      return name;
-    }
+	  return name;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getLiteral() {
-      return literal;
-    }
+	  return literal;
+	}
 
     /**
-     * Returns the literal value of the enumerator, which is its string representation.
-     * <!-- begin-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string representation.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        return literal;
-    }
+		return literal;
+	}
 
 } // RecipientListEndpointType

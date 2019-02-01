@@ -27,45 +27,45 @@ import org.eclipse.emf.common.util.EList;
  */
 public interface EsbElement extends EsbNode {
     /**
-     * Returns the value of the '<em><b>Description</b></em>' attribute.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Description</em>' attribute isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Description</em>' attribute.
-     * @see #setDescription(String)
-     * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getEsbElement_Description()
-     * @model
-     * @generated
-     */
+	 * @return the value of the '<em>Description</em>' attribute.
+	 * @see #setDescription(String)
+	 * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getEsbElement_Description()
+	 * @model
+	 * @generated
+	 */
     String getDescription();
 
     /**
-     * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.EsbElement#getDescription <em>Description</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.wso2.developerstudio.eclipse.gmf.esb.EsbElement#getDescription <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the new value of the '<em>Description</em>' attribute.
-     * @see #getDescription()
-     * @generated
-     */
+	 * @param value the new value of the '<em>Description</em>' attribute.
+	 * @see #getDescription()
+	 * @generated
+	 */
     void setDescription(String value);
 
     /**
-     * Returns the value of the '<em><b>Comments List</b></em>' attribute list.
-     * The list contents are of type {@link java.lang.String}.
-     * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Comments List</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of the '<em>Comments List</em>' attribute list isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @return the value of the '<em>Comments List</em>' attribute list.
-     * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getEsbElement_CommentsList()
-     * @model unique="false"
-     * @generated
-     */
+	 * @return the value of the '<em>Comments List</em>' attribute list.
+	 * @see org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage#getEsbElement_CommentsList()
+	 * @model unique="false"
+	 * @generated
+	 */
     EList<String> getCommentsList();
 
     /**

@@ -20,23 +20,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
  */
 public class EnrichMediatorOutputConnectorImpl extends OutputConnectorImpl implements EnrichMediatorOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected EnrichMediatorOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.ENRICH_MEDIATOR_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.ENRICH_MEDIATOR_OUTPUT_CONNECTOR;
+	}
 
 } // EnrichMediatorOutputConnectorImpl

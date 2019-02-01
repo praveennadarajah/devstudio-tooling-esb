@@ -20,22 +20,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
  */
 public class CalloutMediatorInputConnectorImpl extends InputConnectorImpl implements CalloutMediatorInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected CalloutMediatorInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.CALLOUT_MEDIATOR_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.CALLOUT_MEDIATOR_INPUT_CONNECTOR;
+	}
 
 } // CalloutMediatorInputConnectorImpl

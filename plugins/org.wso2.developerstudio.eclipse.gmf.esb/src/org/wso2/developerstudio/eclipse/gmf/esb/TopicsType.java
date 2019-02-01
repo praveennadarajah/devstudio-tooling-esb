@@ -32,195 +32,195 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum TopicsType implements Enumerator {
     /**
-     * The '<em><b>Topics</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Topics</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #TOPICS_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #TOPICS_VALUE
+	 * @generated
+	 * @ordered
+	 */
     TOPICS(0, "topics", "topics"),
 
     /**
-     * The '<em><b>Topic Filter</b></em>' literal object.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Topic Filter</b></em>' literal object.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #TOPIC_FILTER_VALUE
-     * @generated
-     * @ordered
-     */
+	 * @see #TOPIC_FILTER_VALUE
+	 * @generated
+	 * @ordered
+	 */
     TOPIC_FILTER(1, "TopicFilter", "topic.filter");
 
     /**
-     * The '<em><b>Topics</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Topics</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Topics</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #TOPICS
-     * @model name="topics"
-     * @generated
-     * @ordered
-     */
+	 * @see #TOPICS
+	 * @model name="topics"
+	 * @generated
+	 * @ordered
+	 */
     public static final int TOPICS_VALUE = 0;
 
     /**
-     * The '<em><b>Topic Filter</b></em>' literal value.
-     * <!-- begin-user-doc -->
+	 * The '<em><b>Topic Filter</b></em>' literal value.
+	 * <!-- begin-user-doc -->
      * <p>
      * If the meaning of '<em><b>Topic Filter</b></em>' literal object isn't clear,
      * there really should be more of a description here...
      * </p>
      * <!-- end-user-doc -->
-     * @see #TOPIC_FILTER
-     * @model name="TopicFilter" literal="topic.filter"
-     * @generated
-     * @ordered
-     */
+	 * @see #TOPIC_FILTER
+	 * @model name="TopicFilter" literal="topic.filter"
+	 * @generated
+	 * @ordered
+	 */
     public static final int TOPIC_FILTER_VALUE = 1;
 
     /**
-     * An array of all the '<em><b>Topics Type</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * An array of all the '<em><b>Topics Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private static final TopicsType[] VALUES_ARRAY = new TopicsType[] {
-            TOPICS,
-            TOPIC_FILTER,
-        };
+			TOPICS,
+			TOPIC_FILTER,
+		};
 
     /**
-     * A public read-only list of all the '<em><b>Topics Type</b></em>' enumerators.
-     * <!-- begin-user-doc -->
+	 * A public read-only list of all the '<em><b>Topics Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public static final List<TopicsType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
     /**
-     * Returns the '<em><b>Topics Type</b></em>' literal with the specified literal value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Topics Type</b></em>' literal with the specified literal value.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param literal the literal.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static TopicsType get(String literal) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            TopicsType result = VALUES_ARRAY[i];
-            if (result.toString().equals(literal)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			TopicsType result = VALUES_ARRAY[i];
+			if (result.toString().equals(literal)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
     /**
-     * Returns the '<em><b>Topics Type</b></em>' literal with the specified name.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Topics Type</b></em>' literal with the specified name.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param name the name.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static TopicsType getByName(String name) {
-        for (int i = 0; i < VALUES_ARRAY.length; ++i) {
-            TopicsType result = VALUES_ARRAY[i];
-            if (result.getName().equals(name)) {
-                return result;
-            }
-        }
-        return null;
-    }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			TopicsType result = VALUES_ARRAY[i];
+			if (result.getName().equals(name)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
     /**
-     * Returns the '<em><b>Topics Type</b></em>' literal with the specified integer value.
-     * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Topics Type</b></em>' literal with the specified integer value.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @param value the integer value.
-     * @return the matching enumerator or <code>null</code>.
-     * @generated
-     */
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
     public static TopicsType get(int value) {
-        switch (value) {
-            case TOPICS_VALUE: return TOPICS;
-            case TOPIC_FILTER_VALUE: return TOPIC_FILTER;
-        }
-        return null;
-    }
+		switch (value) {
+			case TOPICS_VALUE: return TOPICS;
+			case TOPIC_FILTER_VALUE: return TOPIC_FILTER;
+		}
+		return null;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final int value;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final String name;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private final String literal;
 
     /**
-     * Only this class can construct instances.
-     * <!-- begin-user-doc -->
+	 * Only this class can construct instances.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     private TopicsType(int value, String name, String literal) {
-        this.value = value;
-        this.name = name;
-        this.literal = literal;
-    }
+		this.value = value;
+		this.name = name;
+		this.literal = literal;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public int getValue() {
-      return value;
-    }
+	  return value;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getName() {
-      return name;
-    }
+	  return name;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getLiteral() {
-      return literal;
-    }
+	  return literal;
+	}
 
     /**
-     * Returns the literal value of the enumerator, which is its string representation.
-     * <!-- begin-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string representation.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        return literal;
-    }
+		return literal;
+	}
 
 } // TopicsType

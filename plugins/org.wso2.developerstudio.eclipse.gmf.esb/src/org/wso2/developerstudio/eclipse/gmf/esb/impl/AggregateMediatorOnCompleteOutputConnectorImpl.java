@@ -21,22 +21,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
 public class AggregateMediatorOnCompleteOutputConnectorImpl extends OutputConnectorImpl
         implements AggregateMediatorOnCompleteOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected AggregateMediatorOnCompleteOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.AGGREGATE_MEDIATOR_ON_COMPLETE_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.AGGREGATE_MEDIATOR_ON_COMPLETE_OUTPUT_CONNECTOR;
+	}
 
 } // AggregateMediatorOnCompleteOutputConnectorImpl

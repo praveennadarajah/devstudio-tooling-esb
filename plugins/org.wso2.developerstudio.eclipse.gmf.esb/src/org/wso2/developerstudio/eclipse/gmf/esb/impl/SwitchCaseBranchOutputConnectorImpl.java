@@ -31,127 +31,127 @@ import org.wso2.developerstudio.eclipse.gmf.esb.SwitchCaseBranchOutputConnector;
 public class SwitchCaseBranchOutputConnectorImpl extends OutputConnectorImpl
         implements SwitchCaseBranchOutputConnector {
     /**
-     * The default value of the '{@link #getCaseRegex() <em>Case Regex</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getCaseRegex() <em>Case Regex</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getCaseRegex()
-     * @generated
-     * @ordered
-     */
-    protected static final String CASE_REGEX_EDEFAULT = "";
+	 * @see #getCaseRegex()
+	 * @generated
+	 * @ordered
+	 */
+    protected static final String CASE_REGEX_EDEFAULT = ".*+";
 
     /**
-     * The cached value of the '{@link #getCaseRegex() <em>Case Regex</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getCaseRegex() <em>Case Regex</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getCaseRegex()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCaseRegex()
+	 * @generated
+	 * @ordered
+	 */
     protected String caseRegex = CASE_REGEX_EDEFAULT;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected SwitchCaseBranchOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.SWITCH_CASE_BRANCH_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.SWITCH_CASE_BRANCH_OUTPUT_CONNECTOR;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getCaseRegex() {
-        return caseRegex;
-    }
+		return caseRegex;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setCaseRegex(String newCaseRegex) {
-        String oldCaseRegex = caseRegex;
-        caseRegex = newCaseRegex;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SWITCH_CASE_BRANCH_OUTPUT_CONNECTOR__CASE_REGEX, oldCaseRegex, caseRegex));
-    }
+		String oldCaseRegex = caseRegex;
+		caseRegex = newCaseRegex;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.SWITCH_CASE_BRANCH_OUTPUT_CONNECTOR__CASE_REGEX, oldCaseRegex, caseRegex));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.SWITCH_CASE_BRANCH_OUTPUT_CONNECTOR__CASE_REGEX:
-                return getCaseRegex();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.SWITCH_CASE_BRANCH_OUTPUT_CONNECTOR__CASE_REGEX:
+				return getCaseRegex();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.SWITCH_CASE_BRANCH_OUTPUT_CONNECTOR__CASE_REGEX:
-                setCaseRegex((String)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.SWITCH_CASE_BRANCH_OUTPUT_CONNECTOR__CASE_REGEX:
+				setCaseRegex((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.SWITCH_CASE_BRANCH_OUTPUT_CONNECTOR__CASE_REGEX:
-                setCaseRegex(CASE_REGEX_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.SWITCH_CASE_BRANCH_OUTPUT_CONNECTOR__CASE_REGEX:
+				setCaseRegex(CASE_REGEX_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.SWITCH_CASE_BRANCH_OUTPUT_CONNECTOR__CASE_REGEX:
-                return CASE_REGEX_EDEFAULT == null ? caseRegex != null : !CASE_REGEX_EDEFAULT.equals(caseRegex);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.SWITCH_CASE_BRANCH_OUTPUT_CONNECTOR__CASE_REGEX:
+				return CASE_REGEX_EDEFAULT == null ? caseRegex != null : !CASE_REGEX_EDEFAULT.equals(caseRegex);
+		}
+		return super.eIsSet(featureID);
+	}
 
     /**
      * <!-- begin-user-doc -->

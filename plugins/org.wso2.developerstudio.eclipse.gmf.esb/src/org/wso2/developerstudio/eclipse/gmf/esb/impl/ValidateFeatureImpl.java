@@ -33,14 +33,14 @@ public class ValidateFeatureImpl extends AbstractBooleanFeatureImpl implements V
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.VALIDATE_FEATURE;
-    }
+		return EsbPackage.Literals.VALIDATE_FEATURE;
+	}
 
 } // ValidateFeatureImpl

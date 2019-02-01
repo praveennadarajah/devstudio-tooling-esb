@@ -20,22 +20,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.ProxyFaultInputConnector;
  */
 public class ProxyFaultInputConnectorImpl extends InputConnectorImpl implements ProxyFaultInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected ProxyFaultInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.PROXY_FAULT_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.PROXY_FAULT_INPUT_CONNECTOR;
+	}
 
 } // ProxyFaultInputConnectorImpl

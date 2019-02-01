@@ -41,8 +41,8 @@ public class LogMediatorItemProvider extends MediatorItemProvider {
      * @generated
      */
     public LogMediatorItemProvider(AdapterFactory adapterFactory) {
-        super(adapterFactory);
-    }
+		super(adapterFactory);
+	}
 
     /**
      * This returns the property descriptors for the adapted class. <!--
@@ -73,20 +73,20 @@ public class LogMediatorItemProvider extends MediatorItemProvider {
      * @generated
      */
     protected void addLogCategoryPropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_LogMediator_logCategory_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_LogMediator_logCategory_feature", "_UI_LogMediator_type"),
-                 EsbPackage.Literals.LOG_MEDIATOR__LOG_CATEGORY,
-                 true,
-                 false,
-                 false,
-                 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-                 null,
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_LogMediator_logCategory_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_LogMediator_logCategory_feature", "_UI_LogMediator_type"),
+				 EsbPackage.Literals.LOG_MEDIATOR__LOG_CATEGORY,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
 
     /**
      * This adds a property descriptor for the Log Category feature. <!--
@@ -110,20 +110,20 @@ public class LogMediatorItemProvider extends MediatorItemProvider {
      * @generated
      */
     protected void addLogLevelPropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_LogMediator_logLevel_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_LogMediator_logLevel_feature", "_UI_LogMediator_type"),
-                 EsbPackage.Literals.LOG_MEDIATOR__LOG_LEVEL,
-                 true,
-                 false,
-                 false,
-                 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-                 null,
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_LogMediator_logLevel_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_LogMediator_logLevel_feature", "_UI_LogMediator_type"),
+				 EsbPackage.Literals.LOG_MEDIATOR__LOG_LEVEL,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
 
     /**
      * This adds a property descriptor for the Log Separator feature. <!--
@@ -132,52 +132,52 @@ public class LogMediatorItemProvider extends MediatorItemProvider {
      * @generated
      */
     protected void addLogSeparatorPropertyDescriptor(Object object) {
-        itemPropertyDescriptors.add
-            (createItemPropertyDescriptor
-                (((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-                 getResourceLocator(),
-                 getString("_UI_LogMediator_logSeparator_feature"),
-                 getString("_UI_PropertyDescriptor_description", "_UI_LogMediator_logSeparator_feature", "_UI_LogMediator_type"),
-                 EsbPackage.Literals.LOG_MEDIATOR__LOG_SEPARATOR,
-                 true,
-                 false,
-                 false,
-                 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-                 null,
-                 null));
-    }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_LogMediator_logSeparator_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_LogMediator_logSeparator_feature", "_UI_LogMediator_type"),
+				 EsbPackage.Literals.LOG_MEDIATOR__LOG_SEPARATOR,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
 
     /**
-     * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
-     * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
-     * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * This specifies how to implement {@link #getChildren} and is used to deduce an appropriate feature for an
+	 * {@link org.eclipse.emf.edit.command.AddCommand}, {@link org.eclipse.emf.edit.command.RemoveCommand} or
+	 * {@link org.eclipse.emf.edit.command.MoveCommand} in {@link #createCommand}.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 
     @Override
     public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
-        if (childrenFeatures == null) {
-            super.getChildrenFeatures(object);
-            childrenFeatures.add(EsbPackage.Literals.LOG_MEDIATOR__INPUT_CONNECTOR);
-            childrenFeatures.add(EsbPackage.Literals.LOG_MEDIATOR__OUTPUT_CONNECTOR);
-            childrenFeatures.add(EsbPackage.Literals.LOG_MEDIATOR__PROPERTIES);
-        }
-        return childrenFeatures;
-    }
+		if (childrenFeatures == null) {
+			super.getChildrenFeatures(object);
+			childrenFeatures.add(EsbPackage.Literals.LOG_MEDIATOR__INPUT_CONNECTOR);
+			childrenFeatures.add(EsbPackage.Literals.LOG_MEDIATOR__OUTPUT_CONNECTOR);
+			childrenFeatures.add(EsbPackage.Literals.LOG_MEDIATOR__PROPERTIES);
+		}
+		return childrenFeatures;
+	}
 
     /**
-     * <!-- begin-user-doc --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 
     @Override
     protected EStructuralFeature getChildFeature(Object object, Object child) {
-        // Check the type of the specified child object and return the proper feature to use for
-        // adding (see {@link AddCommand}) it as a child.
+		// Check the type of the specified child object and return the proper feature to use for
+		// adding (see {@link AddCommand}) it as a child.
 
-        return super.getChildFeature(object, child);
-    }
+		return super.getChildFeature(object, child);
+	}
 
     /**
      * This returns LogMediator.gif. <!-- begin-user-doc --> <!-- end-user-doc
@@ -188,50 +188,50 @@ public class LogMediatorItemProvider extends MediatorItemProvider {
 
     @Override
     public Object getImage(Object object) {
-        return overlayImage(object, getResourceLocator().getImage("full/obj16/LogMediator"));
-    }
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/LogMediator"));
+	}
 
     /**
-     * This returns the label text for the adapted class.
-     * <!-- begin-user-doc
+	 * This returns the label text for the adapted class.
+	 * <!-- begin-user-doc
      * --> <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public String getText(Object object) {
-        String label = ((LogMediator)object).getDescription();
-        return label == null || label.length() == 0 ?
-            getString("_UI_LogMediator_type") :
-            getString("_UI_LogMediator_type") + " " + label;
-    }
+		String label = ((LogMediator)object).getDescription();
+		return label == null || label.length() == 0 ?
+			getString("_UI_LogMediator_type") :
+			getString("_UI_LogMediator_type") + " " + label;
+	}
 
     /**
-     * This handles model notifications by calling {@link #updateChildren} to update any cached
-     * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
-     * <!-- begin-user-doc --> <!--
+	 * This handles model notifications by calling {@link #updateChildren} to update any cached
+	 * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
+	 * <!-- begin-user-doc --> <!--
      * end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     public void notifyChanged(Notification notification) {
-        updateChildren(notification);
+		updateChildren(notification);
 
-        switch (notification.getFeatureID(LogMediator.class)) {
-            case EsbPackage.LOG_MEDIATOR__LOG_CATEGORY:
-            case EsbPackage.LOG_MEDIATOR__LOG_LEVEL:
-            case EsbPackage.LOG_MEDIATOR__LOG_SEPARATOR:
-                fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-                return;
-            case EsbPackage.LOG_MEDIATOR__INPUT_CONNECTOR:
-            case EsbPackage.LOG_MEDIATOR__OUTPUT_CONNECTOR:
-            case EsbPackage.LOG_MEDIATOR__PROPERTIES:
-                fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
-                return;
-        }
-        super.notifyChanged(notification);
-    }
+		switch (notification.getFeatureID(LogMediator.class)) {
+			case EsbPackage.LOG_MEDIATOR__LOG_CATEGORY:
+			case EsbPackage.LOG_MEDIATOR__LOG_LEVEL:
+			case EsbPackage.LOG_MEDIATOR__LOG_SEPARATOR:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+			case EsbPackage.LOG_MEDIATOR__INPUT_CONNECTOR:
+			case EsbPackage.LOG_MEDIATOR__OUTPUT_CONNECTOR:
+			case EsbPackage.LOG_MEDIATOR__PROPERTIES:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
+				return;
+		}
+		super.notifyChanged(notification);
+	}
 
     /**
      * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s
@@ -243,22 +243,22 @@ public class LogMediatorItemProvider extends MediatorItemProvider {
 
     @Override
     protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
-        super.collectNewChildDescriptors(newChildDescriptors, object);
+		super.collectNewChildDescriptors(newChildDescriptors, object);
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.LOG_MEDIATOR__INPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createLogMediatorInputConnector()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.LOG_MEDIATOR__INPUT_CONNECTOR,
+				 EsbFactory.eINSTANCE.createLogMediatorInputConnector()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.LOG_MEDIATOR__OUTPUT_CONNECTOR,
-                 EsbFactory.eINSTANCE.createLogMediatorOutputConnector()));
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.LOG_MEDIATOR__OUTPUT_CONNECTOR,
+				 EsbFactory.eINSTANCE.createLogMediatorOutputConnector()));
 
-        newChildDescriptors.add
-            (createChildParameter
-                (EsbPackage.Literals.LOG_MEDIATOR__PROPERTIES,
-                 EsbFactory.eINSTANCE.createLogProperty()));
-    }
+		newChildDescriptors.add
+			(createChildParameter
+				(EsbPackage.Literals.LOG_MEDIATOR__PROPERTIES,
+				 EsbFactory.eINSTANCE.createLogProperty()));
+	}
 
 }

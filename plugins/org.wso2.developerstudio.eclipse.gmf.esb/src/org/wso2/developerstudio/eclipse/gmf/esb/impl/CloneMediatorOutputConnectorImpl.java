@@ -20,22 +20,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
  */
 public class CloneMediatorOutputConnectorImpl extends OutputConnectorImpl implements CloneMediatorOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected CloneMediatorOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.CLONE_MEDIATOR_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.CLONE_MEDIATOR_OUTPUT_CONNECTOR;
+	}
 
 } // CloneMediatorOutputConnectorImpl

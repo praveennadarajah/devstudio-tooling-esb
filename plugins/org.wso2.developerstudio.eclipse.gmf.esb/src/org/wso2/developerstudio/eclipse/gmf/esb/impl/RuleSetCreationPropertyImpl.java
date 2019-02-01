@@ -33,14 +33,14 @@ public class RuleSetCreationPropertyImpl extends AbstractNameValuePropertyImpl i
     }
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.RULE_SET_CREATION_PROPERTY;
-    }
+		return EsbPackage.Literals.RULE_SET_CREATION_PROPERTY;
+	}
 
 } // RuleSetCreationPropertyImpl

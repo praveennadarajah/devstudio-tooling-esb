@@ -20,23 +20,23 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbSequenceInputConnector;
  */
 public class EsbSequenceInputConnectorImpl extends OutputConnectorImpl implements EsbSequenceInputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected EsbSequenceInputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
 
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.ESB_SEQUENCE_INPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.ESB_SEQUENCE_INPUT_CONNECTOR;
+	}
 
 } // EsbSequenceInputConnectorImpl

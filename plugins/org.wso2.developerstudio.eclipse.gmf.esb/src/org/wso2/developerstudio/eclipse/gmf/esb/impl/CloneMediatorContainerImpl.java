@@ -37,118 +37,118 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
  */
 public class CloneMediatorContainerImpl extends EsbNodeImpl implements CloneMediatorContainer {
     /**
-     * The cached value of the '{@link #getCloneTargetContainer() <em>Clone Target Container</em>}' containment reference list.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getCloneTargetContainer() <em>Clone Target Container</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getCloneTargetContainer()
-     * @generated
-     * @ordered
-     */
+	 * @see #getCloneTargetContainer()
+	 * @generated
+	 * @ordered
+	 */
     protected EList<CloneTargetContainer> cloneTargetContainer;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected CloneMediatorContainerImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.CLONE_MEDIATOR_CONTAINER;
-    }
+		return EsbPackage.Literals.CLONE_MEDIATOR_CONTAINER;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public EList<CloneTargetContainer> getCloneTargetContainer() {
-        if (cloneTargetContainer == null) {
-            cloneTargetContainer = new EObjectContainmentEList<CloneTargetContainer>(CloneTargetContainer.class, this, EsbPackage.CLONE_MEDIATOR_CONTAINER__CLONE_TARGET_CONTAINER);
-        }
-        return cloneTargetContainer;
-    }
+		if (cloneTargetContainer == null) {
+			cloneTargetContainer = new EObjectContainmentEList<CloneTargetContainer>(CloneTargetContainer.class, this, EsbPackage.CLONE_MEDIATOR_CONTAINER__CLONE_TARGET_CONTAINER);
+		}
+		return cloneTargetContainer;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-        switch (featureID) {
-            case EsbPackage.CLONE_MEDIATOR_CONTAINER__CLONE_TARGET_CONTAINER:
-                return ((InternalEList<?>)getCloneTargetContainer()).basicRemove(otherEnd, msgs);
-        }
-        return super.eInverseRemove(otherEnd, featureID, msgs);
-    }
+		switch (featureID) {
+			case EsbPackage.CLONE_MEDIATOR_CONTAINER__CLONE_TARGET_CONTAINER:
+				return ((InternalEList<?>)getCloneTargetContainer()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.CLONE_MEDIATOR_CONTAINER__CLONE_TARGET_CONTAINER:
-                return getCloneTargetContainer();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.CLONE_MEDIATOR_CONTAINER__CLONE_TARGET_CONTAINER:
+				return getCloneTargetContainer();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @SuppressWarnings("unchecked")
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.CLONE_MEDIATOR_CONTAINER__CLONE_TARGET_CONTAINER:
-                getCloneTargetContainer().clear();
-                getCloneTargetContainer().addAll((Collection<? extends CloneTargetContainer>)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.CLONE_MEDIATOR_CONTAINER__CLONE_TARGET_CONTAINER:
+				getCloneTargetContainer().clear();
+				getCloneTargetContainer().addAll((Collection<? extends CloneTargetContainer>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.CLONE_MEDIATOR_CONTAINER__CLONE_TARGET_CONTAINER:
-                getCloneTargetContainer().clear();
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.CLONE_MEDIATOR_CONTAINER__CLONE_TARGET_CONTAINER:
+				getCloneTargetContainer().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.CLONE_MEDIATOR_CONTAINER__CLONE_TARGET_CONTAINER:
-                return cloneTargetContainer != null && !cloneTargetContainer.isEmpty();
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.CLONE_MEDIATOR_CONTAINER__CLONE_TARGET_CONTAINER:
+				return cloneTargetContainer != null && !cloneTargetContainer.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } // CloneMediatorContainerImpl

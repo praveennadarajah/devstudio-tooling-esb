@@ -29,22 +29,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.MethodArgument;
  */
 public class MethodArgumentImpl extends AbstractNameValueExpressionPropertyImpl implements MethodArgument {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected MethodArgumentImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.METHOD_ARGUMENT;
-    }
+		return EsbPackage.Literals.METHOD_ARGUMENT;
+	}
 
 } // MethodArgumentImpl

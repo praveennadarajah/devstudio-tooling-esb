@@ -30,22 +30,22 @@ import org.wso2.developerstudio.eclipse.gmf.esb.EsbPackage;
 public class AddressingEndpointOutputConnectorImpl extends OutputConnectorImpl
         implements AddressingEndpointOutputConnector {
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected AddressingEndpointOutputConnectorImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.ADDRESSING_ENDPOINT_OUTPUT_CONNECTOR;
-    }
+		return EsbPackage.Literals.ADDRESSING_ENDPOINT_OUTPUT_CONNECTOR;
+	}
 
 } // AddressingEndpointOutputConnectorImpl

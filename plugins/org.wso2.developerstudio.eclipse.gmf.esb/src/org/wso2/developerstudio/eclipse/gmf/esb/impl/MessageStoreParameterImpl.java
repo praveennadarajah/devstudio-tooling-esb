@@ -40,190 +40,190 @@ import org.wso2.developerstudio.eclipse.gmf.esb.MessageStoreParameter;
  */
 public class MessageStoreParameterImpl extends EsbNodeImpl implements MessageStoreParameter {
     /**
-     * The default value of the '{@link #getParameterName() <em>Parameter Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getParameterName() <em>Parameter Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getParameterName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getParameterName()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String PARAMETER_NAME_EDEFAULT = null;
 
     /**
-     * The cached value of the '{@link #getParameterName() <em>Parameter Name</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getParameterName() <em>Parameter Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getParameterName()
-     * @generated
-     * @ordered
-     */
+	 * @see #getParameterName()
+	 * @generated
+	 * @ordered
+	 */
     protected String parameterName = PARAMETER_NAME_EDEFAULT;
 
     /**
-     * The default value of the '{@link #getParameterValue() <em>Parameter Value</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getParameterValue() <em>Parameter Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getParameterValue()
-     * @generated
-     * @ordered
-     */
+	 * @see #getParameterValue()
+	 * @generated
+	 * @ordered
+	 */
     protected static final String PARAMETER_VALUE_EDEFAULT = null;
 
     /**
-     * The cached value of the '{@link #getParameterValue() <em>Parameter Value</em>}' attribute.
-     * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getParameterValue() <em>Parameter Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #getParameterValue()
-     * @generated
-     * @ordered
-     */
+	 * @see #getParameterValue()
+	 * @generated
+	 * @ordered
+	 */
     protected String parameterValue = PARAMETER_VALUE_EDEFAULT;
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     protected MessageStoreParameterImpl() {
-        super();
-    }
+		super();
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     protected EClass eStaticClass() {
-        return EsbPackage.Literals.MESSAGE_STORE_PARAMETER;
-    }
+		return EsbPackage.Literals.MESSAGE_STORE_PARAMETER;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getParameterName() {
-        return parameterName;
-    }
+		return parameterName;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setParameterName(String newParameterName) {
-        String oldParameterName = parameterName;
-        parameterName = newParameterName;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_NAME, oldParameterName, parameterName));
-    }
+		String oldParameterName = parameterName;
+		parameterName = newParameterName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_NAME, oldParameterName, parameterName));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public String getParameterValue() {
-        return parameterValue;
-    }
+		return parameterValue;
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     public void setParameterValue(String newParameterValue) {
-        String oldParameterValue = parameterValue;
-        parameterValue = newParameterValue;
-        if (eNotificationRequired())
-            eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_VALUE, oldParameterValue, parameterValue));
-    }
+		String oldParameterValue = parameterValue;
+		parameterValue = newParameterValue;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_VALUE, oldParameterValue, parameterValue));
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public Object eGet(int featureID, boolean resolve, boolean coreType) {
-        switch (featureID) {
-            case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_NAME:
-                return getParameterName();
-            case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_VALUE:
-                return getParameterValue();
-        }
-        return super.eGet(featureID, resolve, coreType);
-    }
+		switch (featureID) {
+			case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_NAME:
+				return getParameterName();
+			case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_VALUE:
+				return getParameterValue();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eSet(int featureID, Object newValue) {
-        switch (featureID) {
-            case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_NAME:
-                setParameterName((String)newValue);
-                return;
-            case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_VALUE:
-                setParameterValue((String)newValue);
-                return;
-        }
-        super.eSet(featureID, newValue);
-    }
+		switch (featureID) {
+			case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_NAME:
+				setParameterName((String)newValue);
+				return;
+			case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_VALUE:
+				setParameterValue((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public void eUnset(int featureID) {
-        switch (featureID) {
-            case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_NAME:
-                setParameterName(PARAMETER_NAME_EDEFAULT);
-                return;
-            case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_VALUE:
-                setParameterValue(PARAMETER_VALUE_EDEFAULT);
-                return;
-        }
-        super.eUnset(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_NAME:
+				setParameterName(PARAMETER_NAME_EDEFAULT);
+				return;
+			case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_VALUE:
+				setParameterValue(PARAMETER_VALUE_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public boolean eIsSet(int featureID) {
-        switch (featureID) {
-            case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_NAME:
-                return PARAMETER_NAME_EDEFAULT == null ? parameterName != null : !PARAMETER_NAME_EDEFAULT.equals(parameterName);
-            case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_VALUE:
-                return PARAMETER_VALUE_EDEFAULT == null ? parameterValue != null : !PARAMETER_VALUE_EDEFAULT.equals(parameterValue);
-        }
-        return super.eIsSet(featureID);
-    }
+		switch (featureID) {
+			case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_NAME:
+				return PARAMETER_NAME_EDEFAULT == null ? parameterName != null : !PARAMETER_NAME_EDEFAULT.equals(parameterName);
+			case EsbPackage.MESSAGE_STORE_PARAMETER__PARAMETER_VALUE:
+				return PARAMETER_VALUE_EDEFAULT == null ? parameterValue != null : !PARAMETER_VALUE_EDEFAULT.equals(parameterValue);
+		}
+		return super.eIsSet(featureID);
+	}
 
     /**
-     * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @generated
-     */
+	 * @generated
+	 */
     @Override
     public String toString() {
-        if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-        StringBuffer result = new StringBuffer(super.toString());
-        result.append(" (parameterName: ");
-        result.append(parameterName);
-        result.append(", parameterValue: ");
-        result.append(parameterValue);
-        result.append(')');
-        return result.toString();
-    }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (parameterName: ");
+		result.append(parameterName);
+		result.append(", parameterValue: ");
+		result.append(parameterValue);
+		result.append(')');
+		return result.toString();
+	}
 
 } // MessageStoreParameterImpl
