@@ -13,16 +13,16 @@ import org.wso2.developerstudio.eclipse.gmf.esb.diagram.providers.EsbModelingAss
  */
 public class EsbModelingAssistantProviderOfPropertyGroupMediatorEditPart extends EsbModelingAssistantProvider {
 
-	/**
-	* @generated
-	*/
-	@Override
+    /**
+    * @generated
+    */
+    @Override
 
-	public List<IElementType> getTypesForPopupBar(IAdaptable host) {
-		List<IElementType> types = new ArrayList<IElementType>(2);
-		types.add(EsbElementTypes.PropertyGroupMediatorInputConnector_3789);
-		types.add(EsbElementTypes.PropertyGroupMediatorOutputConnector_3790);
-		return types;
-	}
+    public List<IElementType> getTypesForPopupBar(IAdaptable host) {
+        List<IElementType> types = new ArrayList<IElementType>(2);
+        types.add(EsbElementTypes.PropertyGroupMediatorInputConnector_3789);
+        types.add(EsbElementTypes.PropertyGroupMediatorOutputConnector_3790);
+        return types;
+    }
 
 }

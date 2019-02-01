@@ -24,20 +24,20 @@ import org.eclipse.swt.widgets.Label;
  * @generated
  */
 public class ModelElementSelectionPage extends DefaultModelElementSelectionPage {
-	/**
-	 * @generated
-	 */
-	public ModelElementSelectionPage(String pageName) {
-		super(EsbDiagramEditorPlugin.getInstance().getItemProvidersAdapterFactory(), pageName);
-	}
+    /**
+     * @generated
+     */
+    public ModelElementSelectionPage(String pageName) {
+        super(EsbDiagramEditorPlugin.getInstance().getItemProvidersAdapterFactory(), pageName);
+    }
 
-	/**
-	 * Override to provide custom model element description.
-	 * 
-	 * @generated
-	 */
-	protected String getSelectionTitle() {
-		return Messages.ModelElementSelectionPageMessage;
-	}
+    /**
+     * Override to provide custom model element description.
+     * 
+     * @generated
+     */
+    protected String getSelectionTitle() {
+        return Messages.ModelElementSelectionPageMessage;
+    }
 
 }
