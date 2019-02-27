@@ -292,20 +292,20 @@ public interface EntitlementMediatorPropertiesEditionPart {
     public RegistryKeyProperty getOnRejectSequenceKey();
 
     public void setOnRejectSequenceKey(RegistryKeyProperty onRejectSequenceKey);
-    // End of user code
 
+    // End of user code
     // Start of user code for onAcceptSequenceKey specific getters and setters declaration
     public RegistryKeyProperty getOnAcceptSequenceKey();
 
     public void setOnAcceptSequenceKey(RegistryKeyProperty onAcceptSequenceKey);
-    // End of user code
 
+    // End of user code
     // Start of user code for adviceSequenceKey specific getters and setters declaration
     public RegistryKeyProperty getAdviceSequenceKey();
 
     public void setAdviceSequenceKey(RegistryKeyProperty adviceSequenceKey);
-    // End of user code
 
+    // End of user code
     // Start of user code for obligationsSequenceKey specific getters and setters declaration
     public RegistryKeyProperty getObligationsSequenceKey();
 

@@ -164,12 +164,11 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 		composer.compose(view);
 	}
 
-
-    /**
+	/**
 	 * 
 	 */
 	protected Composite createPropertiesGroup(Composite parent) {
-		propertiesGroup = new Group(parent, SWT.NONE);
+		Group propertiesGroup = new Group(parent, SWT.NONE);
 		propertiesGroup.setText(EsbMessages.URLRewriteRuleActionPropertiesEditionPart_PropertiesGroupLabel);
 		GridData propertiesGroupData = new GridData(GridData.FILL_HORIZONTAL);
 		propertiesGroupData.horizontalSpan = 3;
@@ -182,7 +181,7 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 
 	
 	protected Composite createRuleActionEMFComboViewer(Composite parent) {
-	    Control ruleActionLabel = createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.ruleAction, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_RuleActionLabel);
+		createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.ruleAction, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_RuleActionLabel);
 		ruleAction = new EMFComboViewer(parent);
 		ruleAction.setContentProvider(new ArrayContentProvider());
 		ruleAction.setLabelProvider(new AdapterFactoryLabelProvider(EEFRuntimePlugin.getDefault().getAdapterFactory()));
@@ -203,17 +202,17 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 
 		});
 		ruleAction.setID(EsbViewsRepository.URLRewriteRuleAction.Properties.ruleAction);
-		Control ruleActionHelp = SWTUtils.createHelpButton(parent, propertiesEditionComponent.getHelpContent(EsbViewsRepository.URLRewriteRuleAction.Properties.ruleAction, EsbViewsRepository.SWT_KIND), null); //$NON-NLS-1$
+		SWTUtils.createHelpButton(parent, propertiesEditionComponent.getHelpContent(EsbViewsRepository.URLRewriteRuleAction.Properties.ruleAction, EsbViewsRepository.SWT_KIND), null); //$NON-NLS-1$
 		// Start of user code for createRuleActionEMFComboViewer
-		ruleActionElements = new Control[] { ruleActionLabel, ruleActionHelp,
-		        ruleAction.getCombo() };
+//		ruleActionElements = new Control[] { ruleActionLabel, ruleActionHelp,
+//		        ruleAction.getCombo() };
 		// End of user code
 		return parent;
 	}
 
 	
 	protected Composite createRuleFragmentEMFComboViewer(Composite parent) {
-	    Control ruleFragmentLabel = createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.ruleFragment, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_RuleFragmentLabel);
+		createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.ruleFragment, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_RuleFragmentLabel);
 		ruleFragment = new EMFComboViewer(parent);
 		ruleFragment.setContentProvider(new ArrayContentProvider());
 		ruleFragment.setLabelProvider(new AdapterFactoryLabelProvider(EEFRuntimePlugin.getDefault().getAdapterFactory()));
@@ -234,17 +233,17 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 
 		});
 		ruleFragment.setID(EsbViewsRepository.URLRewriteRuleAction.Properties.ruleFragment);
-		Control ruleFragmentHelp = SWTUtils.createHelpButton(parent, propertiesEditionComponent.getHelpContent(EsbViewsRepository.URLRewriteRuleAction.Properties.ruleFragment, EsbViewsRepository.SWT_KIND), null); //$NON-NLS-1$
+		SWTUtils.createHelpButton(parent, propertiesEditionComponent.getHelpContent(EsbViewsRepository.URLRewriteRuleAction.Properties.ruleFragment, EsbViewsRepository.SWT_KIND), null); //$NON-NLS-1$
 		// Start of user code for createRuleFragmentEMFComboViewer
-		ruleFragmentElements = new Control[] { ruleFragmentLabel, ruleFragmentHelp,
-		        ruleFragment.getCombo() };
+//		ruleFragmentElements = new Control[] { ruleFragmentLabel, ruleFragmentHelp,
+//		        ruleFragment.getCombo() };
 		// End of user code
 		return parent;
 	}
 
 	
 	protected Composite createRuleOptionEMFComboViewer(Composite parent) {
-	    Control ruleOptionLabel = createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.ruleOption, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_RuleOptionLabel);
+		createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.ruleOption, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_RuleOptionLabel);
 		ruleOption = new EMFComboViewer(parent);
 		ruleOption.setContentProvider(new ArrayContentProvider());
 		ruleOption.setLabelProvider(new AdapterFactoryLabelProvider(EEFRuntimePlugin.getDefault().getAdapterFactory()));
@@ -265,9 +264,9 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 
 		});
 		ruleOption.setID(EsbViewsRepository.URLRewriteRuleAction.Properties.ruleOption);
-		Control ruleOptionHelp = SWTUtils.createHelpButton(parent, propertiesEditionComponent.getHelpContent(EsbViewsRepository.URLRewriteRuleAction.Properties.ruleOption, EsbViewsRepository.SWT_KIND), null); //$NON-NLS-1$
+		SWTUtils.createHelpButton(parent, propertiesEditionComponent.getHelpContent(EsbViewsRepository.URLRewriteRuleAction.Properties.ruleOption, EsbViewsRepository.SWT_KIND), null); //$NON-NLS-1$
 		// Start of user code for createRuleOptionEMFComboViewer
-		ruleOptionTypeElements = new Control[] { ruleOptionLabel, ruleOptionHelp, ruleOption.getCombo() };
+//		ruleOptionTypeElements = new Control[] { ruleOptionLabel, ruleOptionHelp, ruleOption.getCombo() };
 		ruleOption.addSelectionChangedListener(new ISelectionChangedListener() {
 
             /**
@@ -287,7 +286,7 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 
 	
 	protected Composite createActionValueText(Composite parent) {
-	    Control actionValueLabel = createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.actionValue, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_ActionValueLabel);
+		createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.actionValue, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_ActionValueLabel);
 		actionValue = SWTUtils.createScrollableText(parent, SWT.BORDER);
 		GridData actionValueData = new GridData(GridData.FILL_HORIZONTAL);
 		actionValue.setLayoutData(actionValueData);
@@ -327,16 +326,16 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 		});
 		EditingUtils.setID(actionValue, EsbViewsRepository.URLRewriteRuleAction.Properties.actionValue);
 		EditingUtils.setEEFtype(actionValue, "eef::Text"); //$NON-NLS-1$
-		Control actionValueHelp = SWTUtils.createHelpButton(parent, propertiesEditionComponent.getHelpContent(EsbViewsRepository.URLRewriteRuleAction.Properties.actionValue, EsbViewsRepository.SWT_KIND), null); //$NON-NLS-1$
+		SWTUtils.createHelpButton(parent, propertiesEditionComponent.getHelpContent(EsbViewsRepository.URLRewriteRuleAction.Properties.actionValue, EsbViewsRepository.SWT_KIND), null); //$NON-NLS-1$
 		// Start of user code for createActionValueText
-		actionValueElements = new Control[] { actionValueLabel, actionValue, actionValueHelp };
+//		actionValueElements = new Control[] { actionValueLabel, actionValue, actionValueHelp };
 		// End of user code
 		return parent;
 	}
 
 	
 	protected Composite createActionRegexText(Composite parent) {
-	    Control actionRegexLabel = createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.actionRegex, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_ActionRegexLabel);
+		createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.actionRegex, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_ActionRegexLabel);
 		actionRegex = SWTUtils.createScrollableText(parent, SWT.BORDER);
 		GridData actionRegexData = new GridData(GridData.FILL_HORIZONTAL);
 		actionRegex.setLayoutData(actionRegexData);
@@ -376,9 +375,9 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 		});
 		EditingUtils.setID(actionRegex, EsbViewsRepository.URLRewriteRuleAction.Properties.actionRegex);
 		EditingUtils.setEEFtype(actionRegex, "eef::Text"); //$NON-NLS-1$
-		Control actionRegexHelp = SWTUtils.createHelpButton(parent, propertiesEditionComponent.getHelpContent(EsbViewsRepository.URLRewriteRuleAction.Properties.actionRegex, EsbViewsRepository.SWT_KIND), null); //$NON-NLS-1$
+		SWTUtils.createHelpButton(parent, propertiesEditionComponent.getHelpContent(EsbViewsRepository.URLRewriteRuleAction.Properties.actionRegex, EsbViewsRepository.SWT_KIND), null); //$NON-NLS-1$
 		// Start of user code for createActionRegexText
-		actionRegexElements = new Control[] { actionRegexLabel, actionRegex, actionRegexHelp };
+//		actionRegexElements = new Control[] { actionRegexLabel, actionRegex, actionRegexHelp };
 		// End of user code
 		return parent;
 	}
@@ -630,8 +629,6 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 	public String getTitle() {
 		return EsbMessages.URLRewriteRuleAction_Part_Title;
 	}
-
-
 
 	// Start of user code additional methods
 

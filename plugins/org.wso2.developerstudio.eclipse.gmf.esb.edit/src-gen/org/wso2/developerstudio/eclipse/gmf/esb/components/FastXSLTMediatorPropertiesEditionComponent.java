@@ -233,6 +233,7 @@ public class FastXSLTMediatorPropertiesEditionComponent extends SinglePartProper
             // Start of user code for fastXsltDynamicSchemaKey live update
 
             // End of user code
+
         }
     }
 

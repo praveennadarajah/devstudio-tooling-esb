@@ -358,7 +358,7 @@ public class PayloadFactoryMediatorEditPart extends FixedSizedAbstractMediator {
         }
 
     }
-    
+
     @Override
     public void notifyChanged(Notification notification) {
         // this.getModel() will get EMF datamodel of the payload factory mediator datamodel
@@ -366,16 +366,18 @@ public class PayloadFactoryMediatorEditPart extends FixedSizedAbstractMediator {
             // The following part will check for validation issues with the current data in the model
             CSSNodeImpl model = (CSSNodeImpl) this.getModel();
             if (model.getElement() instanceof PayloadFactoryMediatorImpl) {
-                PayloadFactoryMediatorImpl payloadFactoryMediatorDataModel = (PayloadFactoryMediatorImpl) model.getElement();
+                PayloadFactoryMediatorImpl payloadFactoryMediatorDataModel = (PayloadFactoryMediatorImpl) model
+                        .getElement();
                 try {
                     org.apache.synapse.mediators.transform.PayloadFactoryMediator payloadFactoryMediator = PayloadFactoryMediatorTransformer
                             .createPayloadFactoryMediator((EsbNode) payloadFactoryMediatorDataModel);
 
                     PayloadFactoryMediatorSerializer payloadFactoryMediatorSerializer = new PayloadFactoryMediatorSerializer();
-                    OMElement omElement = payloadFactoryMediatorSerializer.serializeSpecificMediator(payloadFactoryMediator);
+                    OMElement omElement = payloadFactoryMediatorSerializer
+                            .serializeSpecificMediator(payloadFactoryMediator);
 
-                    if (StringUtils
-                            .isEmpty(MediatorValidationUtil.validateMediatorsFromOEMElement(omElement, "payloadFactory"))) {
+                    if (StringUtils.isEmpty(
+                            MediatorValidationUtil.validateMediatorsFromOEMElement(omElement, "payloadFactory"))) {
                         GraphicalValidatorUtil.removeValidationMark(this);
                     } else {
                         GraphicalValidatorUtil.addValidationMark(this);

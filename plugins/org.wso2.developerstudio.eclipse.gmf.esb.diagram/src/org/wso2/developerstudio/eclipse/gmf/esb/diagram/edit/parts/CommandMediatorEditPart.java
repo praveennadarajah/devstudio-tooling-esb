@@ -407,8 +407,8 @@ public class CommandMediatorEditPart extends FixedSizedAbstractMediator {
                     POJOCommandMediatorExtSerializer commandMediatorSerializer = new POJOCommandMediatorExtSerializer();
                     OMElement omElement = commandMediatorSerializer.serializeSpecificMediator(commandMediator);
 
-                    if (StringUtils
-                            .isEmpty(MediatorValidationUtil.validateMediatorsFromOEMElement(omElement, "pojoCommand"))) {
+                    if (StringUtils.isEmpty(
+                            MediatorValidationUtil.validateMediatorsFromOEMElement(omElement, "pojoCommand"))) {
                         GraphicalValidatorUtil.removeValidationMark(this);
                     } else {
                         GraphicalValidatorUtil.addValidationMark(this);

@@ -435,7 +435,7 @@ public class FilterMediatorEditPart extends MultipleCompartmentComplexFiguredAbs
         }
 
     }
-    
+
     @Override
     public void notifyChanged(Notification notification) {
         // this.getModel() will get EMF datamodel of the filter mediator datamodel
@@ -446,7 +446,7 @@ public class FilterMediatorEditPart extends MultipleCompartmentComplexFiguredAbs
                 FilterMediatorImpl filterMediatorDataModel = (FilterMediatorImpl) model.getElement();
                 try {
                     org.apache.synapse.mediators.filters.FilterMediator filterMediator = FilterMediatorTransformer
-                            .createFilterMediator(new TransformationInfo(),(EsbNode) filterMediatorDataModel);
+                            .createFilterMediator(new TransformationInfo(), (EsbNode) filterMediatorDataModel);
 
                     FilterMediatorSerializer filterMediatorSerializer = new FilterMediatorSerializer();
                     OMElement omElement = filterMediatorSerializer.serializeSpecificMediator(filterMediator);
@@ -457,7 +457,7 @@ public class FilterMediatorEditPart extends MultipleCompartmentComplexFiguredAbs
                     } else {
                         GraphicalValidatorUtil.addValidationMark(this);
                     }
-                } catch ( TransformerException | SynapseException e) {
+                } catch (TransformerException | SynapseException e) {
                     GraphicalValidatorUtil.addValidationMark(this);
                 }
             }

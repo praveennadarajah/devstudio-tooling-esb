@@ -370,8 +370,7 @@ public class EJBMediatorEditPart extends FixedSizedAbstractMediator {
                     EJBMediatorExtSerializer ejbMediatorSerializer = new EJBMediatorExtSerializer();
                     OMElement omElement = ejbMediatorSerializer.serializeSpecificMediator(ejbMediator);
 
-                    if (StringUtils
-                            .isEmpty(MediatorValidationUtil.validateMediatorsFromOEMElement(omElement, "ejb"))) {
+                    if (StringUtils.isEmpty(MediatorValidationUtil.validateMediatorsFromOEMElement(omElement, "ejb"))) {
                         GraphicalValidatorUtil.removeValidationMark(this);
                     } else {
                         GraphicalValidatorUtil.addValidationMark(this);

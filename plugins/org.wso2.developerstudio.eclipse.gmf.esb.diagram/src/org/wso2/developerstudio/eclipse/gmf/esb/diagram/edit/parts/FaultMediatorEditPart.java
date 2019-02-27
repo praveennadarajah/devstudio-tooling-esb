@@ -423,7 +423,7 @@ public class FaultMediatorEditPart extends FixedSizedAbstractMediator {
                     } else {
                         GraphicalValidatorUtil.addValidationMark(this);
                     }
-                } catch (JaxenException | URISyntaxException  | SynapseException e) {
+                } catch (JaxenException | URISyntaxException | SynapseException e) {
                     GraphicalValidatorUtil.addValidationMark(this);
                 }
             }

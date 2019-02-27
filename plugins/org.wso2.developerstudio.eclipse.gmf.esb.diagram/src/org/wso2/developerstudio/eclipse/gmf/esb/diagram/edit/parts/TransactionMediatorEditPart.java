@@ -368,8 +368,8 @@ public class TransactionMediatorEditPart extends FixedSizedAbstractMediator {
                     TransactionMediatorSerializer transactionMediatorSerializer = new TransactionMediatorSerializer();
                     OMElement omElement = transactionMediatorSerializer.serializeSpecificMediator(transactionMediator);
 
-                    if (StringUtils
-                            .isEmpty(MediatorValidationUtil.validateMediatorsFromOEMElement(omElement, "transaction"))) {
+                    if (StringUtils.isEmpty(
+                            MediatorValidationUtil.validateMediatorsFromOEMElement(omElement, "transaction"))) {
                         GraphicalValidatorUtil.removeValidationMark(this);
                     } else {
                         GraphicalValidatorUtil.addValidationMark(this);

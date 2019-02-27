@@ -427,7 +427,7 @@ public class ForEachMediatorEditPart extends SingleCompartmentComplexFiguredAbst
         }
 
     }
-    
+
     @Override
     public void notifyChanged(Notification notification) {
         // this.getModel() will get EMF datamodel of the ForEach mediator datamodel
@@ -438,8 +438,7 @@ public class ForEachMediatorEditPart extends SingleCompartmentComplexFiguredAbst
                 ForEachMediatorImpl forEachMediatorDataModel = (ForEachMediatorImpl) model.getElement();
                 try {
                     org.apache.synapse.mediators.builtin.ForEachMediator forEachMediator = ForEachMediatorTransformer
-                            .createForEachMediator(new TransformationInfo(), (EsbNode) forEachMediatorDataModel,
-                                    true);
+                            .createForEachMediator(new TransformationInfo(), (EsbNode) forEachMediatorDataModel, true);
 
                     ForEachMediatorSerializer forEachMediatorSerializer = new ForEachMediatorSerializer();
                     OMElement omElement = forEachMediatorSerializer.serializeMediator(null, forEachMediator);
