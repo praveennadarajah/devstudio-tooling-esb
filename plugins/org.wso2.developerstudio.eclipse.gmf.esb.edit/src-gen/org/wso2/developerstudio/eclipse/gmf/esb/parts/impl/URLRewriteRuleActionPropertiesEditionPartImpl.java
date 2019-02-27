@@ -164,9 +164,11 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 		composer.compose(view);
 	}
 
-	/**
-	 * 
-	 */
+
+
+    /**
+     * @generated NOT
+     */
 	protected Composite createPropertiesGroup(Composite parent) {
 		Group propertiesGroup = new Group(parent, SWT.NONE);
 		propertiesGroup.setText(EsbMessages.URLRewriteRuleActionPropertiesEditionPart_PropertiesGroupLabel);
@@ -179,7 +181,9 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 		return propertiesGroup;
 	}
 
-	
+    /**
+     * @generated NOT
+     */
 	protected Composite createRuleActionEMFComboViewer(Composite parent) {
 		createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.ruleAction, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_RuleActionLabel);
 		ruleAction = new EMFComboViewer(parent);
@@ -210,7 +214,9 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 		return parent;
 	}
 
-	
+    /**
+     * @generated NOT
+     */
 	protected Composite createRuleFragmentEMFComboViewer(Composite parent) {
 		createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.ruleFragment, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_RuleFragmentLabel);
 		ruleFragment = new EMFComboViewer(parent);
@@ -241,7 +247,9 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 		return parent;
 	}
 
-	
+    /**
+     * @generated NOT
+     */
 	protected Composite createRuleOptionEMFComboViewer(Composite parent) {
 		createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.ruleOption, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_RuleOptionLabel);
 		ruleOption = new EMFComboViewer(parent);
@@ -284,7 +292,9 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 		return parent;
 	}
 
-	
+    /**
+     * @generated NOT
+     */
 	protected Composite createActionValueText(Composite parent) {
 		createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.actionValue, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_ActionValueLabel);
 		actionValue = SWTUtils.createScrollableText(parent, SWT.BORDER);
@@ -333,7 +343,9 @@ public class URLRewriteRuleActionPropertiesEditionPartImpl extends CompositeProp
 		return parent;
 	}
 
-	
+    /**
+     * @generated NOT
+     */
 	protected Composite createActionRegexText(Composite parent) {
 		createDescription(parent, EsbViewsRepository.URLRewriteRuleAction.Properties.actionRegex, EsbMessages.URLRewriteRuleActionPropertiesEditionPart_ActionRegexLabel);
 		actionRegex = SWTUtils.createScrollableText(parent, SWT.BORDER);

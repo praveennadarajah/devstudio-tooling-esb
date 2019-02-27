@@ -1475,7 +1475,6 @@ public class EsbPaletteFactory {
                 }
             }
         }
-
         if (!cloudConnectorsGroupAdded) {
             ((DiagramEditDomain) ((EsbDiagramEditor) editor).getDiagramEditDomain()).getPaletteViewer().getPaletteRoot()
                     .add(createCloudConnectors6Group());
@@ -1740,7 +1739,7 @@ public class EsbPaletteFactory {
                     nodePalette.setVisible(false);
                     endpoitPalette.setVisible(true);
                     defineEpPalette.setVisible(true);
-                    linksPalette.setVisible(true);
+                    linksPalette.setVisible(false);
                     apiResourceTool.setVisible(false);
                     updateConnectorVisibility(paletteContainer, true);
                     break;
@@ -1750,7 +1749,7 @@ public class EsbPaletteFactory {
                     seqPalette.setVisible(false);
                     endpoitPalette.setVisible(true);
                     defineEpPalette.setVisible(true);
-                    linksPalette.setVisible(true);
+                    linksPalette.setVisible(false);
                     apiResourceTool.setVisible(false);
                     updateConnectorVisibility(paletteContainer, false);
                     break;
@@ -1771,7 +1770,7 @@ public class EsbPaletteFactory {
                     nodePalette.setVisible(true);
                     endpoitPalette.setVisible(true);
                     defineEpPalette.setVisible(true);
-                    linksPalette.setVisible(true);
+                    linksPalette.setVisible(false);
                     // fixing TOOLS-1820
                     apiResourceTool.getParent().setLabel("API");
                     apiResourceTool.setVisible(true);
@@ -1784,7 +1783,7 @@ public class EsbPaletteFactory {
                     nodePalette.setVisible(false);
                     endpoitPalette.setVisible(true);
                     defineEpPalette.setVisible(true);
-                    linksPalette.setVisible(true);
+                    linksPalette.setVisible(false);
                     apiResourceTool.setVisible(false);
                     updateConnectorVisibility(paletteContainer, true);
                     break;
@@ -1794,7 +1793,7 @@ public class EsbPaletteFactory {
                     nodePalette.setVisible(false);
                     endpoitPalette.setVisible(true);
                     defineEpPalette.setVisible(true);
-                    linksPalette.setVisible(true);
+                    linksPalette.setVisible(false);
                     apiResourceTool.setVisible(false);
                     seqPalette.setVisible(false);
                     updateConnectorVisibility(paletteContainer, false);
@@ -1805,7 +1804,7 @@ public class EsbPaletteFactory {
                     nodePalette.setVisible(false);
                     endpoitPalette.setVisible(true);
                     defineEpPalette.setVisible(true);
-                    linksPalette.setVisible(true);
+                    linksPalette.setVisible(false);
                     apiResourceTool.setVisible(false);
                     updateConnectorVisibility(paletteContainer, true);
                     break;
@@ -1835,7 +1834,7 @@ public class EsbPaletteFactory {
                     nodePalette.setVisible(false);
                     endpoitPalette.setVisible(false);
                     defineEpPalette.setVisible(false);
-                    linksPalette.setVisible(true);
+                    linksPalette.setVisible(false);
                     apiResourceTool.setVisible(false);
                     seqPalette.setVisible(true);
                     updateConnectorVisibility(paletteContainer, false);
@@ -1847,7 +1846,7 @@ public class EsbPaletteFactory {
                     nodePalette.setVisible(true);
                     endpoitPalette.setVisible(true);
                     defineEpPalette.setVisible(true);
-                    linksPalette.setVisible(true);
+                    linksPalette.setVisible(false);
                     apiResourceTool.setVisible(true);
                     updateConnectorVisibility(paletteContainer, true);
                     break;

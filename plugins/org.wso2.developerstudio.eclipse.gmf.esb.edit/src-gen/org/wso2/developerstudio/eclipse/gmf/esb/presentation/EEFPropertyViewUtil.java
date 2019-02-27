@@ -1,6 +1,5 @@
 package org.wso2.developerstudio.eclipse.gmf.esb.presentation;
 
-import java.awt.GridLayout;
 import java.util.ArrayList;
 
 import org.eclipse.swt.SWT;
@@ -9,6 +8,9 @@ import org.eclipse.swt.layout.FormData;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
+import org.eclipse.ui.forms.widgets.FormToolkit;
+import org.eclipse.ui.forms.widgets.Section;
+import org.eclipse.swt.layout.GridLayout;
 
 public class EEFPropertyViewUtil {
 
@@ -117,6 +119,21 @@ public class EEFPropertyViewUtil {
         }
     }
     
+    // This method will return a subSection group that can be use to group section inside a eef form
+    public static Composite createSubsectionGroup(FormToolkit widgetFactory, final Composite parent, String name) {
+        Section propertiesSection = widgetFactory.createSection(parent, Section.TITLE_BAR | Section.TWISTIE | Section.EXPANDED);
+        propertiesSection.setText(name);
+        GridData propertiesSectionData = new GridData(GridData.FILL_HORIZONTAL);
+        propertiesSectionData.horizontalSpan = 3;
+        propertiesSection.setLayoutData(propertiesSectionData);
+        Composite subsectionGroup = widgetFactory.createComposite(propertiesSection);
+        GridLayout propertiesGroupLayout = new GridLayout();
+        propertiesGroupLayout.numColumns = 3;
+        subsectionGroup.setLayout(propertiesGroupLayout);
+        propertiesSection.setClient(subsectionGroup);
+        return subsectionGroup;
+    }
+    
     /**
      * This method will check if a specific key combination matches a defined
      * set of key combinations.
@@ -125,24 +142,23 @@ public class EEFPropertyViewUtil {
      * @return 'True' if matches, 'False' otherwise.
      */
     public static boolean isReservedKeyCombination(KeyEvent e) {
-        boolean isReserved = false;
         
         if (e.keyCode == SWT.CR) {
-            isReserved = true;
+            return true;
         } else if (e.keyCode == SWT.COMMAND) {
-            isReserved = true;
+            return true;
         } else if (e.keyCode == SWT.CTRL) {
-            isReserved = true;
+            return true;
         } else if (e.keyCode == SWT.ALT) {
-            isReserved = true;
+            return true;
         } else if (e.keyCode == SWT.SHIFT) {
-            isReserved = true;
-        } else if (e.stateMask == SWT.COMMAND && e.character == 's') {
-            isReserved = true;
-        } else if (e.stateMask == SWT.CTRL && e.character == 's') {
-            isReserved = true;
+            return true;
+        } else if (e.stateMask == SWT.COMMAND) {
+            return true;
+        } else if (e.stateMask == SWT.CTRL) {
+            return true;
         }
         
-        return isReserved;
+        return false;
     }
 }
