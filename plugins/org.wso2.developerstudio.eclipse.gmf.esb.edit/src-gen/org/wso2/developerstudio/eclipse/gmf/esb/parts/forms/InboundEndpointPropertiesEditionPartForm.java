@@ -667,7 +667,11 @@ public class InboundEndpointPropertiesEditionPartForm extends SectionPropertiesE
 
                 }
                 if (key == EsbViewsRepository.InboundEndpoint.Properties.class_) {
-                    return createClass_Text(widgetFactory, parent);
+                    Control[] previousControls = filterBasicSubPropertiesGroup.getChildren();
+                    Composite composite = createClass_Text(widgetFactory, filterBasicSubPropertiesGroup);
+                    Control[] newControls = filterBasicSubPropertiesGroup.getChildren();
+                    EEFPropertyViewUtil.addTableElementsAsList(generalProperties, previousControls, newControls);
+                    return composite;
                 }
                 if (key == EsbViewsRepository.InboundEndpoint.Properties.protocol) {
                     return createProtocolText(widgetFactory, parent);
